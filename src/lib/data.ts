@@ -13,6 +13,7 @@ export interface Fish {
   rarity: 'Common' | 'Uncommon' | 'Rare' | 'Epic' | 'Legendary' | 'Mythical' | 'Secret';
   time: 'day' | 'night' | 'any';
   valueRange: string;
+  weightKg?: number;
   note: string;
 }
 
