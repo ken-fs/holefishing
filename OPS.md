@@ -10,7 +10,7 @@
 | 仓库 | https://github.com/ken-fs/holefishing |
 | 部署 | Cloudflare Workers 静态资产，`git push` → 自动构建部署 |
 | GA4 | G-QX57H8KJLJ |
-| 本地项目 | ~/Projects/holefishing-gg |
+| 本地项目 | ~/Desktop/david/Ship/holefishing |
 | 游戏本体 | [Hole Fishing](https://www.roblox.com/games/80158232099900) by 67K CCU（上线时 3,109 在线，🏜️沙漠EVENT进行中）|
 
 ## 当前规模

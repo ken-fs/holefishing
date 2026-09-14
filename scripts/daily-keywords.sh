@@ -2,7 +2,7 @@
 # Hole Fishing 每日关键词管道
 # YouTube 挖词 → 缺口分析 → 建页 → build → git push（CF 自动部署）
 set -u
-PROJ="/Users/david/Projects/holefishing-gg"
+PROJ="/Users/david/Desktop/david/Ship/holefishing"
 LOG="/tmp/holefishing-daily.log"
 PI="/Users/david/Library/pnpm/bin/pi"
 
@@ -12,7 +12,7 @@ cd "$PROJ" || exit 1
 echo "=== $(date '+%Y-%m-%d %H:%M') run start ===" >> "$LOG"
 
 "$PI" -p --no-session <<'EOF' >> "$LOG" 2>&1
-你是 Hole Fishing (Roblox) 工具站的每日运营 agent。项目目录：/Users/david/Projects/holefishing-gg
+你是 Hole Fishing (Roblox) 工具站的每日运营 agent。项目目录：/Users/david/Desktop/david/Ship/holefishing
 
 ## 站点现状
 - 已有页面：/ /rods /fish (+41个/fish/[slug]) /codes /calculator /secret-fish /server-hole /beginner-guide /updates
