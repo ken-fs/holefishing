@@ -36,10 +36,15 @@
 - **机制**：昼夜循环（夜鱼更贵）、Server Hole（~20min冷却/~60s/4x现金）、突变（Big/Large/Huge/Giant）、图鉴 +10 luck 里程碑
 - **codes**：游戏当前**无** codes 系统
 
+## 收录状态
+
+- ✅ **IndexNow**（Bing/Yandex 即时收录）：2026-09-14 已提交 53 URL，key 文件在 `public/e806fbee77f140daaac27f6e1193da54.txt`（verity 站同 key 已提交 10 URL）
+- ☐ **Google Search Console**：需手动（见下）
+
 ## 待办（按优先级）
 
-1. ☐ **GSC + Bing 提交 sitemap**（手动一次性，今天就做）→ 之后才能看收录/曝光数据
-2. ☐ 沙漠 EVENT 内容补全（管道在挖，或人工进游戏确认 EVENT 专属鱼/竿）
+1. ☐ **GSC 提交**（手动 1 分钟）：search.google.com/search-console → 添加资源 → URL 前缀 `https://holefishing.xyz` → HTML 标记验证 → 把标记给 agent 加到 layout → 提交 sitemap.xml
+2. ☐ 沙漠 EVENT 内容补全（管道每天挖，公开渠道目前无人覆盖；可人工进游戏确认 EVENT 专属鱼/竿）
 3. ☐ 鱼详情页继续加深（价格曲线、最佳时段）— 等真实数据源
 4. ☐ 外链建设（AI/游戏目录提交）
 5. ☐ 观察 7 天流量，决定续费/加码
