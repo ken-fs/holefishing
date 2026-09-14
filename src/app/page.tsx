@@ -23,9 +23,9 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       {/* Hero */}
-      <section className="relative rounded-2xl overflow-hidden mb-10 border border-gray-200 dark:border-gray-800">
+      <section className="relative rounded-2xl overflow-hidden mb-10 border border-gray-200 dark:border-gray-800 hero-bg hero-grain">
         <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/80 via-cyan-950/85 to-gray-950/90" />
-        <img src="/hero-bg.jpg" alt="Hole Fishing gameplay" className="absolute inset-0 w-full h-full object-cover -z-10" />
+        <img src="/hero-bg.jpg" alt="Hole Fishing gameplay" fetchPriority="high" loading="eager" className="absolute inset-0 w-full h-full object-cover -z-10" />
         <div className="relative px-6 py-14 md:py-20 text-white">
           <p className="text-cyan-300 text-sm font-semibold mb-2 tracking-wide uppercase">🏜️ Desert Event Live Now</p>
           <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight">Hole Fishing Guide &amp; Tools</h1>
@@ -34,10 +34,10 @@ export default function HomePage() {
             rod tier lists, full fish index, progression calculator and secret fish guides. Updated {getCurrentDateString()}.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/rods" className="px-5 py-2.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-gray-950 font-bold transition-colors">
+            <Link href="/rods" className="btn-press px-5 py-2.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-gray-950 font-bold">
               Rod Tier List →
             </Link>
-            <Link href="/fish" className="px-5 py-2.5 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 font-semibold transition-colors">
+            <Link href="/fish" className="btn-press px-5 py-2.5 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 font-semibold">
               Browse Fish Index
             </Link>
           </div>
@@ -63,8 +63,8 @@ export default function HomePage() {
       <section className="mb-10">
         <h2 className="text-2xl font-black mb-4">Tools &amp; Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {TOOLS.map((t) => (
-            <Link key={t.href} href={t.href} className="p-5 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-cyan-500 dark:hover:border-cyan-600 hover:shadow-lg transition-all group">
+          {TOOLS.map((t, i) => (
+            <Link key={t.href} href={t.href} className={`p-5 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-cyan-500 dark:hover:border-cyan-600 hover:shadow-lg hover:shadow-cyan-950/10 dark:hover:shadow-cyan-500/5 transition-all group ${i === 0 ? 'md:col-span-2 bg-gradient-to-br from-cyan-50/80 to-transparent dark:from-cyan-950/30 dark:to-transparent' : ''}`}>
               <div className="text-2xl mb-2">{t.emoji}</div>
               <h3 className="font-bold mb-1 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">{t.title}</h3>
               <p className="text-sm text-gray-500">{t.desc}</p>

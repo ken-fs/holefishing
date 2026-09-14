@@ -32,6 +32,16 @@ export default function CodesPage() {
       answer:
         'Claim the free reward chest near the spawn (likes/group rewards), fish during the Server Hole event for 4x cash, and complete your fish index — each milestone grants permanent +luck.',
     },
+    {
+      question: 'When will Hole Fishing add codes?',
+      answer:
+        'No official date has been announced. Roblox simulators typically add codes around major updates or visit milestones — the Desert Event did not include a code system. We monitor daily and update this page the moment codes arrive.',
+    },
+    {
+      question: 'Are the Hole Fishing codes on other websites real?',
+      answer:
+        'No. Any site currently listing "working Hole Fishing codes" is fabricating them — the game has no redemption UI. Bookmark this page for verified status instead.',
+    },
   ]);
 
   return (

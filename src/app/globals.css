@@ -52,17 +52,17 @@ code {
   @apply px-1 py-0.5 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono;
 }
 
-/* Hero：旭日放射 + 血色渐变 + 细颗粒，纯 CSS 无图片 */
+/* Hero：深水光晕 + 放射纹理 + 细颗粒，纯 CSS 无图片 */
 .hero-bg {
-  background-color: #0a0608;
+  background-color: #06202b;
   background-image:
-    radial-gradient(circle at 50% 120%, rgba(225, 29, 42, 0.55) 0%, rgba(225, 29, 42, 0) 55%),
+    radial-gradient(circle at 50% 120%, rgba(14, 116, 144, 0.55) 0%, rgba(14, 116, 144, 0) 55%),
     repeating-conic-gradient(
       from 0deg at 50% 120%,
       rgba(255, 255, 255, 0.04) 0deg 6deg,
       rgba(255, 255, 255, 0) 6deg 12deg
     ),
-    linear-gradient(160deg, #1a0306 0%, #0a0608 60%, #000 100%);
+    linear-gradient(160deg, #062530 0%, #041820 60%, #020d12 100%);
 }
 
 /* 细颗粒噪点覆盖层（SVG data URI，约 1KB）*/
@@ -86,4 +86,45 @@ code {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* ===== 体验优化批次 ===== */
+/* 标题防孤词 */
+h1, h2 {
+  text-wrap: balance;
+}
+/* 数字表格化（价格/数值不跳动） */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+/* 键盘焦点环（可访问性） */
+a:focus-visible,
+button:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--color-deep-500);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+/* 按钮按压缩放反馈 */
+.btn-press {
+  transition: transform 150ms ease, background-color 200ms ease, color 200ms ease;
+}
+.btn-press:active {
+  transform: scale(0.97);
+}
+/* 跳转主内容链接（屏幕阅读器/键盘） */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  background: var(--color-deep-600);
+  color: #fff;
+  border-radius: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+.skip-link:focus {
+  left: 0;
 }

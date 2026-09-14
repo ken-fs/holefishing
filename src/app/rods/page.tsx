@@ -41,6 +41,16 @@ export default function RodsPage() {
       answer:
         'Every fish has a weight. If the hooked fish exceeds your rod\'s max weight, you get the "too strong" message and lose the catch. Bigger holes spawn heavier fish, so rod and hole upgrades must stay balanced.',
     },
+    {
+      question: 'How much does the Hacker Rod cost in Hole Fishing?',
+      answer:
+        '$320,000,000 — it is the 12th and final rod, with effectively unlimited weight capacity. Expect a long grind funded by night fishing and Server Hole events.',
+    },
+    {
+      question: 'Is the Cactus Rod worth buying in Hole Fishing?',
+      answer:
+        'Yes. At ~$150,000 the Cactus Rod sits in the critical early-mid game bracket (~80 kg capacity). It bridges the gap between the cheap early rods and the $650K Tree Rod tier.',
+    },
   ]);
 
   return (

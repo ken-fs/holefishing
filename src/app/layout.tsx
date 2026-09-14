@@ -51,8 +51,9 @@ gtag('config', 'G-QX57H8KJLJ');`}
         </Script>
       </head>
       <body className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 antialiased font-body">
+        <a href="#main" className="skip-link">Skip to content</a>
         <Header />
-        <main className="min-h-[calc(100vh-180px)]">{children}</main>
+        <main id="main" className="min-h-[calc(100vh-180px)]">{children}</main>
         <Footer />
       </body>
     </html>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import NavLink from '@/components/NavLink';
 import { getGameConfig } from '@/lib/data';
 
 const config = getGameConfig();
@@ -24,13 +25,7 @@ export default function Header() {
         </Link>
         <nav className="flex items-center gap-0.5 text-sm font-medium overflow-x-auto">
           {NAV.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="px-2.5 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors whitespace-nowrap"
-            >
-              {item.label}
-            </Link>
+            <NavLink key={item.href} href={item.href} label={item.label} />
           ))}
         </nav>
       </div>
