@@ -58,7 +58,7 @@ export default async function FishDetailPage({ params }: { params: Promise<{ slu
   const related = getAllFish().filter((f) => f.rarity === fish.rarity && f.slug !== fish.slug).slice(0, 4);
   const rodAdvice = rodAdviceFor(fish);
 
-  const faq = generateFAQSchema([
+  const FAQS = [
     {
       question: `What rarity is the ${fish.name} in Hole Fishing?`,
       answer: `The ${fish.name} is a ${fish.rarity} fish. Rarity order in Hole Fishing runs Common → Uncommon → Rare → Epic → Legendary → Mythical → Secret.`,
@@ -76,7 +76,8 @@ export default async function FishDetailPage({ params }: { params: Promise<{ slu
       question: `How much is the ${fish.name} worth in Hole Fishing?`,
       answer: `Base observed value: ${fish.valueRange}. Your actual sale price scales with sell-value upgrades, Big/Large/Huge/Giant mutations, and 4x Server Hole windows.`,
     },
-  ]);
+  ];
+  const faq = generateFAQSchema(FAQS);
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-10">
@@ -148,6 +149,18 @@ export default async function FishDetailPage({ params }: { params: Promise<{ slu
           <Link href="/secret-fish" className="underline font-semibold">Secret Fish guide</Link>.
         </div>
       )}
+
+      <section className="mb-10">
+        <h2 className="text-lg font-bold mb-3">{fish.name} FAQ</h2>
+        <div className="space-y-4">
+          {FAQS.map((f) => (
+            <div key={f.question} className="p-4 rounded-xl border border-gray-200 dark:border-gray-800">
+              <h3 className="font-semibold text-sm mb-1">{f.question}</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">{f.answer}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {related.length > 0 && (
         <section>
