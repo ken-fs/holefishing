@@ -1,6 +1,8 @@
 # Hole Fishing 站运营日志
 
-> 最后更新：2026-09-14 · 状态：✅ 已上线运营中
+> 最后更新：2026-09-14（晚）· 状态：✅ 已上线运营中
+>
+> **今日完成**：建站上线 → 亮色编辑风改版 → SEO 审计 77→85 分（llms.txt/安全头/WebSite schema/薄页扩写）→ 41 鱼详情页加深 3 倍（100→250-320 词，含每鱼 FAQ）→ IndexNow 收录提交 53 URL
 
 ## 站点信息
 
@@ -41,13 +43,14 @@
 - ✅ **IndexNow**（Bing/Yandex 即时收录）：2026-09-14 已提交 53 URL，key 文件在 `public/e806fbee77f140daaac27f6e1193da54.txt`（verity 站同 key 已提交 10 URL）
 - ☐ **Google Search Console**：需手动（见下）
 
-## 待办（按优先级）
+## 明日待办（按优先级）
 
-1. ☐ **GSC 提交**（手动 1 分钟）：search.google.com/search-console → 添加资源 → URL 前缀 `https://holefishing.xyz` → HTML 标记验证 → 把标记给 agent 加到 layout → 提交 sitemap.xml
-2. ☐ 沙漠 EVENT 内容补全（管道每天挖，公开渠道目前无人覆盖；可人工进游戏确认 EVENT 专属鱼/竿）
-3. ☐ 鱼详情页继续加深（价格曲线、最佳时段）— 等真实数据源
-4. ☐ 外链建设（AI/游戏目录提交）
-5. ☐ 观察 7 天流量，决定续费/加码
+1. ☐ **GSC 验证 + sitemap 提交**（双站一起）：用户拿 HTML 验证标记 → agent 加 layout → 推送 → 提交 sitemap
+2. ☐ 检查每日管道第一轮日志：`/tmp/holefishing-daily.log`（11:00 跑）
+3. ☐ 沙漠 EVENT 内容补全（管道每天挖；可人工进游戏确认 EVENT 专属鱼/竿）
+4. ☐ 鱼详情页继续加深（价格曲线、最佳时段）— 等真实数据源
+5. ☐ 外链建设（AI/游戏目录提交）
+6. ☐ 观察 7 天流量，决定续费/加码
 
 ## 运营日历
 
