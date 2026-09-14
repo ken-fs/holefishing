@@ -23,23 +23,37 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       {/* Hero */}
-      <section className="relative rounded-2xl overflow-hidden mb-10 border border-gray-200 dark:border-gray-800 hero-bg hero-grain">
-        <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/80 via-cyan-950/85 to-gray-950/90" />
-        <img src="/hero-bg.jpg" alt="Hole Fishing gameplay" fetchPriority="high" loading="eager" className="absolute inset-0 w-full h-full object-cover -z-10" />
-        <div className="relative px-6 py-14 md:py-20 text-white">
-          <p className="text-cyan-300 text-sm font-semibold mb-2 tracking-wide uppercase">🏜️ Desert Event Live Now</p>
-          <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight">Hole Fishing Guide &amp; Tools</h1>
-          <p className="text-lg text-gray-200 max-w-2xl mb-6">
-            One hole. One rod. Endless fish. The complete companion for Roblox&apos;s viral fishing game —
-            rod tier lists, full fish index, progression calculator and secret fish guides. Updated {getCurrentDateString()}.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <Link href="/rods" className="btn-press px-5 py-2.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-gray-950 font-bold">
-              Rod Tier List →
-            </Link>
-            <Link href="/fish" className="btn-press px-5 py-2.5 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 font-semibold">
-              Browse Fish Index
-            </Link>
+      <section className="mb-12">
+        <div className="grid md:grid-cols-[1.15fr_1fr] gap-8 items-center">
+          <div>
+            <p className="inline-block text-xs font-bold tracking-widest uppercase bg-cyan-300 text-gray-950 px-2.5 py-1 rounded mb-5">
+              🏜️ Desert Event live now
+            </p>
+            <h1 className="text-5xl md:text-6xl font-black tracking-tight text-gray-950 dark:text-gray-50 leading-[1.02] mb-5">
+              One hole. One rod. <span className="bg-cyan-300 dark:bg-cyan-400 px-1.5 rounded-sm box-decoration-clone">Endless</span> fish.
+            </h1>
+            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-xl mb-7 leading-relaxed">
+              The complete companion for Roblox&apos;s viral fishing game — rod tier lists,
+              full fish index, progression calculator and secret fish guides. Updated {getCurrentDateString()}.
+            </p>
+            <div className="flex flex-wrap items-center gap-4">
+              <Link href="/rods" className="btn-press px-5 py-2.5 rounded-lg bg-gray-950 dark:bg-cyan-400 text-white dark:text-gray-950 font-bold hover:bg-gray-800 dark:hover:bg-cyan-300">
+                Rod Tier List →
+              </Link>
+              <Link href="/fish" className="font-semibold text-gray-700 dark:text-gray-300 underline decoration-cyan-400 decoration-2 underline-offset-4 hover:decoration-cyan-500">
+                Browse Fish Index
+              </Link>
+            </div>
+          </div>
+          <div className="relative">
+            <div className="absolute -inset-2 bg-cyan-300 dark:bg-cyan-400/80 rounded-2xl rotate-2" aria-hidden="true" />
+            <img
+              src="/hero-bg.jpg"
+              alt="Hole Fishing gameplay — the hole and a whale catch"
+              fetchPriority="high"
+              loading="eager"
+              className="relative rounded-2xl w-full aspect-video object-cover border-2 border-gray-950 dark:border-gray-100"
+            />
           </div>
         </div>
       </section>
@@ -53,7 +67,7 @@ export default function HomePage() {
           { label: 'Final Rod Cost', value: '$320M' },
         ].map((s) => (
           <div key={s.label} className="p-4 rounded-xl border border-gray-200 dark:border-gray-800 text-center">
-            <div className="text-2xl font-black text-cyan-600 dark:text-cyan-400">{s.value}</div>
+            <div className="text-2xl font-black text-gray-950 dark:text-cyan-400 tabular">{s.value}</div>
             <div className="text-xs text-gray-500 uppercase tracking-wide">{s.label}</div>
           </div>
         ))}
@@ -64,7 +78,7 @@ export default function HomePage() {
         <h2 className="text-2xl font-black mb-4">Tools &amp; Guides</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {TOOLS.map((t, i) => (
-            <Link key={t.href} href={t.href} className={`p-5 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-cyan-500 dark:hover:border-cyan-600 hover:shadow-lg hover:shadow-cyan-950/10 dark:hover:shadow-cyan-500/5 transition-all group ${i === 0 ? 'md:col-span-2 bg-gradient-to-br from-cyan-50/80 to-transparent dark:from-cyan-950/30 dark:to-transparent' : ''}`}>
+            <Link key={t.href} href={t.href} className={`p-5 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-cyan-500 dark:hover:border-cyan-600 hover:shadow-lg hover:shadow-cyan-900/5 dark:hover:shadow-cyan-500/5 transition-all group ${i === 0 ? 'md:col-span-2 bg-gradient-to-br from-cyan-50 to-transparent dark:from-cyan-950/20 dark:to-transparent' : ''}`}>
               <div className="text-2xl mb-2">{t.emoji}</div>
               <h3 className="font-bold mb-1 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">{t.title}</h3>
               <p className="text-sm text-gray-500">{t.desc}</p>
