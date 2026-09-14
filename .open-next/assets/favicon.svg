@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#155e75"/>
+      <stop offset="100%" stop-color="#0a2530"/>
+    </linearGradient>
+    <linearGradient id="fish" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f5c451"/>
+      <stop offset="100%" stop-color="#e0a92e"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="6" fill="url(#bg)"/>
+  <!-- hole -->
+  <ellipse cx="16" cy="23" rx="10" ry="4" fill="#06202b" stroke="#f5c451" stroke-width="1.2"/>
+  <!-- fishing line -->
+  <line x1="20" y1="4" x2="20" y2="16" stroke="#e2e8f0" stroke-width="1"/>
+  <!-- fish body -->
+  <path d="M8 16 Q14 10 21 15 L25 12.5 L25 19.5 L21 17 Q14 22 8 16 Z" fill="url(#fish)"/>
+  <circle cx="12" cy="15" r="1.1" fill="#0a2530"/>
+</svg>

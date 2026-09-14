@@ -1,0 +1,17 @@
+{
+  "note": "Rod progression data sourced from real gameplay videos (Sept 2026). Prices marked with ~ are approximate and being verified. Game updates may change values.",
+  "rods": [
+    { "slug": "starter-rod", "name": "Starter Rod", "order": 1, "price": 0, "priceText": "Free", "maxWeightKg": 15, "tier": "D", "note": "The rod you spawn with. Fine for your first few commons — replace it as soon as you have $1,000." },
+    { "slug": "stone-rod", "name": "Stone Rod", "order": 2, "price": 1000, "priceText": "$1,000", "maxWeightKg": 20, "tier": "C", "note": "First real upgrade. Can technically hook a 30 kg Crocodile (weight overflow is possible, but unreliable)." },
+    { "slug": "golden-rod", "name": "Golden Rod", "order": 3, "price": 7500, "priceText": "$7,500", "maxWeightKg": 40, "tier": "C", "note": "Early-game workhorse. Pairs well with first hole-size upgrades." },
+    { "slug": "leaf-rod", "name": "Leaf Rod", "order": 4, "price": 25000, "priceText": "$25,000", "maxWeightKg": 80, "tier": "B", "note": "Bamboo-styled rod. Noticeably faster reel speed — first rod that feels 'smooth'." },
+    { "slug": "cactus-rod", "name": "Cactus Rod", "order": 5, "price": 150000, "priceText": "$150,000", "maxWeightKg": 80, "tier": "B", "note": "Spiky. Same ~80 kg class as Leaf but better luck profile. Fits the desert theme." },
+    { "slug": "tree-rod", "name": "Tree Rod", "order": 6, "price": 650000, "priceText": "~$650,000", "maxWeightKg": 250, "tier": "A", "note": "Mid-game gate. Start stacking sell-value upgrades before buying." },
+    { "slug": "pirate-rod", "name": "Pirate Rod", "order": 7, "price": 2000000, "priceText": "$2,000,000", "maxWeightKg": 1200, "tier": "A", "note": "Huge jump — 1,200 kg capacity opens up turtles and big sharks. Confirmed in gameplay." },
+    { "slug": "magic-rod", "name": "Magic Rod", "order": 8, "price": 4800000, "priceText": "~$4,800,000", "maxWeightKg": 2500, "tier": "A", "note": "Shooting-star visual. Much faster reel speed, great for server-hole bursts." },
+    { "slug": "bone-rod", "name": "Bone Rod", "order": 9, "price": 11000000, "priceText": "~$11,000,000", "maxWeightKg": 5000, "tier": "S", "note": "Skippable if you can rush Candy Cane — but 'too strong' escapes will hurt." },
+    { "slug": "candy-cane-rod", "name": "Candy Cane Rod", "order": 10, "price": 26000000, "priceText": "~$26,000,000", "maxWeightKg": 12000, "tier": "S", "note": "Late-game. From here on, hole size and luck matter more than the rod." },
+    { "slug": "void-rod", "name": "Void Rod", "order": 11, "price": 60000000, "priceText": "~$60,000,000", "maxWeightKg": 30000, "tier": "S", "note": "Name pending verification. Handles everything except extreme secrets." },
+    { "slug": "hacker-rod", "name": "Hacker Rod", "order": 12, "price": 320000000, "priceText": "$320,000,000", "maxWeightKg": 999999, "tier": "S+", "note": "Final rod. Max weight effectively unlimited — confirmed end-game rod in multiple playthroughs." }
+  ]
+}

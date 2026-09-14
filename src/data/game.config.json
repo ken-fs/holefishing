@@ -1,0 +1,40 @@
+{
+  "game": {
+    "name": "Hole Fishing",
+    "robloxId": "80158232099900",
+    "developer": "67K CCU",
+    "genre": "Simulator / Fishing",
+    "currentVersion": "Desert Event",
+    "lastUpdated": "2026-09-14",
+    "platforms": ["PC", "Mobile", "Tablet", "Console"]
+  },
+  "stats": {
+    "visits": "10M+",
+    "favorites": "50K+",
+    "onlineNow": "3,100+",
+    "serverSize": 12,
+    "active": true
+  },
+  "seo": {
+    "siteTitle": "Hole Fishing Guide & Tools — Rod Tier List, Fish Index & Calculator",
+    "siteDescription": "The ultimate Hole Fishing (Roblox) companion — complete fish index, rod tier list, progression calculator, server hole timers, secret fish guides and codes tracking. Updated daily.",
+    "baseUrl": "https://holefishing.xyz",
+    "defaultOgImage": "/og-default.jpg",
+    "primaryKeywords": ["hole fishing", "hole fishing roblox", "hole fishing guide"],
+    "secondaryKeywords": ["hole fishing codes", "hole fishing rod tier list", "hole fishing fish list", "hole fishing secret fish", "hole fishing calculator"]
+  },
+  "routes": [
+    { "path": "/", "title": "Hole Fishing Guide", "priority": "1.0" },
+    { "path": "/rods", "title": "Rod Tier List", "priority": "0.9" },
+    { "path": "/fish", "title": "Fish Index", "priority": "0.9" },
+    { "path": "/codes", "title": "Codes", "priority": "0.9" },
+    { "path": "/calculator", "title": "Progression Calculator", "priority": "0.9" },
+    { "path": "/secret-fish", "title": "Secret Fish", "priority": "0.8" },
+    { "path": "/server-hole", "title": "Server Hole Event", "priority": "0.8" },
+    { "path": "/beginner-guide", "title": "Beginner Guide", "priority": "0.8" },
+    { "path": "/updates", "title": "Updates", "priority": "0.8" },
+    { "path": "/about", "title": "About", "priority": "0.3" },
+    { "path": "/terms", "title": "Terms", "priority": "0.2" },
+    { "path": "/privacy-policy", "title": "Privacy Policy", "priority": "0.2" }
+  ]
+}

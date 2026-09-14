@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+/* 主题令牌：字体 + 血武士配色（深红 + 金）*/
+@theme {
+  --font-display: var(--font-display), "Oswald", system-ui, sans-serif;
+  --font-body: var(--font-body), "Inter", system-ui, sans-serif;
+
+  --color-deep-50: #eef8fb;
+  --color-deep-500: #0e7490;
+  --color-deep-600: #155e75;
+  --color-deep-700: #164e63;
+  --color-deep-900: #0a2530;
+  --color-sand-400: #f5c451;
+  --color-sand-500: #e0a92e;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased;
+  }
+
+  /* 标题统一上 display 字体 + 紧字距 */
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+a {
+  @apply transition-colors duration-200;
+}
+
+.card-hover {
+  @apply transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5;
+}
+
+.tag {
+  @apply inline-block px-2 py-0.5 rounded text-xs font-medium bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400;
+}
+
+code {
+  @apply px-1 py-0.5 rounded bg-gray-100 dark:bg-gray-800 text-sm font-mono;
+}
+
+/* Hero：旭日放射 + 血色渐变 + 细颗粒，纯 CSS 无图片 */
+.hero-bg {
+  background-color: #0a0608;
+  background-image:
+    radial-gradient(circle at 50% 120%, rgba(225, 29, 42, 0.55) 0%, rgba(225, 29, 42, 0) 55%),
+    repeating-conic-gradient(
+      from 0deg at 50% 120%,
+      rgba(255, 255, 255, 0.04) 0deg 6deg,
+      rgba(255, 255, 255, 0) 6deg 12deg
+    ),
+    linear-gradient(160deg, #1a0306 0%, #0a0608 60%, #000 100%);
+}
+
+/* 细颗粒噪点覆盖层（SVG data URI，约 1KB）*/
+.hero-grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.25'/%3E%3C/svg%3E");
+}
+
+/* 区块标题左侧血色竖条 */
+.section-rule {
+  @apply border-l-4 border-deep-500 pl-3;
+}
+
+/* line-clamp 兜底（boss 列表用） */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
