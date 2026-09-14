@@ -1,0 +1,18 @@
+# Hole Fishing Guide (holefishing.xyz)
+
+> Fan-made companion site for the Roblox game Hole Fishing by 67K CCU. Complete fish index, rod tier list, progression calculator, server hole event guide, secret fish tracking and codes monitoring.
+
+## Key Pages
+
+- /rods — All 12 rods ranked with real prices and max weight (Starter → Hacker Rod $320M)
+- /fish — Complete fish index: 41 fish, day/night, Common→Secret rarities, value ranges
+- /calculator — Rod progression cost calculator (cash needed, casts, time)
+- /codes — Codes status (no code system exists yet; monitored daily)
+- /secret-fish — Glacial Wyrm ($3B+) and Alien secret catch guide
+- /server-hole — Server Hole event: ~20min cooldown, ~60s duration, 4x cash
+- /beginner-guide — Core loop, upgrade priorities, night fishing
+- /updates — Desert Event and patch tracking
+
+## Data Policy
+
+All game data sourced from real gameplay footage and community verification. Approximate values are explicitly marked.

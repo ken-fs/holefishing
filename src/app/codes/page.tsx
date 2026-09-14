@@ -61,6 +61,17 @@ export default function CodesPage() {
         </div>
       </section>
 
+      <section className="prose prose-gray dark:prose-invert max-w-none mb-10">
+        <h2>Why There Are No Hole Fishing Codes Yet</h2>
+        <p>
+          Hole Fishing is still a young game — it went viral only weeks ago. The developers (67K CCU) built the
+          economy around four in-game systems instead of codes: the free reward chest, the Server Hole event,
+          index luck milestones, and Robux potions/gamepasses. Codes typically arrive when a Roblox game hits a
+          like/visit milestone or ships a major update, so the smart money is on codes appearing alongside a
+          future event. When that happens, this page updates within hours.
+        </p>
+      </section>
+
       <section className="mb-10">
         <h2 className="text-xl font-bold mb-3">Get Free Rewards Without Codes</h2>
         <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300">

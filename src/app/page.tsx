@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getGameConfig, getAllFish, getRods, RARITY_COLORS } from '@/lib/data';
-import { generateVideoGameSchema, getCurrentDateString } from '@/lib/seo';
+import { generateVideoGameSchema, generateWebSiteSchema, getCurrentDateString } from '@/lib/seo';
 
 const config = getGameConfig();
 
@@ -21,6 +21,7 @@ export default function HomePage() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(generateWebSiteSchema()) }} />
 
       {/* Hero */}
       <section className="mb-12">
@@ -119,6 +120,21 @@ export default function HomePage() {
           The bigger your hole, the luckier your catches. Night brings exclusive fish like the Void Ray and Asian Turtle,
           and every ~20 minutes the <Link href="/server-hole">Server Hole</Link> opens with 4x cash for everyone.
           Two <Link href="/secret-fish">secret fish</Link> — the Glacial Wyrm and the Alien — are worth billions.
+        </p>
+        <h2 className="text-2xl font-black">How Progression Works</h2>
+        <p>
+          Progression is built on four upgrade tracks: <strong>rods</strong> (max weight + reel speed),
+          <strong> hole size</strong> (luck and fish size), <strong>sell value</strong> (a multiplier on every sale) and
+          <strong> backpack</strong> capacity. The rod ladder runs from the free Starter Rod to the $320M Hacker Rod —
+          see the full <Link href="/rods">rod tier list</Link> for prices and which tiers to skip. Use the{' '}
+          <Link href="/calculator">progression calculator</Link> to plan exactly how many casts stand between you and your next rod.
+        </p>
+        <p>
+          Fish span seven rarities from Common to Secret, and every species can roll a Big, Large, Huge or Giant
+          <strong> mutation</strong> that multiplies its weight and value. Filling your <strong>fish index</strong> grants permanent
+          +luck milestones, which is why variety beats grinding the same catch. Check the full{' '}
+          <Link href="/fish">fish index</Link> for every documented species, or read the{' '}
+          <Link href="/beginner-guide">beginner guide</Link> if you just spawned in.
         </p>
       </section>
     </div>

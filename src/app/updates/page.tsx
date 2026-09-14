@@ -44,6 +44,16 @@ export default function UpdatesPage() {
         </p>
       </article>
 
+      <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
+        <h2 className="text-xl font-black mb-2">What to Watch For</h2>
+        <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2 list-disc list-inside">
+          <li><strong>Event rotations</strong> — the 🏜️ Desert Event is the game&apos;s first limited event; expect themed fish and possibly exclusive rods to rotate out when it ends.</li>
+          <li><strong>Codes system</strong> — not in the game yet; likely to arrive with a milestone celebration. Tracked on the <a href="/codes" className="underline">codes page</a>.</li>
+          <li><strong>New secrets</strong> — the index currently hides two secret slots (Glacial Wyrm, Alien). Updates historically add more.</li>
+          <li><strong>Rod ladder extensions</strong> — the Hacker Rod caps at $320M today; new top-end rods are the natural update lever.</li>
+        </ul>
+      </article>
+
       <p className="text-sm text-gray-500">
         Hole Fishing updates typically land alongside event rotations. Bookmark this page — or check the{' '}
         <a href="/codes" className="underline">codes page</a>, which we check daily for new redemption systems.

@@ -110,6 +110,16 @@ export function generateVideoGameSchema(): object {
   return schema;
 }
 
+export function generateWebSiteSchema(): object {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: config.seo.siteTitle,
+    url: baseUrl,
+    description: config.seo.siteDescription,
+  };
+}
+
 export function getCurrentDateString(): string {
   const date = new Date();
   return date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
