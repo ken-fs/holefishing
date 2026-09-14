@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { Rubik, Inter } from 'next/font/google';
 import { getGameConfig } from '@/lib/data';
 import Header from '@/components/Header';
@@ -40,6 +41,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`scroll-smooth ${display.variable} ${body.variable}`}>
+      <head>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-QX57H8KJLJ" strategy="afterInteractive" />
+        <Script id="ga4" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-QX57H8KJLJ');`}
+        </Script>
+      </head>
       <body className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 antialiased font-body">
         <Header />
         <main className="min-h-[calc(100vh-180px)]">{children}</main>
