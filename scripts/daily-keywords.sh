@@ -6,7 +6,7 @@ PROJ="/Users/david/Desktop/david/Ship/holefishing"
 LOG="/tmp/holefishing-daily.log"
 PI="/Users/david/Library/pnpm/bin/pi"
 
-export PATH="/Users/david/Library/pnpm/bin:/usr/local/bin:/usr/bin:/bin"
+export PATH="/opt/homebrew/bin:/Users/david/Library/pnpm/bin:/usr/local/bin:/usr/bin:/bin"
 cd "$PROJ" || exit 1
 
 echo "=== $(date '+%Y-%m-%d %H:%M') run start ===" >> "$LOG"
