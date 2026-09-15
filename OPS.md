@@ -43,6 +43,18 @@
 - ✅ **IndexNow**（Bing/Yandex 即时收录）：2026-09-14 已提交 53 URL，key 文件在 `public/e806fbee77f140daaac27f6e1193da54.txt`（verity 站同 key 已提交 10 URL）
 - ☐ **Google Search Console**：需手动（见下）
 
+## 热度追踪
+
+| 日期 | Hole Fishing CCU | 备注 |
+|------|-----------------|------|
+| 09-14（发现） | 3,109 | 🏜️EVENT 上线中 |
+| 09-15 | 1,714（RoMonitor）| 回落 45%，零 SEO 竞争格局不变，续持 |
+
+| 关联游戏 | 09-15 CCU | 备注 |
+|------|------|------|
+| Verity's Game | 765（峰值 3,254）| 退烧快，出现竞争站 veritysgame.wiki |
+| Build Base to Survive VERITY | 6,200 | Verity 系顶流，带 codes，大媒体已占词——候选三号站，待评估 |
+
 ## 明日待办（按优先级）
 
 1. ☐ **GSC 验证 + sitemap 提交**（双站一起）：用户拿 HTML 验证标记 → agent 加 layout → 推送 → 提交 sitemap
