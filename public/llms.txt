@@ -1,6 +1,6 @@
 # Hole Fishing Guide (holefishing.xyz)
 
-> Fan-made companion site for the Roblox game Hole Fishing by 67K CCU. Complete fish index, rod tier list, progression calculator, server hole event guide, secret fish tracking and codes monitoring.
+> Fan-made companion site for the Roblox game Hole Fishing by 67K CCU. Complete fish index, rod tier list, progression calculator, upgrade and mutation guides, server hole event guide, secret fish tracking and codes monitoring.
 
 ## Key Pages
 
@@ -11,6 +11,11 @@
 - /secret-fish — Glacial Wyrm ($3B+) and Alien secret catch guide
 - /server-hole — Server Hole event: ~20min cooldown, ~60s duration, 4x cash
 - /beginner-guide — Core loop, upgrade priorities, night fishing
+- /money-guide — Five income methods ranked by cash per hour
+- /upgrades — Rod, hole size, sell value and backpack: what each does and the buy order
+- /mutations — Big, Large, Huge, Giant and Golden mutation variants and how to farm them
+- /night-fishing — All 9 night-exclusive species with values and night cycle strategy
+- /mistakes — The ten mistakes that slow progress, with fixes
 - /updates — Desert Event and patch tracking
 
 ## Data Policy

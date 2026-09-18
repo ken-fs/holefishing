@@ -31,7 +31,7 @@ echo "=== $(date '+%Y-%m-%d %H:%M') run start ===" >> "$LOG"
    - 新鱼/新鱼竿 → 更新 src/data/*.json
    - 新机制/EVENT → 更新 /updates 页面
    - codes 系统上线 → 立即更新 /codes 页（这是最高优先级）
-   - 改完必须：npm run build 验证通过（无 error），然后 git add -A && git commit && git push（用 GIT_TERMINAL_PROMPT=0）
+   - 改完必须：npm run build 验证通过（无 error），然后 git add -A && git commit（只 commit 不 push——推送由外层脚本统一负责）
 4. 没有新内容就一行输出"今日无新增"，不要做任何代码改动
 
 ## 硬性规则
@@ -39,5 +39,14 @@ echo "=== $(date '+%Y-%m-%d %H:%M') run start ===" >> "$LOG"
 - 不要改动页面结构/组件，只动数据文件和 /updates 内容
 - build 失败绝不 push；修复不了就回滚（git checkout .）并报告
 EOF
+RC=$?
 
-echo "=== $(date '+%Y-%m-%d %H:%M') run end (exit $?) ===" >> "$LOG"
+# 统一推送兜底：agent 只负责 commit，此处由 cron 环境推送（直连 → 代理两级），失败必留痕
+cd "$PROJ" || exit 1
+if [ -n "$(git log origin/main..main --oneline 2>/dev/null)" ]; then
+  GIT_TERMINAL_PROMPT=0 git push -q origin main >> "$LOG" 2>&1 \
+    || GIT_TERMINAL_PROMPT=0 git -c http.proxy=http://127.0.0.1:7897 push -q origin main >> "$LOG" 2>&1 \
+    || echo "⚠️ PUSH_FAILED：本地有未推送 commit，需人工处理" >> "$LOG"
+fi
+
+echo "=== $(date '+%Y-%m-%d %H:%M') run end (exit $RC) ===" >> "$LOG"

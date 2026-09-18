@@ -5,14 +5,14 @@
     "developer": "67K CCU",
     "genre": "Simulator / Fishing",
     "currentVersion": "Desert Event",
-    "lastUpdated": "2026-09-14",
+    "lastUpdated": "2026-09-15",
     "platforms": ["PC", "Mobile", "Tablet", "Console"]
   },
   "stats": {
-    "visits": "10M+",
-    "favorites": "50K+",
-    "onlineNow": "3,100+",
-    "serverSize": 12,
+    "visits": "6.1M+",
+    "favorites": "180K+",
+    "onlineNow": "4,100+",
+    "serverSize": 6,
     "active": true
   },
   "seo": {
@@ -32,6 +32,11 @@
     { "path": "/secret-fish", "title": "Secret Fish", "priority": "0.8" },
     { "path": "/server-hole", "title": "Server Hole Event", "priority": "0.8" },
     { "path": "/beginner-guide", "title": "Beginner Guide", "priority": "0.8" },
+    { "path": "/mutations", "title": "Mutations Guide", "priority": "0.8" },
+    { "path": "/money-guide", "title": "Money Guide", "priority": "0.8" },
+    { "path": "/upgrades", "title": "Upgrade Guide", "priority": "0.8" },
+    { "path": "/night-fishing", "title": "Night Fishing Guide", "priority": "0.8" },
+    { "path": "/mistakes", "title": "Common Mistakes", "priority": "0.7" },
     { "path": "/updates", "title": "Updates", "priority": "0.8" },
     { "path": "/about", "title": "About", "priority": "0.3" },
     { "path": "/terms", "title": "Terms", "priority": "0.2" },

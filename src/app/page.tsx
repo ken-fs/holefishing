@@ -13,6 +13,15 @@ const TOOLS = [
   { href: '/server-hole', emoji: '🕳️', title: 'Server Hole Event', desc: 'Timer, 4x cash strategy, and mutation rolls explained.' },
 ];
 
+const GUIDES = [
+  { href: '/beginner-guide', emoji: '🚀', title: 'Beginner Guide', desc: 'The core loop and your first 30 minutes.' },
+  { href: '/money-guide', emoji: '💰', title: 'Money Guide', desc: 'Five income methods ranked by cash per hour.' },
+  { href: '/upgrades', emoji: '⬆️', title: 'Upgrade Guide', desc: 'Rod, hole, sell value and backpack — the correct order.' },
+  { href: '/mutations', emoji: '🧬', title: 'Mutations Guide', desc: 'Big, Large, Huge, Giant and Golden variants explained.' },
+  { href: '/night-fishing', emoji: '🌙', title: 'Night Fishing', desc: 'All 9 night-exclusive fish and the night cycle strategy.' },
+  { href: '/mistakes', emoji: '⚠️', title: 'Common Mistakes', desc: 'Ten mistakes slowing your grind — and the fix for each.' },
+];
+
 export default function HomePage() {
   const fish = getAllFish();
   const rods = getRods();
@@ -88,6 +97,20 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Guides grid */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-black mb-4">Deep-Dive Guides</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          {GUIDES.map((g) => (
+            <Link key={g.href} href={g.href} className="p-4 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-cyan-500 dark:hover:border-cyan-600 transition-colors group">
+              <div className="text-xl mb-1">{g.emoji}</div>
+              <h3 className="font-bold text-sm mb-1 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">{g.title}</h3>
+              <p className="text-xs text-gray-500">{g.desc}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* Rarest fish teaser */}
       <section className="mb-10">
         <div className="flex items-baseline justify-between mb-4">
@@ -135,6 +158,13 @@ export default function HomePage() {
           +luck milestones, which is why variety beats grinding the same catch. Check the full{' '}
           <Link href="/fish">fish index</Link> for every documented species, or read the{' '}
           <Link href="/beginner-guide">beginner guide</Link> if you just spawned in.
+        </p>
+        <p>
+          Grinding efficiently is its own skill: the <Link href="/money-guide">money guide</Link> ranks every income
+          method, the <Link href="/upgrades">upgrade guide</Link> explains the correct purchase order, and the{' '}
+          <Link href="/mutations">mutations guide</Link> covers the size and colour variants. When night falls, the{' '}
+          <Link href="/night-fishing">night fishing guide</Link> lists every exclusive species — and if your grind feels
+          stuck, the <Link href="/mistakes">common mistakes</Link> page is the fastest fix.
         </p>
       </section>
     </div>
