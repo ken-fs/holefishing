@@ -63,6 +63,16 @@
 - **机制**：昼夜循环（夜鱼更贵）、Server Hole（~20min冷却/~60s/4x现金）、突变（Big/Large/Huge/Giant）、图鉴 +10 luck 里程碑
 - **codes**：游戏当前**无** codes 系统
 
+## ⚠️ Indexing API 实测无效（2026-09-18）
+
+服务账号升到 Owner 后实测：
+- `POST /v3/urlNotifications:publish` → **HTTP 200 ✓**（看起来成功）
+- `GET /v3/urlNotifications/metadata` → **404 NOT_FOUND**（Google 根本没记录）
+
+这是官方设计：Indexing API 只处理 `JobPosting` / `BroadcastEvent`，其他页面静默丢弃。
+
+**结论：收录只能靠 sitemap（已自动化）+ IndexNow（已配置）+ 手动「请求编入索引」（无 API）。**
+
 ## 收录状态
 
 - ✅ **Google Search Console API**：2026-09-18 已接入（`Ship/scripts/gsc.mjs`，零依赖）
