@@ -2,6 +2,8 @@
 
 > 最后更新：2026-09-18 · 状态：✅ 已上线运营中
 >
+> **09-18 GSC API 接入 + 数据驱动优化**：GSC API 打通（gcloud 建项目 ken-seo-tools + 服务账号 gsc-bot）。首次拉到真实搜索数据：**15 点击/44 展示，codes 类词占 11 点击（73%）**，`/codes` 排第 2 位 CTR 62-75%。据此把 `/codes` 237→942 词 + 加里程碑监控面板（点赞 39,347/40,000 只差 653）。GSC URL 检查查出 **`/fish` 从未被抓取**，定位到 sitemap 无斜杠 URL 与 canonical 带斜杠不一致（307 重定向链）→ 已修。
+>
 > **09-18 竞品拆解轮**：唯一对手 holefishing.wiki 全站拆解（11 guides + 4 hubs，单页 1,426-1,529 词）→ ①新建 5 内容页 ②挖 7 个 gameplay 视频字幕交叉验证，修正竿表 12→16、鱼表 41→45 ③内容深度翻倍（657→1032 等）④新增 /scripts /community。56→65 页。
 >
 > **09-18 内容补全**：竞品有 11 个 guides 页而我方仅 4 个内容页 → 新建 5 页；Roblox API 实测修正过期数据（访问 10M+→6.1M、收藏 50K+→180K、在线 3.1K→4.1K、服务器 12→6）。
@@ -63,8 +65,36 @@
 
 ## 收录状态
 
-- ✅ **IndexNow**（Bing/Yandex 即时收录）：2026-09-14 已提交 53 URL，key 文件在 `public/e806fbee77f140daaac27f6e1193da54.txt`（verity 站同 key 已提交 10 URL）
-- ☐ **Google Search Console**：需手动（见下）
+- ✅ **Google Search Console API**：2026-09-18 已接入（`Ship/scripts/gsc.mjs`，零依赖）
+  - GCP 项目 `ken-seo-tools`，服务账号 `gsc-bot@ken-seo-tools.iam.gserviceaccount.com`
+  - sitemap 已通过 API 提交，无警告无错误，Google 排队中
+  - 命令：`node gsc.mjs sitemaps | report 28 holefishing | inspect <url>`
+  - ⚠️ 其余 5 站待授权（同一邮箱，每站粘贴一次）
+- ✅ **IndexNow**（Bing/Yandex 即时收录）：2026-09-14 已提交 53 URL，key 文件在 `public/e806fbee77f140daaac27f6e1193da54.txt`（verity 站同 key）
+- 🔧 **已修**：sitemap 尾斜杠与 canonical 对齐（原有无斜杠 URL 307 跳转，浪费新站抓取预算）
+
+## GSC 真实搜索数据（28 天，实为 09-14 上线后 4 天）
+
+| 点击 | 展示 | CTR | 排名 | 关键词 |
+|---:|---:|---:|---:|---|
+| 5 | 8 | 62.5% | 2.0 | hole fishing code |
+| 3 | 4 | 75.0% | 2.0 | code hole fishing |
+| 3 | 14 | 21.4% | 4.5 | hole fishing roblox |
+| 2 | 11 | 18.2% | 3.2 | hole fishing codes |
+| 1 | 5 | 20.0% | 4.8 | hole fishing |
+| 1 | 2 | 50.0% | 2.0 | hole fishing roblox codes |
+
+**关键洞察**：codes 类词贡献 73% 点击，而游戏**没有 codes 系统** → 诚实页面反而排第 2、CTR 极高。`/codes` 是全站流量引擎，已重点投入。主词 `hole fishing roblox` 排 4.5、CTR 21% 有提升空间。
+
+## URL 收录抽查（GSC URL Inspection API）
+
+| URL | 状态 | 最后抓取 |
+|---|---|---|
+| `/` | ✅ Submitted and indexed | 09-16 |
+| `/rods/` | ✅ Submitted and indexed | 09-14 |
+| `/codes/` | ✅ Submitted and indexed | 09-17 |
+| `/fish/` | ❌ URL is unknown to Google | 从未 ← 已修 sitemap |
+| `/mutations/` | ❌ URL is unknown to Google | 从未（今日新建）|
 
 ## 热度追踪
 
