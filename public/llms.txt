@@ -16,8 +16,17 @@
 - /mutations — Big, Large, Huge, Giant and Golden mutation variants and how to farm them
 - /night-fishing — All 9 night-exclusive species with values and night cycle strategy
 - /mistakes — The ten mistakes that slow progress, with fixes
+- /community — The 67K CCU group, six-player servers and server etiquette
+- /scripts — Why Roblox scripts risk account bans, and the legitimate alternatives
 - /updates — Desert Event and patch tracking
 
 ## Data Policy
 
-All game data sourced from real gameplay footage and community verification. Approximate values are explicitly marked.
+All game data sourced from real gameplay footage (seven creator videos cross-checked) and the Roblox public API.
+Approximate values are marked ~ and single-source sightings are marked unverified.
+
+## Current Game Data
+
+- 16 rods in the ladder (Starter → Hacker Rod $320M); Night, Magma, Alien and Royal rods confirmed but their prices are still being verified
+- 45 documented fish species across seven rarities, including 4 secret-rarity reports
+- Server size 6 players; ~4,100 concurrent players; 6.1M visits; 180K favorites (Roblox API, Sept 2026)

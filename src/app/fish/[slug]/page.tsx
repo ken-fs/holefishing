@@ -88,6 +88,11 @@ export default async function FishDetailPage({ params }: { params: Promise<{ slu
       <div className="flex items-center gap-3 mb-2 flex-wrap">
         <h1 className="text-3xl font-black">{fish.name}</h1>
         <span className={`text-xs px-2 py-0.5 rounded-full border font-bold uppercase ${RARITY_COLORS[fish.rarity]}`}>{fish.rarity}</span>
+        {fish.unverified && (
+          <span className="text-xs px-2 py-0.5 rounded-full border border-amber-400/50 text-amber-600 dark:text-amber-400 font-bold">
+            ⚠️ Unverified sighting
+          </span>
+        )}
       </div>
       <p className="text-gray-500 mb-8">
         {fish.time === 'any' ? 'Available any time' : fish.time === 'night' ? '🌙 Night-exclusive catch' : '☀️ Day-time catch'} · Hole Fishing (Roblox)
@@ -113,6 +118,13 @@ export default async function FishDetailPage({ params }: { params: Promise<{ slu
       <section className="prose prose-gray dark:prose-invert max-w-none mb-8">
         <h2>About the {fish.name}</h2>
         <p>{fish.note}</p>
+        {fish.unverified && (
+          <p className="text-sm p-3 rounded-lg border border-amber-300 dark:border-amber-800 bg-amber-50 dark:bg-amber-950/30 not-prose">
+            ⚠️ <strong>Unverified.</strong> This species has been reported in creator gameplay but not yet confirmed by a
+            second independent source. Rarity, timing and value shown here are provisional and will be corrected as
+            soon as more evidence lands.
+          </p>
+        )}
       </section>
 
       <section className="prose prose-gray dark:prose-invert max-w-none mb-8">
@@ -127,7 +139,7 @@ export default async function FishDetailPage({ params }: { params: Promise<{ slu
         <p>{rodAdvice.text}</p>
         <p>
           Luck matters as much as the rod: grow your <Link href="/beginner-guide">hole size</Link> for passive luck,
-          complete index milestones (+10 luck each), and save potions for{' '}
+          complete index milestones (+10 index luck each), and save potions for{' '}
           <Link href="/server-hole">Server Hole windows</Link> when rarity rolls are boosted.
         </p>
       </section>
@@ -145,7 +157,7 @@ export default async function FishDetailPage({ params }: { params: Promise<{ slu
 
       {fish.rarity === 'Secret' && (
         <div className="mb-10 p-4 rounded-xl border border-cyan-300 dark:border-cyan-800 bg-cyan-50 dark:bg-cyan-950/30 text-sm">
-          🎣 The {fish.name} is one of the two secret fish — full hunt strategy lives in the{' '}
+          🎣 {fish.name} is one of the secret-rarity catches — full hunt strategy lives in the{' '}
           <Link href="/secret-fish" className="underline font-semibold">Secret Fish guide</Link>.
         </div>
       )}

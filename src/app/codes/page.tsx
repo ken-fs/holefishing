@@ -77,7 +77,7 @@ export default function CodesPage() {
         <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
           <li className="p-3 rounded-lg border border-gray-200 dark:border-gray-800">🎁 <strong>Free reward chest</strong> — near spawn; pays out cash for liking the game / joining the group.</li>
           <li className="p-3 rounded-lg border border-gray-200 dark:border-gray-800">🕳️ <strong>Server Hole event</strong> — opens every ~15–25 minutes for ~60 seconds with 4x cash. Best free money in the game.</li>
-          <li className="p-3 rounded-lg border border-gray-200 dark:border-gray-800">📖 <strong>Index milestones</strong> — catching new species grants permanent +10 luck bonuses.</li>
+          <li className="p-3 rounded-lg border border-gray-200 dark:border-gray-800">📖 <strong>Index milestones</strong> — catching new species grants permanent +10 index luck bonuses.</li>
           <li className="p-3 rounded-lg border border-gray-200 dark:border-gray-800">🌙 <strong>Night fishing</strong> — night-exclusive fish (Void Ray, Asian Turtle) sell for far more than day catches.</li>
         </ul>
       </section>

@@ -71,7 +71,7 @@ export default function BeginnerGuidePage() {
 
         <h2>Index = Free Luck</h2>
         <p>
-          Every new species you catch fills your <strong>Index</strong> and each milestone grants permanent <strong>+10 luck</strong>.
+          Every new species you catch fills your <strong>Index</strong> and each milestone grants permanent <strong>+10 index luck</strong>.
           Variety beats volume early — catching 10 different commons is worth more than 50 of the same fish.
         </p>
 

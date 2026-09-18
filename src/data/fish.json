@@ -1,5 +1,5 @@
 {
-  "note": "Fish index sourced from real gameplay (Sept 2026). Values are base-range observations — your sell-value upgrades multiply them. Rarities: Common > Uncommon > Rare > Epic > Legendary > Mythical > Secret.",
+  "note": "Fish index sourced from real gameplay (Sept 2026). Values are base-range observations — your sell-value upgrades multiply them. Rarities: Common > Uncommon > Rare > Epic > Legendary > Mythical > Secret. Newly sighted species are marked unverified until confirmed by multiple creators.",
   "fish": [
     {
       "slug": "goldfish",
@@ -333,6 +333,39 @@
       "time": "any",
       "valueRange": "$???",
       "note": "SECRET #2. Referenced in gameplay as an ultra-rare luck-based catch. Details still being verified."
+    },
+    {
+      "slug": "orfish",
+      "name": "Orfish",
+      "rarity": "Rare",
+      "time": "night",
+      "valueRange": "~$40,000",
+      "note": "A night-exclusive standout that arrives with a cutscene despite being mid-value. Sighted in creator gameplay ($40K) and named in community wikis — one of the fish people specifically go night fishing for."
+    },
+    {
+      "slug": "legendary-toadfish",
+      "name": "Legendary Toadfish",
+      "rarity": "Legendary",
+      "time": "any",
+      "valueRange": "~$8,000,000",
+      "note": "Green, fat and poisoned-looking — a Legendary that lands around the $8M mark in creator gameplay. Named in community wikis alongside Orfish as a standout catch."
+    },
+    {
+      "slug": "swordfish",
+      "name": "Swordfish",
+      "rarity": "Epic",
+      "time": "day",
+      "valueRange": "~$50,000+",
+      "note": "Long-billed billfish. Creators place it above $50K and treat it as a solid mid-game payday — often confused with the Sawfish in the index."
+    },
+    {
+      "slug": "magma-fin-devourer",
+      "name": "Magma Fin Devourer",
+      "rarity": "Secret",
+      "time": "any",
+      "valueRange": "~$400,000,000",
+      "note": "Reported as a third secret: a huge finned catch that arrived with a cutscene and sold for roughly $400M in a single creator video. Only one sighting so far — treat as unconfirmed until more players report it.",
+      "unverified": true
     }
   ]
 }

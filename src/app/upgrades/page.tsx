@@ -125,7 +125,7 @@ export default function UpgradesPage() {
         <h2>What Each Track Actually Buys You</h2>
         <ul>
           <li><strong>Rod tiers</strong> are the biggest single power spikes — the jump from Tree Rod (~$650K, 250 kg) to <Link href="/rods">Pirate Rod</Link> ($2M, 1,200 kg) unlocks turtles and big sharks outright.</li>
-          <li><strong>Hole size</strong> is the only upgrade that changes <em>what species you see</em>, which is why it feeds the <Link href="/fish">index</Link> and its permanent +10 luck milestones.</li>
+          <li><strong>Hole size</strong> is the only upgrade that changes <em>what species you see</em>, which is why it feeds the <Link href="/fish">index</Link> and its permanent +10 index luck milestones.</li>
           <li><strong>Sell value</strong> is the only upgrade that pays out on a catch you already would have caught anyway.</li>
           <li><strong>Backpack</strong> is the only upgrade with no effect on income per cast.</li>
         </ul>
@@ -141,6 +141,67 @@ export default function UpgradesPage() {
           More pitfalls in the <Link href="/mistakes">common mistakes guide</Link>, and use the{' '}
           <Link href="/calculator">calculator</Link> to price out your exact next upgrade.
         </p>
+
+        <h2>When to Stop Upgrading the Hole</h2>
+        <p>
+          Hole size is the only upgrade that can actively hurt you. Because it raises luck <em>and</em> the weight of
+          what you hook, there is a point where every additional hole tier makes your sessions worse, not better:
+        </p>
+        <ul>
+          <li><strong>Stop when escapes start.</strong> If you are seeing the &quot;too strong&quot; message more than occasionally, the hole has outrun the rod. Buy a rod before another hole tier.</li>
+          <li><strong>Stop before the Server Hole.</strong> A heavier bite pool inside a 4x window you cannot land is the worst possible combination. Be conservative going into an event.</li>
+          <li><strong>Stop while saving for a rod.</strong> Hole tiers are cheap enough to quietly drain the cash you were banking for the next rod. Treat them as a purchase with an opportunity cost, not a free luck boost.</li>
+          <li><strong>Resume once the rod catches up.</strong> The cycle is meant to alternate — hole, rod, hole, rod — not to max one and then the other.</li>
+        </ul>
+
+        <h2>Planning Upgrades Around Cost, Not Vibes</h2>
+        <p>
+          Each upgrade track has a different payback shape, and treating them the same is what causes stalls:
+        </p>
+        <div className="overflow-x-auto not-prose">
+          <table className="w-full text-sm border-collapse my-4">
+            <thead>
+              <tr className="border-b border-gray-200 dark:border-gray-800 text-left">
+                <th className="py-2 pr-3">Track</th>
+                <th className="py-2 pr-3">Payback</th>
+                <th className="py-2">Buy when</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-gray-100 dark:border-gray-800/60">
+                <td className="py-2 pr-3 font-bold whitespace-nowrap">Rod</td>
+                <td className="py-2 pr-3 text-gray-600 dark:text-gray-400">Immediate — unlocks catches you are currently losing</td>
+                <td className="py-2 text-gray-600 dark:text-gray-400">The moment escapes start</td>
+              </tr>
+              <tr className="border-b border-gray-100 dark:border-gray-800/60">
+                <td className="py-2 pr-3 font-bold whitespace-nowrap">Sell value</td>
+                <td className="py-2 pr-3 text-gray-600 dark:text-gray-400">Compounds on every future sale</td>
+                <td className="py-2 text-gray-600 dark:text-gray-400">Whenever it costs less than one Server Hole session</td>
+              </tr>
+              <tr className="border-b border-gray-100 dark:border-gray-800/60">
+                <td className="py-2 pr-3 font-bold whitespace-nowrap">Hole size</td>
+                <td className="py-2 pr-3 text-gray-600 dark:text-gray-400">Delayed — more species and index luck, but heavier spawns</td>
+                <td className="py-2 text-gray-600 dark:text-gray-400">Only when the rod is comfortably ahead</td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-3 font-bold whitespace-nowrap">Backpack</td>
+                <td className="py-2 pr-3 text-gray-600 dark:text-gray-400">Convenience only — zero effect on income per cast</td>
+                <td className="py-2 text-gray-600 dark:text-gray-400">When shop trips start costing you Server Hole windows</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Reading the Upgrade Feedback</h2>
+        <p>
+          The game tells you what it wants, if you pay attention to the messages rather than the shop menu:
+        </p>
+        <ul>
+          <li><strong>&quot;Too strong&quot;</strong> — the fish outweighed your rod. Rod upgrade needed, hole upgrade forbidden.</li>
+          <li><strong>Constant commons</strong> — your luck is the bottleneck, not your weight capacity. Hole size and index progress are the answer, not a new rod.</li>
+          <li><strong>Backpack full mid-event</strong> — the Server Hole window is being wasted on inventory overflow. Backpack or better sell discipline.</li>
+          <li><strong>Everything lands easily but income is flat</strong> — sell value is the missing multiplier. It is the cheapest permanent upgrade in the game.</li>
+        </ul>
       </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />

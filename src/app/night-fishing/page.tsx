@@ -102,7 +102,7 @@ export default function NightFishingPage() {
         </p>
         <p>
           On top of raw value, night catches fill a <strong>separate night index</strong> with the same permanent{' '}
-          <strong>+10 luck</strong> milestones as the day index. That makes night fishing doubly efficient: higher payouts now,
+          <strong>+10 index luck</strong> milestones as the day index. That makes night fishing doubly efficient: higher payouts now,
           better rarity rolls forever.
         </p>
 
@@ -142,6 +142,69 @@ export default function NightFishingPage() {
           Values are base-range observations from gameplay — sell-value upgrades, mutations and Server Hole multipliers
           stack on top. See the <Link href="/mutations">mutations guide</Link> and the{' '}
           <Link href="/money-guide">money guide</Link> for the stacking order.
+        </p>
+
+        <h2>Pre-Dusk Checklist</h2>
+        <p>
+          Night is the one window in Hole Fishing you cannot get back — the cycle keeps moving. Everything that wastes
+          it is a preparation failure, not bad luck:
+        </p>
+        <ol>
+          <li><strong>Sell your inventory.</strong> A full backpack at dusk means the highest-value fish in the game bounce off your capacity.</li>
+          <li><strong>Confirm your rod can handle the night pool.</strong> Night species include the heaviest catches in the game — the Asian Turtle alone is roughly 500 kg.</li>
+          <li><strong>Hold cash instead of spending it.</strong> Being mid-upgrade when night falls is the most common way players lose a full cycle.</li>
+          <li><strong>Pop luck potions before dark,</strong> not during. The potion clock runs in real time, so activating it mid-night burns the window.</li>
+          <li><strong>Know whether a Server Hole may overlap.</strong> A Server Hole that opens after dark is the single best cast window in the game — see below.</li>
+        </ol>
+
+        <h2>Night Fish vs Day Fish: Why the Gap Is So Large</h2>
+        <p>
+          The day and night pools are not balanced against each other. Day fish exist to fund your upgrades; night fish
+          exist to be the payoff. Compare the two ends of each pool:
+        </p>
+        <div className="overflow-x-auto not-prose">
+          <table className="w-full text-sm border-collapse my-4">
+            <thead>
+              <tr className="border-b border-gray-200 dark:border-gray-800 text-left">
+                <th className="py-2 pr-3">Pool</th>
+                <th className="py-2 pr-3">Typical early catch</th>
+                <th className="py-2">Top confirmed catch</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-gray-100 dark:border-gray-800/60">
+                <td className="py-2 pr-3 font-bold whitespace-nowrap">☀️ Day</td>
+                <td className="py-2 pr-3 text-gray-600 dark:text-gray-400">Commons at $30–$500</td>
+                <td className="py-2 text-gray-600 dark:text-gray-400">Sawfish, Sunfish and the big sharks in the Mythical/Legendary tiers</td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-3 font-bold whitespace-nowrap">🌙 Night</td>
+                <td className="py-2 pr-3 text-gray-600 dark:text-gray-400">Ghost Catfish at $1,000–$5,000</td>
+                <td className="py-2 text-gray-600 dark:text-gray-400">Nebulous Fin at $500,000,000+ — the highest-value confirmed night catch</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Even the <em>worst</em> night fish (the Ghost Catfish, a Common) outsells most day commons by an order of
+          magnitude. That is the entire argument for dropping everything when the sky darkens.
+        </p>
+
+        <h2>The Best Cast Window in the Game: Night + Server Hole</h2>
+        <p>
+          When a Server Hole opens during the night cycle, four multipliers line up at once: the highest base-value fish
+          pool, the 4x Server Hole cash multiplier, boosted mutation rolls, and any luck potion you have running. It is
+          the best possible cast in Hole Fishing and it lasts about 60 seconds.
+        </p>
+        <p>
+          To catch it, watch the Server Hole cooldown against the day/night cycle. If a window is due while it is still
+          light out, hold your potion. If night is about to fall and the cooldown is close, sell everything first so you
+          are standing at the shared hole with an empty bag when both align.
+        </p>
+        <p className="text-sm text-gray-500">
+          Because servers hold only six players, the competition for that window is far lighter than in a
+          thirty-player game — see the <Link href="/community">community page</Link> for why small servers are an
+          advantage.
         </p>
       </section>
 

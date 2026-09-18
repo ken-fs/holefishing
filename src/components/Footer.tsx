@@ -10,6 +10,8 @@ const GUIDE_LINKS = [
   { href: '/mutations', label: 'Mutations' },
   { href: '/night-fishing', label: 'Night Fishing' },
   { href: '/mistakes', label: 'Common Mistakes' },
+  { href: '/community', label: 'Community' },
+  { href: '/scripts', label: 'Scripts & Safety' },
   { href: '/rods', label: 'Rod Tier List' },
   { href: '/fish', label: 'Fish Index' },
   { href: '/server-hole', label: 'Server Hole' },

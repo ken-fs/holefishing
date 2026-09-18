@@ -39,7 +39,7 @@ const METHODS = [
   {
     rank: 4,
     name: 'Index milestones',
-    pay: 'Permanent +10 luck each',
+    pay: 'Permanent +10 index luck each',
     why: 'Luck is the multiplier behind every other method here. Each new species caught grants +10 permanent luck — a one-time cost that pays out forever.',
     how: 'Chase variety over volume early. Ten different commons beat fifty of the same fish.',
     link: { href: '/fish', label: 'Fish index' },
@@ -178,6 +178,79 @@ export default function MoneyGuidePage() {
           <li><strong>Never let your backpack cap you mid-event.</strong> Sell before the window opens, not during.</li>
           <li><strong>Never let your hole outgrow your rod.</strong> &quot;Too strong&quot; escapes are pure lost income — see <Link href="/mistakes">common mistakes</Link>.</li>
         </ol>
+
+        <h2>The First Million, Step by Step</h2>
+        <p>
+          The gap between spawning in and having $1,000,000 is the part where most players quit. It is also the most
+          scripted part of the game — there is a known-fast route:
+        </p>
+        <ol>
+          <li><strong>Casts 1–20:</strong> fish commons with the free Starter Rod. Do not upgrade anything except the Stone Rod ($1,000) the moment you can afford it.</li>
+          <li><strong>Claim the free reward chest</strong> near spawn — it pays out for liking the game and joining the 67K CCU group. It is the only free money in the game.</li>
+          <li><strong>Push to the Golden Rod ($7,500).</strong> This is the first rod that stops you losing catches constantly, so it pays for itself quickly.</li>
+          <li><strong>Hunt the Crocodile.</strong> At roughly 30 kg and $3,000 it is catchable far earlier than its value suggests, and it is the classic first &quot;big&quot; payday.</li>
+          <li><strong>Start treating Server Hole windows as mandatory.</strong> Even at low catch values, 4x for a minute beats ten minutes of normal fishing.</li>
+          <li><strong>Alternate rod → sell value → hole size</strong> from here. By the Cactus Rod (~$150K) you are in the mid game with a real income.</li>
+        </ol>
+        <p>
+          The <Link href="/beginner-guide">beginner guide</Link> covers the same first 30 minutes in more detail,
+          including the fishing minigame and upgrade priorities.
+        </p>
+
+        <h2>Income Methods Compared</h2>
+        <div className="overflow-x-auto not-prose">
+          <table className="w-full text-sm border-collapse my-4">
+            <thead>
+              <tr className="border-b border-gray-200 dark:border-gray-800 text-left">
+                <th className="py-2 pr-3">Method</th>
+                <th className="py-2 pr-3">Upside</th>
+                <th className="py-2">Catch</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-gray-100 dark:border-gray-800/60">
+                <td className="py-2 pr-3 font-bold whitespace-nowrap">Server Hole</td>
+                <td className="py-2 pr-3 text-gray-600 dark:text-gray-400">4x cash + boosted mutations for ~60s</td>
+                <td className="py-2 text-gray-600 dark:text-gray-400">Requires timing and an empty backpack</td>
+              </tr>
+              <tr className="border-b border-gray-100 dark:border-gray-800/60">
+                <td className="py-2 pr-3 font-bold whitespace-nowrap">Night fishing</td>
+                <td className="py-2 pr-3 text-gray-600 dark:text-gray-400">Night-exclusive species carry far higher base values</td>
+                <td className="py-2 text-gray-600 dark:text-gray-400">Only available part of the cycle</td>
+              </tr>
+              <tr className="border-b border-gray-100 dark:border-gray-800/60">
+                <td className="py-2 pr-3 font-bold whitespace-nowrap">Mutation farming</td>
+                <td className="py-2 pr-3 text-gray-600 dark:text-gray-400">Multiplies any catch, stacks with everything</td>
+                <td className="py-2 text-gray-600 dark:text-gray-400">RNG-gated; needs luck stacking first</td>
+              </tr>
+              <tr className="border-b border-gray-100 dark:border-gray-800/60">
+                <td className="py-2 pr-3 font-bold whitespace-nowrap">Index milestones</td>
+                <td className="py-2 pr-3 text-gray-600 dark:text-gray-400">Permanent +10 index luck each, forever</td>
+                <td className="py-2 text-gray-600 dark:text-gray-400">Slow — you have to catch new species</td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-3 font-bold whitespace-nowrap">Sell-value upgrades</td>
+                <td className="py-2 pr-3 text-gray-600 dark:text-gray-400">Multiplies every future sale, no gameplay change</td>
+                <td className="py-2 text-gray-600 dark:text-gray-400">Costs cash now for cash later</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Where the Rod Ladder Becomes a Cash Trap</h2>
+        <p>
+          Every rod purchase is a payback calculation, and two rungs on the ladder are famous traps. The{' '}
+          <strong>Tree Rod (~$650K)</strong> arrives right before the Night Rod tier and is the point where players
+          stall because they bought it instead of investing in sell value. The <strong>Bone Rod (~$11M)</strong> is the
+          opposite problem — it is genuinely skippable, and creators routinely jump straight from Magic to the Candy
+          Cane Rod.
+        </p>
+        <p>
+          The rule that resolves both: <strong>if a rod does not unlock fish you are currently losing, it is not the
+          purchase you need.</strong> Check the <Link href="/rods">rod tier list</Link> for the full ladder including
+          the Night, Magma, Alien and Royal rods, and use the <Link href="/calculator">calculator</Link> to see what
+          each rung actually costs in casts.
+        </p>
       </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />

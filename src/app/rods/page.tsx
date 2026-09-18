@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { getRods } from '@/lib/data';
 import { generateSEOMetadata, generateBreadcrumbSchema, generateFAQSchema, getCurrentDateString } from '@/lib/seo';
 
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Rod Tier List (${getCurrentDateString()}) — All Rods Ranked`,
   description:
-    'Complete Hole Fishing rod tier list: all 12 rods from Starter to Hacker Rod with prices, max weight, and which rods are worth buying vs skipping.',
+    'Complete Hole Fishing rod tier list: every rod from Starter to the $320M Hacker Rod with prices, max weight, and which rods are worth buying vs skipping.',
   keywords: ['hole fishing rod tier list', 'hole fishing best rod', 'hole fishing rods', 'hacker rod hole fishing', 'hole fishing rod progression'],
   path: '/rods',
 });
@@ -59,7 +60,6 @@ export default function RodsPage() {
       <p className="text-gray-500 mb-8">
         All {rods.length} rods in progression order. Prices verified from gameplay — {getCurrentDateString()}.
       </p>
-
       <div className="overflow-x-auto mb-10">
         <table className="w-full text-sm border-collapse">
           <thead>
@@ -76,7 +76,12 @@ export default function RodsPage() {
             {rods.map((r) => (
               <tr key={r.slug} className="border-b border-gray-100 dark:border-gray-800/60 align-top">
                 <td className="py-3 pr-3 text-gray-400 font-mono">{r.order}</td>
-                <td className="py-3 pr-3 font-bold whitespace-nowrap">{r.name}</td>
+                <td className="py-3 pr-3 font-bold whitespace-nowrap">
+                  {r.name}
+                  {r.priceVerified === false && (
+                    <span className="ml-2 text-[10px] px-1.5 py-0.5 rounded border border-amber-400/50 text-amber-600 dark:text-amber-400 font-semibold align-middle">est.</span>
+                  )}
+                </td>
                 <td className="py-3 pr-3">
                   <span className={`text-xs px-2 py-0.5 rounded border font-black ${TIER_STYLE[r.tier] ?? TIER_STYLE.C}`}>{r.tier}</span>
                 </td>
@@ -98,11 +103,18 @@ export default function RodsPage() {
         </p>
         <ul>
           <li><strong>Early ($0–$150K):</strong> Stone → Golden → Leaf → Cactus. Buy every tier, they&apos;re cheap.</li>
-          <li><strong>Mid ($150K–$5M):</strong> Tree → Pirate ($2M, 1,200 kg — the biggest jump in the game) → Magic.</li>
-          <li><strong>Late ($5M+):</strong> Consider skipping Bone Rod → Candy Cane → Void → Hacker ($320M, final).</li>
+          <li><strong>Mid ($150K–$5M):</strong> Night Rod → Tree → Magma → Pirate ($2M, 1,200 kg — the biggest jump in the game) → Magic.</li>
+          <li><strong>Late ($5M+):</strong> Consider skipping Bone Rod → Candy Cane → Alien → Royal → Hacker ($320M, final).</li>
         </ul>
+        <p>
+          The <strong>Night Rod</strong> is the one most players miss: it sits between Cactus and Tree and is built for the
+          night cycle — creators skip the Tree Rod entirely to reach it around $190K. See the{' '}
+          <Link href="/night-fishing">night fishing guide</Link> for why that matters.
+        </p>
         <p className="text-sm text-gray-500">
-          Note: prices marked ~ are community-verified approximations and may shift with game updates.
+          Note: prices marked ~ are community-verified approximations. Rods tagged <span className="text-[10px] px-1.5 py-0.5 rounded border border-amber-400/50 text-amber-600 dark:text-amber-400 font-semibold">est.</span>{' '}
+          are confirmed to exist by multiple creators but their exact shop price and ladder position are still being
+          verified — they are excluded from the <Link href="/calculator">calculator</Link> until confirmed.
         </p>
       </section>
 

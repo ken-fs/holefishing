@@ -37,6 +37,8 @@
     { "path": "/upgrades", "title": "Upgrade Guide", "priority": "0.8" },
     { "path": "/night-fishing", "title": "Night Fishing Guide", "priority": "0.8" },
     { "path": "/mistakes", "title": "Common Mistakes", "priority": "0.7" },
+    { "path": "/community", "title": "Community Hub", "priority": "0.6" },
+    { "path": "/scripts", "title": "Scripts & Safety", "priority": "0.6" },
     { "path": "/updates", "title": "Updates", "priority": "0.8" },
     { "path": "/about", "title": "About", "priority": "0.3" },
     { "path": "/terms", "title": "Terms", "priority": "0.2" },

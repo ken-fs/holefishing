@@ -20,6 +20,8 @@ const GUIDES = [
   { href: '/mutations', emoji: '🧬', title: 'Mutations Guide', desc: 'Big, Large, Huge, Giant and Golden variants explained.' },
   { href: '/night-fishing', emoji: '🌙', title: 'Night Fishing', desc: 'All 9 night-exclusive fish and the night cycle strategy.' },
   { href: '/mistakes', emoji: '⚠️', title: 'Common Mistakes', desc: 'Ten mistakes slowing your grind — and the fix for each.' },
+  { href: '/community', emoji: '👥', title: 'Community', desc: 'The 67K CCU group, six-player servers and server etiquette.' },
+  { href: '/scripts', emoji: '🛡️', title: 'Scripts & Safety', desc: 'Why scripts get your account banned — and what to do instead.' },
 ];
 
 export default function HomePage() {

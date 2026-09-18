@@ -38,7 +38,12 @@ export default function FishIndexPage() {
               {group.map((f) => (
                 <Link key={f.slug} href={`/fish/${f.slug}`} className="p-4 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-cyan-500 dark:hover:border-cyan-600 transition-colors">
                   <div className="flex items-center justify-between mb-1">
-                    <span className="font-bold">{f.name}</span>
+                    <span className="font-bold">
+                      {f.name}
+                      {f.unverified && (
+                        <span className="ml-2 text-[10px] px-1.5 py-0.5 rounded border border-amber-400/50 text-amber-600 dark:text-amber-400 font-semibold align-middle">unverified</span>
+                      )}
+                    </span>
                     <span className="text-[10px] text-gray-400 uppercase font-semibold">
                       {f.time === 'any' ? 'Any time' : f.time === 'night' ? '🌙 Night' : '☀️ Day'}
                     </span>
@@ -53,6 +58,15 @@ export default function FishIndexPage() {
       })}
 
       <section className="prose prose-gray dark:prose-invert max-w-none mt-10">
+        <h2>How Complete Is This List?</h2>
+        <p>
+          This is the most complete public Hole Fishing species list we know of — {fish.length} entries, each with its own
+          page. Community wikis covering the same game deliberately publish only &quot;illustrative&quot; examples rather than a
+          full catalog. We publish what creators have actually shown on camera and mark anything single-source as{' '}
+          <span className="text-[10px] px-1.5 py-0.5 rounded border border-amber-400/50 text-amber-600 dark:text-amber-400 font-semibold">unverified</span>.
+          Species sighted but not yet confirmed — including <strong>Stingray</strong>, <strong>Humpback Whale</strong> and{' '}
+          <strong>Mackerel</strong> — are being tracked and will get pages once a second source lands.
+        </p>
         <h2>Day vs Night Fishing</h2>
         <p>
           Hole Fishing has a day/night cycle. Night-exclusive fish — Squid, Jellyfish, Moray Eel, Lionfish,

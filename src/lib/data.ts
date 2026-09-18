@@ -15,6 +15,8 @@ export interface Fish {
   valueRange: string;
   weightKg?: number;
   note: string;
+  /** true = sighted in gameplay but rarity/time/value not yet confirmed */
+  unverified?: boolean;
 }
 
 export interface Rod {
@@ -26,6 +28,8 @@ export interface Rod {
   maxWeightKg: number;
   tier: string;
   note: string;
+  /** false = rod confirmed to exist but price/ladder position still being verified */
+  priceVerified?: boolean;
 }
 
 export interface GameConfig {

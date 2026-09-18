@@ -127,7 +127,7 @@ export default function MutationsPage() {
             balance between hole size and rod tier.
           </li>
           <li>
-            <strong>Index milestones.</strong> Each index milestone grants permanent <strong>+10 luck</strong>, and luck stacks with
+            <strong>Index milestones.</strong> Each index milestone grants permanent <strong>+10 index luck</strong>, and luck stacks with
             potions and hole size. Catching new species is the cheapest permanent mutation-rate upgrade in the game.
           </li>
         </ol>
@@ -168,11 +168,74 @@ export default function MutationsPage() {
           <li>Never sell mid-event. Every second of the window is worth 4x cash.</li>
           <li>Use your best rod. A mutation you cannot land is worth nothing — see <Link href="/mistakes">common mistakes</Link>.</li>
           <li>Fish the night cycle too: night-exclusive species have far higher base values, so their mutations multiply harder.</li>
-          <li>Log every new species in the index. +10 luck per milestone compounds into more mutations over time.</li>
+          <li>Log every new species in the index. +10 index luck per milestone compounds into more mutations over time.</li>
+        </ul>
+
+        <h2>Keep It or Sell It? A Decision Table</h2>
+        <p>
+          The single most common mutation mistake is treating every mutated catch as a trophy. Mutations are multipliers,
+          and a multiplier on a small number is still a small number.
+        </p>
+        <div className="overflow-x-auto not-prose">
+          <table className="w-full text-sm border-collapse my-4">
+            <thead>
+              <tr className="border-b border-gray-200 dark:border-gray-800 text-left">
+                <th className="py-2 pr-3">Situation</th>
+                <th className="py-2">What to do</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-gray-100 dark:border-gray-800/60">
+                <td className="py-2 pr-3 font-semibold whitespace-nowrap">Mutated common, early game</td>
+                <td className="py-2 text-gray-600 dark:text-gray-400">Sell it. The cash buys your next rod, which unlocks better mutations later.</td>
+              </tr>
+              <tr className="border-b border-gray-100 dark:border-gray-800/60">
+                <td className="py-2 pr-3 font-semibold whitespace-nowrap">Mutated rare, mid game</td>
+                <td className="py-2 text-gray-600 dark:text-gray-400">Sell during a Server Hole window if the timing lines up — the 4x stacks on the mutation multiplier.</td>
+              </tr>
+              <tr className="border-b border-gray-100 dark:border-gray-800/60">
+                <td className="py-2 pr-3 font-semibold whitespace-nowrap">Huge or Giant on a high-value species</td>
+                <td className="py-2 text-gray-600 dark:text-gray-400">Your best case. Hold it for a Server Hole window rather than selling at base rate.</td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-3 font-semibold whitespace-nowrap">Golden variant</td>
+                <td className="py-2 text-gray-600 dark:text-gray-400">A collector catch. Worth more as a screenshot than as cash — but it is not a size tier, so it does not change weight.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>How Mutations Stack With Everything Else</h2>
+        <p>
+          Mutations are one layer in a multiplier stack. Understanding the order matters more than memorising numbers
+          we cannot verify yet:
+        </p>
+        <ol>
+          <li><strong>Base species value</strong> — fixed by the fish. This is why mutations on rare fish beat mutations on commons.</li>
+          <li><strong>Mutation multiplier</strong> — Big → Large → Huge → Giant, applied on top of the base value.</li>
+          <li><strong>Sell-value upgrades</strong> — your permanent account multiplier, applied to the sale.</li>
+          <li><strong>Server Hole 4x</strong> — the final multiplier, which is why a mutated catch sold inside the window is the best-case outcome in the game.</li>
+        </ol>
+        <p>
+          Because these multiply rather than add, the same Giant catch can be worth several times more depending purely
+          on <em>when</em> you sell it. That is the entire argument for holding a good mutated fish until the next
+          Server Hole rather than cashing out immediately.
+        </p>
+
+        <h2>What We Don&apos;t Know Yet</h2>
+        <p>
+          We deliberately do not publish mutation multipliers, because no creator has shown the exact numbers on camera
+          and the game does not display them. What is confirmed:
+        </p>
+        <ul>
+          <li>Mutations raise <strong>both</strong> weight and sale value — that is visible in the catch UI.</li>
+          <li>Size tiers run <strong>Big → Large → Huge → Giant</strong>, with Giant being the rarest seen in gameplay.</li>
+          <li><strong>Golden</strong> is a separate colour variant, not a size tier — confirmed on Goldfish and Tench.</li>
+          <li>The Server Hole has boosted mutation rolls alongside its 4x cash window.</li>
         </ul>
         <p className="text-sm text-gray-500">
-          Note: exact per-tier multipliers are still being verified in-game. This page tracks confirmed mutation
-          sightings rather than publishing unverified numbers.
+          When multipliers are confirmed in-game, this page gets a full table. Until then we publish the mechanics
+          instead of invented percentages — the same policy applied across this site.
         </p>
       </section>
 

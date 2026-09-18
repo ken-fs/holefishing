@@ -3,10 +3,10 @@ import Link from 'next/link';
 import { generateSEOMetadata, generateBreadcrumbSchema, generateFAQSchema, getCurrentDateString } from '@/lib/seo';
 
 export const metadata: Metadata = generateSEOMetadata({
-  title: `Hole Fishing Secret Fish (${getCurrentDateString()}) — Glacial Wyrm & Alien`,
+  title: `Hole Fishing Secret Fish (${getCurrentDateString()}) — Glacial Wyrm, Alien & Devourer`,
   description:
-    'How to catch both Hole Fishing secret fish: Glacial Wyrm ($3B+) and the Alien. Rarity, strategy, and everything confirmed so far about the two hidden catches.',
-  keywords: ['hole fishing secret fish', 'glacial wyrm hole fishing', 'hole fishing alien fish', 'hole fishing secrets'],
+    'How to catch Hole Fishing secret fish: Glacial Wyrm ($3B+), the Alien, and the newly reported Magma Fin Devourer ($400M). Rarity, strategy and what is confirmed so far.',
+  keywords: ['hole fishing secret fish', 'glacial wyrm hole fishing', 'hole fishing alien fish', 'magma fin devourer', 'hole fishing secrets'],
   path: '/secret-fish',
 });
 
@@ -19,7 +19,7 @@ export default function SecretFishPage() {
     {
       question: 'What are the secret fish in Hole Fishing?',
       answer:
-        'The fish index shows two hidden slots: the Glacial Wyrm (confirmed catch worth $3+ billion) and the Alien. Both are ultra-rare and luck-gated.',
+        'Three secret-rarity catches have been reported: the Glacial Wyrm (confirmed catch worth $3+ billion), the Alien (conditions still unverified), and the Magma Fin Devourer — a $400M catch reported in creator gameplay but not yet confirmed by a second source. Secrets are ultra-rare and luck-gated.',
     },
     {
       question: 'How do you catch the Glacial Wyrm in Hole Fishing?',
@@ -31,7 +31,7 @@ export default function SecretFishPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-10">
       <h1 className="text-3xl font-black mb-2">Hole Fishing Secret Fish</h1>
-      <p className="text-gray-500 mb-8">The index hides two slots. Here&apos;s everything confirmed — updated {getCurrentDateString()}.</p>
+      <p className="text-gray-500 mb-8">The index hides secret slots — here is everything confirmed, and everything still being verified. Updated {getCurrentDateString()}.</p>
 
       <div className="space-y-4 mb-10">
         <div className="p-5 rounded-xl border border-cyan-300 dark:border-cyan-800 bg-cyan-50 dark:bg-cyan-950/30">
@@ -59,6 +59,22 @@ export default function SecretFishPage() {
             being verified — no confirmed public catch footage with values yet. We update this page the moment data lands.
           </p>
           <Link href="/fish/alien" className="inline-block mt-3 text-sm text-cyan-600 dark:text-cyan-400 hover:underline">Alien details →</Link>
+        </div>
+
+        <div className="p-5 rounded-xl border border-amber-300 dark:border-amber-800 bg-amber-50 dark:bg-amber-950/20">
+          <div className="flex items-center justify-between mb-2">
+            <h2 className="text-xl font-black">🔥 Magma Fin Devourer</h2>
+            <span className="text-xs px-2 py-0.5 rounded-full border font-bold uppercase border-amber-400/50 text-amber-600 dark:text-amber-400">Unverified</span>
+          </div>
+          <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+            <strong className="text-emerald-600 dark:text-emerald-400 font-mono">~$400,000,000</strong> — reported as a third secret in creator gameplay.
+          </p>
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            A huge finned catch that arrived with a cutscene and sold for roughly $400M in a single creator video. Only
+            one sighting so far — we are waiting on a second independent report before treating it as confirmed. Note
+            that the in-game index showed only two secret slots at launch, so this may be a newly added secret.
+          </p>
+          <Link href="/fish/magma-fin-devourer" className="inline-block mt-3 text-sm text-amber-600 dark:text-amber-400 hover:underline">Magma Fin Devourer details →</Link>
         </div>
       </div>
 

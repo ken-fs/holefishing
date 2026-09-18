@@ -12,9 +12,13 @@ interface Rod {
   maxWeightKg: number;
   tier: string;
   note: string;
+  priceVerified?: boolean;
 }
 
-const RODS = (rodsData as { rods: Rod[] }).rods;
+const ALL_RODS = (rodsData as { rods: Rod[] }).rods;
+// Only rods with a verified price are used in the cost math — see /rods for the full ladder.
+const RODS = ALL_RODS.filter((r) => r.priceVerified !== false);
+const UNVERIFIED_COUNT = ALL_RODS.length - RODS.length;
 
 const CATCH_PRESETS = [
   { label: 'Early game (~$500/catch)', value: 500 },
@@ -42,7 +46,6 @@ export default function CalculatorClient() {
     const minutes = Math.round((catches * 20) / 60); // ~20s per cast
     return { cost, catches, minutes };
   }, [currentIdx, targetIdx, avgCatch]);
-
   return (
     <div className="max-w-3xl mx-auto px-4 py-10">
       <h1 className="text-3xl font-black mb-2">Hole Fishing Progression Calculator</h1>
@@ -125,6 +128,12 @@ export default function CalculatorClient() {
           <p className="text-xs text-gray-500 mt-4 text-center">
             Estimates ~20s per cast with no Server Hole events. Server Hole 4x windows can cut this by 50%+ — see the{' '}
             <a href="/server-hole" className="underline">Server Hole guide</a>.
+            {UNVERIFIED_COUNT > 0 && (
+              <>
+                {' '}Excludes {UNVERIFIED_COUNT} rods whose shop price is still being verified (Night, Magma, Alien, Royal) —
+                see the <a href="/rods" className="underline">full ladder</a>.
+              </>
+            )}
           </p>
         </div>
       ) : (

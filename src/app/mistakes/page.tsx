@@ -38,7 +38,7 @@ const MISTAKES = [
   {
     title: 'Ignoring the fish index',
     symptom: 'You catch the same five commons on repeat.',
-    fix: 'Each new species fills the index and every milestone grants permanent +10 luck. Ten different commons beat fifty of the same fish.',
+    fix: 'Each new species fills the index and every milestone grants permanent +10 index luck. Ten different commons beat fifty of the same fish.',
     link: { href: '/fish', label: 'Fish index' },
   },
   {
@@ -102,7 +102,7 @@ export default function MistakesPage() {
     {
       question: 'Is it better to catch many fish or many species in Hole Fishing?',
       answer:
-        'Many species, early on. Every new species fills the index and each milestone grants permanent +10 luck, which raises rarity and mutation odds for the rest of your account.',
+        'Many species, early on. Every new species fills the index and each milestone grants permanent +10 index luck, which raises rarity and mutation odds for the rest of your account.',
     },
   ]);
 
@@ -143,6 +143,77 @@ export default function MistakesPage() {
           The shortcut to avoiding all of it: <strong>if something feels stuck, it is almost always the rod.</strong> Buy the
           rod, then re-evaluate. Read the <Link href="/upgrades">upgrade guide</Link> for the full order, or the{' '}
           <Link href="/beginner-guide">beginner guide</Link> if you just spawned in.
+        </p>
+
+        <h2>Mistakes by Game Stage</h2>
+        <p>
+          The mistakes that matter change as you progress. Here is what to watch for at each stage rather than trying
+          to fix everything at once:
+        </p>
+        <div className="overflow-x-auto not-prose">
+          <table className="w-full text-sm border-collapse my-4">
+            <thead>
+              <tr className="border-b border-gray-200 dark:border-gray-800 text-left">
+                <th className="py-2 pr-3">Stage</th>
+                <th className="py-2 pr-3">The mistake that hurts most</th>
+                <th className="py-2">The fix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-gray-100 dark:border-gray-800/60">
+                <td className="py-2 pr-3 font-bold whitespace-nowrap">First hour</td>
+                <td className="py-2 pr-3 text-gray-600 dark:text-gray-400">Buying backpack capacity or cosmetics before the Golden Rod</td>
+                <td className="py-2 text-gray-600 dark:text-gray-400">Rod first. Everything else is a rounding error at this scale.</td>
+              </tr>
+              <tr className="border-b border-gray-100 dark:border-gray-800/60">
+                <td className="py-2 pr-3 font-bold whitespace-nowrap">Early ($1K–$150K)</td>
+                <td className="py-2 pr-3 text-gray-600 dark:text-gray-400">Grinding one species instead of filling the index</td>
+                <td className="py-2 text-gray-600 dark:text-gray-400">Variety first — every new species is permanent index luck.</td>
+              </tr>
+              <tr className="border-b border-gray-100 dark:border-gray-800/60">
+                <td className="py-2 pr-3 font-bold whitespace-nowrap">Mid ($150K–$5M)</td>
+                <td className="py-2 pr-3 text-gray-600 dark:text-gray-400">Maxing hole size for luck and losing every rare to &quot;too strong&quot;</td>
+                <td className="py-2 text-gray-600 dark:text-gray-400">Alternate rod and hole. If escapes start, the rod is the purchase.</td>
+              </tr>
+              <tr className="border-b border-gray-100 dark:border-gray-800/60">
+                <td className="py-2 pr-3 font-bold whitespace-nowrap">Late ($5M+)</td>
+                <td className="py-2 pr-3 text-gray-600 dark:text-gray-400">Skipping sell-value upgrades while chasing the next rod</td>
+                <td className="py-2 text-gray-600 dark:text-gray-400">Sell value multiplies every future sale — it pays for the rods.</td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-3 font-bold whitespace-nowrap">Any stage</td>
+                <td className="py-2 pr-3 text-gray-600 dark:text-gray-400">Fishing through a Server Hole window</td>
+                <td className="py-2 text-gray-600 dark:text-gray-400">4x cash for 60 seconds beats anything else you could be doing.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Auditing Your Own Grind in Five Minutes</h2>
+        <p>
+          If progress feels slow but you cannot tell why, answer these five questions honestly. The bottleneck is
+          usually the first &quot;no&quot;:
+        </p>
+        <ol>
+          <li><strong>Am I actually hitting every Server Hole window?</strong> If you are not watching the ~20 minute cooldown, you are leaving the largest income multiplier in the game on the table.</li>
+          <li><strong>Am I selling before the window, not during?</strong> A full backpack at event time converts a 4x window into a normal fishing session.</li>
+          <li><strong>Am I fishing at night?</strong> The night pool carries the highest base values in the game. Sleeping through it is the most expensive habit in Hole Fishing.</li>
+          <li><strong>Is my rod ahead of my hole?</strong> If escapes are common, you are paying for luck you cannot collect on.</li>
+          <li><strong>Am I buying sell value?</strong> It is the only upgrade that raises income without changing how you play, and it is the one players forget because it is invisible.</li>
+        </ol>
+        <p>
+          Score three or more &quot;no&quot; answers and the fix is almost always the same sequence: sell value, then rod,
+          then hole. The <Link href="/money-guide">money guide</Link> lays out the full ranked order, and the{' '}
+          <Link href="/calculator">calculator</Link> turns it into a concrete number of casts.
+        </p>
+
+        <h2>What This Site Does Not Do</h2>
+        <p>
+          One mistake we deliberately avoid: publishing numbers nobody can verify. Hole Fishing has no official wiki
+          or patch notes, so fan sites fill the gap with invented drop rates, fake multipliers and made-up codes. This
+          site does the opposite — approximate values are marked <strong>~</strong>, single-source sightings are marked{' '}
+          <span className="text-[10px] px-1.5 py-0.5 rounded border border-amber-400/50 text-amber-600 dark:text-amber-400 font-semibold">unverified</span>,
+          and the <Link href="/codes">codes page</Link> says plainly that no code system exists rather than inventing one.
         </p>
       </section>
 

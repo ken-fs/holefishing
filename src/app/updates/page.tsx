@@ -79,7 +79,7 @@ export default function UpdatesPage() {
         <p className="text-sm text-gray-600 dark:text-gray-400">
           Hole Fishing by 67K CCU went viral — climbing past 3,000+ concurrent players with major YouTube coverage
           (&quot;This Roblox fishing game has 1 hole...&quot; — 150K+ views in under two weeks). Core systems at launch:
-          12-rod progression ending at the $320M Hacker Rod, day/night fish cycle, index luck milestones,
+          16-rod progression ending at the $320M Hacker Rod, day/night fish cycle, index luck milestones,
           mutations, and the 4x-cash Server Hole event.
         </p>
       </article>
