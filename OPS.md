@@ -96,6 +96,24 @@
 | `/fish/` | ❌ URL is unknown to Google | 从未 ← 已修 sitemap |
 | `/mutations/` | ❌ URL is unknown to Google | 从未（今日新建）|
 
+## GSC page 维度：Google 实际有数据的 URL（28 天）
+
+| 展示 | 点击 | URL |
+|---:|---:|---|
+| 93 | 15 | `holefishing.xyz/` |
+| 20 | 11 | `holefishing.xyz/codes/` |
+| 28 | 3 | `holefishing.xyz/updates/` |
+| 14 | 3 | `holefishing.xyz/server-hole/` |
+| 12 | 0 | `holefishing.xyz/updates` ← **无斜杠版仍单独有数据**（今日已修）|
+| 1 | 0 | `holefishing.xyz/calculator/` |
+| 1 | 0 | `holefishing.xyz/rods/` |
+
+## 已发现的收录问题
+
+1. ✅ **已修**：sitemap 无斜杠 URL vs canonical 带斜杠 → 307 重定向链（证据：`/updates` 与 `/updates/` 在 GSC 里分成两条独立数据）
+2. ⏳ **待修**：`www.holefishing.xyz` 返回 200 且内容与非 www 完全相同（58,149 字节）→ 重复内容，无 301 跳转。建议 Cloudflare 面板加 Redirect Rule（主机名 = www.holefishing.xyz → 跳 https://holefishing.xyz）
+3. ℹ️ 首页 09-15 单日 92 展示/19 点击 —— 站点已跑起来了
+
 ## 热度追踪
 
 | 日期 | Hole Fishing CCU | 备注 |
