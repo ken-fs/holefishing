@@ -9,7 +9,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
   const entries: MetadataRoute.Sitemap = config.routes.map((r) => ({
-    url: `${base}${r.path === '/' ? '' : r.path}`,
+    // 尾斜杠必须与 canonical 一致（非斜杠 URL 会 307 跳转，浪费抓取预算）
+    url: `${base}${r.path === '/' ? '' : `${r.path}/`}`,
     lastModified: now,
     changeFrequency: r.path === '/codes' || r.path === '/updates' ? 'daily' : 'weekly',
     priority: Number(r.priority),
@@ -17,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const f of getAllFish()) {
     entries.push({
-      url: `${base}/fish/${f.slug}`,
+      url: `${base}/fish/${f.slug}/`,
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.6,
