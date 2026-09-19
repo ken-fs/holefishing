@@ -4,6 +4,7 @@ import { Rubik, Inter } from 'next/font/google';
 import { getGameConfig } from '@/lib/data';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import AdBanner from '@/components/AdBanner';
 import './globals.css';
 
 const config = getGameConfig();
@@ -55,6 +56,7 @@ gtag('config', 'G-QX57H8KJLJ');`}
       <body className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 antialiased font-body">
         <a href="#main" className="skip-link">Skip to content</a>
         <Header />
+        <AdBanner adKey="fde15261438fd3b866a3a6c0d9b106fe" />
         <main id="main" className="min-h-[calc(100vh-180px)]">{children}</main>
         <Footer />
       </body>
