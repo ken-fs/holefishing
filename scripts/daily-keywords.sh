@@ -41,11 +41,15 @@ echo "=== $(date '+%Y-%m-%d %H:%M') run start ===" >> "$LOG"
 EOF
 RC=$?
 
-# 统一推送兜底：agent 只负责 commit，此处由 cron 环境推送（直连 → 代理两级），失败必留痕
+# 统一推送兜底：agent 只负责 commit，此处由 cron 环境推送（直连 → 代理 → 代理重试三级），失败必留痕
 cd "$PROJ" || exit 1
 if [ -n "$(git log origin/main..main --oneline 2>/dev/null)" ]; then
+  # 凭据自检：缺 github.com 凭据时先留痕（2026-09-19 前车之鉴：cron 里取不到 keychain 会导致代理 push 失败）
+  printf 'protocol=https\nhost=github.com\n\n' | GIT_TERMINAL_PROMPT=0 git credential fill >/dev/null 2>&1 \
+    || echo "⚠️ CRED_MISSING：cron 环境取不到 github.com 凭据，需人工执行一次 git push 刷新 keychain" >> "$LOG"
   GIT_TERMINAL_PROMPT=0 git push -q origin main >> "$LOG" 2>&1 \
     || GIT_TERMINAL_PROMPT=0 git -c http.proxy=http://127.0.0.1:7897 push -q origin main >> "$LOG" 2>&1 \
+    || { sleep 30; GIT_TERMINAL_PROMPT=0 git -c http.proxy=http://127.0.0.1:7897 push -q origin main >> "$LOG" 2>&1; } \
     || echo "⚠️ PUSH_FAILED：本地有未推送 commit，需人工处理" >> "$LOG"
 fi
 
