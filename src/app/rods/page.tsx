@@ -77,7 +77,7 @@ export default function RodsPage() {
               <tr key={r.slug} className="border-b border-gray-100 dark:border-gray-800/60 align-top">
                 <td className="py-3 pr-3 text-gray-400 font-mono">{r.order}</td>
                 <td className="py-3 pr-3 font-bold whitespace-nowrap">
-                  {r.name}
+                  <Link href={`/rods/${r.slug}`} className="hover:underline">{r.name}</Link>
                   {r.priceVerified === false && (
                     <span className="ml-2 text-[10px] px-1.5 py-0.5 rounded border border-amber-400/50 text-amber-600 dark:text-amber-400 font-semibold align-middle">est.</span>
                   )}

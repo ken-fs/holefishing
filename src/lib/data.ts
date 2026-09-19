@@ -84,6 +84,10 @@ export function getRods(): Rod[] {
   return [...rods].sort((a, b) => a.order - b.order);
 }
 
+export function getRodBySlug(slug: string): Rod | undefined {
+  return rods.find((r) => r.slug === slug);
+}
+
 export function getCodes(): { note: string; active: { code: string; reward: string }[]; expired: { code: string; reward: string }[] } {
   return codesData;
 }

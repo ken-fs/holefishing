@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import { getGameConfig, getAllFish } from '@/lib/data';
+import { getGameConfig, getAllFish, getRods } from '@/lib/data';
 
 export const dynamic = 'force-static';
 
@@ -15,6 +15,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: r.path === '/codes' || r.path === '/updates' ? 'daily' : 'weekly',
     priority: Number(r.priority),
   }));
+
+  for (const r of getRods()) {
+    entries.push({
+      url: `${base}/rods/${r.slug}/`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.6,
+    });
+  }
 
   for (const f of getAllFish()) {
     entries.push({
