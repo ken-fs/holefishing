@@ -131,6 +131,7 @@
 | 09-14（发现） | 3,109 | 🏜️EVENT 上线中 |
 | 09-15 | 1,714（RoMonitor）| 回落 45%，零 SEO 竞争格局不变，续持 |
 | 09-18（API 实测） | **4,132–4,224** | 回升至 4.1K+；6.07M visits / 180,978 favorites / 39,222 likes |
+| 09-19（API 实测） | **4,415** | 续涨；6,402,855 visits / 193,413 favorites（favorites 日 +12K）；游戏标题仍 [🏜️EVENT]，updated=09-15 无新版本；codes 系统仍未上线（tavily 三轮搜索零结果） |
 
 | 关联游戏 | 09-15 CCU | 备注 |
 |------|------|------|
@@ -143,8 +144,15 @@
 2. ☐ 观察 09-18 新 5 页收录与排名（对标 holefishing.wiki 同题页；先行指标：GSC 里 /mutations /money-guide 展示数）
 3. ☐ 检查每日管道日志：`/tmp/holefishing-daily.log`（11:00 跑）
 4. ☐ 沙漠 EVENT 内容补全（管道每天挖；可人工进游戏确认 EVENT 专属鱼/竿）
+   - **待验证信号（09-19）**：YouTube 视频「HOW TO GET EGYPTIAN ROD IN HOLE FISHING」(qt8GJkrfdJU，09-15 发布=事件上线当天，小频道 189 views）——疑似沙漠事件竿 Egyptian Rod，但仅单一来源，不满足 rods.json「多创作者交叉确认」录入标准，暂不录入；继续监控，出现第二个创作者来源或数值细节后再录
 5. ☐ 外链建设（AI/游戏目录提交）
 6. ☐ 观察 7 天流量，决定续费/加码
+
+## 待验证信号池
+
+| 日期 | 信号 | 来源 | 状态 |
+|------|------|------|------|
+| 09-19 | Egyptian Rod（沙漠事件专属竿？） | YT qt8GJkrfdJU（单频道） | 待第二来源确认后录入 rods.json |
 
 ## 运营日历
 
