@@ -49,6 +49,8 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-QX57H8KJLJ');`}
         </Script>
+        {/* Monetag Social Bar */}
+        <Script src="https://pl31416016.profitableratecpmnetwork.com/fa/1d/18/fa1d1800bfe5400eb119f31a65c2d9aa.js" strategy="afterInteractive" />
       </head>
       <body className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 antialiased font-body">
         <a href="#main" className="skip-link">Skip to content</a>
