@@ -64,7 +64,7 @@ export default function UpdatesPage() {
       <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
         <h2 className="text-xl font-black mb-2">Player Base Recovering (Sept 2026)</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-          After cooling off from its viral spike, Hole Fishing has climbed back to roughly <strong>4,100 concurrent
+          After cooling off from its viral spike, Hole Fishing has climbed back to roughly <strong>5,400 concurrent
           players</strong> with <strong>{config.stats.visits} visits</strong> and <strong>{config.stats.favorites} favorites</strong> — a
           solid recovery that suggests the game is holding a real audience rather than a one-off spike.
         </p>
