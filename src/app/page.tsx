@@ -8,7 +8,7 @@ const TOOLS = [
   { href: '/rods', emoji: '🎣', title: 'Rod Tier List', desc: 'All 12 rods ranked — prices, max weight, and which ones to skip.' },
   { href: '/fish', emoji: '🐟', title: 'Fish Index', desc: 'Every fish by rarity: day & night catches, values, mutations.' },
   { href: '/calculator', emoji: '🧮', title: 'Progression Calculator', desc: 'Calculate exactly how much cash you need for your next rod.' },
-  { href: '/codes', emoji: '🎁', title: 'Codes', desc: 'Working Hole Fishing codes — tracked and updated daily.' },
+  { href: '/codes', emoji: '🎁', title: 'Codes', desc: 'Is there a reward-code system yet? We check every day and update the moment one appears.' },
   { href: '/secret-fish', emoji: '❄️', title: 'Secret Fish', desc: 'Glacial Wyrm & Alien — how to catch the $3B+ secrets.' },
   { href: '/server-hole', emoji: '🕳️', title: 'Server Hole Event', desc: 'Timer, 4x cash strategy, and mutation rolls explained.' },
 ];
