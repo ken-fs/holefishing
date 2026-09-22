@@ -6,7 +6,7 @@ import { generateSEOMetadata, generateBreadcrumbSchema, getCurrentDateString } f
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Updates (${getCurrentDateString()}) — Patch Notes & Events`,
   description:
-    'Latest Hole Fishing updates: the Desert Event (🏜️), new fish, rod changes and patch notes. Updated whenever the game updates.',
+    'Latest Hole Fishing updates: the ☯️ Yin-Yang update, the 🏜️ Desert Event, new fish, rod changes and patch notes. Updated whenever the game updates.',
   keywords: ['hole fishing update', 'hole fishing desert event', 'hole fishing patch notes', 'hole fishing new update'],
   path: '/updates',
 });
@@ -45,28 +45,44 @@ export default function UpdatesPage() {
       <article className="mb-8 p-5 rounded-xl border border-amber-300 dark:border-amber-800 bg-amber-50 dark:bg-amber-950/20">
         <div className="flex items-center gap-2 mb-2">
           <span className="text-xs px-2 py-0.5 rounded-full bg-amber-400/20 text-amber-600 dark:text-amber-400 font-bold uppercase border border-amber-400/40">Live</span>
-          <h2 className="text-xl font-black">🏜️ Desert Event</h2>
+          <h2 className="text-xl font-black">☯️ Yin-Yang Update (Sept 21, 2026)</h2>
         </div>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-          The current live event — the game title still carries the 🏜️ EVENT tag and the last game update was
-          15 September 2026. Desert-themed content is active in-game.
+          The game updated on 21 September 2026 and the title tag flipped from 🏜️ EVENT to{' '}
+          <strong>☯️ YINYANG</strong> — the Desert Event has rotated out after roughly one week live.
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-          The event has not shipped an exclusive fish list or event-only rod that any verified source has documented
-          yet — including the community wikis. We do not publish unverified event data, so this section stays
-          deliberately short until the details are confirmable in-game.
+          What the Yin-Yang update adds is still being verified against gameplay footage — creators have not
+          covered it yet. We do not publish unverified event data, so themed fish, trial NPCs or exclusive rods
+          land here only once confirmed on video.
         </p>
         <p className="text-xs text-gray-500">
-          Status: actively tracking. Event-specific catches will be added to the <Link href="/fish" className="underline">Fish Index</Link> once verified.
+          Status: actively tracking. Verified catches and rods will be added to the <Link href="/fish" className="underline">Fish Index</Link> and <Link href="/rods" className="underline">Rod Tier List</Link> once confirmed.
         </p>
       </article>
 
       <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
-        <h2 className="text-xl font-black mb-2">Player Base Recovering (Sept 2026)</h2>
+        <h2 className="text-xl font-black mb-2">🏜️ Desert Event (ran Sept 15–21, 2026)</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-          After cooling off from its viral spike, Hole Fishing has climbed back to roughly <strong>5,400 concurrent
+          The game&apos;s first limited event, now rotated out. Its structure is verified on creator footage and is
+          the best template for what the Yin-Yang event likely looks like:
+        </p>
+        <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2 list-disc list-inside mb-3">
+          <li><strong>Mummy NPC</strong> at the desert pyramids — &quot;do the trials and I reward you.&quot; Trials are handed out one at a time; return to the Mummy to collect the next.</li>
+          <li><strong>Reward: the exclusive Egyptian Rod</strong>. Its in-game description notes a very slow reel; exact stats are still unverified, and whether it remains obtainable after the rotation is unknown.</li>
+          <li>Trials seen on video: <strong>catch 5 fish at night</strong> and <strong>catch 3 epic fish</strong>.</li>
+        </ul>
+        <p className="text-xs text-gray-500">
+          Sources: CurryBlox (Sept 18) and TAMPAN GAMING (Sept 19) gameplay footage.
+        </p>
+      </article>
+
+      <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
+        <h2 className="text-xl font-black mb-2">Player Base Holding (Sept 2026)</h2>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          After cooling off from its viral spike, Hole Fishing is holding around <strong>{config.stats.onlineNow} concurrent
           players</strong> with <strong>{config.stats.visits} visits</strong> and <strong>{config.stats.favorites} favorites</strong> — a
-          solid recovery that suggests the game is holding a real audience rather than a one-off spike.
+          solid floor that suggests the game is keeping a real audience rather than a one-off spike.
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400">
           Servers are capped at {config.stats.serverSize} players, so the Server Hole event stays crowded — time your
@@ -87,7 +103,7 @@ export default function UpdatesPage() {
       <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
         <h2 className="text-xl font-black mb-2">What to Watch For</h2>
         <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2 list-disc list-inside">
-          <li><strong>Event rotations</strong> — the 🏜️ Desert Event is the game&apos;s first limited event; expect themed fish and possibly exclusive rods to rotate out when it ends.</li>
+          <li><strong>Event rotations</strong> — confirmed pattern: the 🏜️ Desert Event (Sept 15–21) rotated into the ☯️ Yin-Yang update. Expect the current event&apos;s themed content to leave when the next one lands.</li>
           <li><strong>Codes system</strong> — not in the game yet; likely to arrive with a milestone celebration. Tracked on the <Link href="/codes" className="underline">codes page</Link>.</li>
           <li><strong>New secrets</strong> — the index currently hides two secret slots (Glacial Wyrm, Alien). Updates historically add more.</li>
           <li><strong>Rod ladder extensions</strong> — the Hacker Rod caps at $320M today; new top-end rods are the natural update lever.</li>

@@ -39,7 +39,7 @@ export default function HomePage() {
         <div className="grid md:grid-cols-[1.15fr_1fr] gap-8 items-center">
           <div>
             <p className="inline-block text-xs font-bold tracking-widest uppercase bg-cyan-300 text-gray-950 px-2.5 py-1 rounded mb-5">
-              🏜️ Desert Event live now
+              ☯️ Yin-Yang update live now
             </p>
             <h1 className="text-5xl md:text-6xl font-black tracking-tight text-gray-950 dark:text-gray-50 leading-[1.02] mb-5">
               One hole. One rod. <span className="bg-cyan-300 dark:bg-cyan-400 px-1.5 rounded-sm box-decoration-clone">Endless</span> fish.
