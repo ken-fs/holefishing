@@ -56,8 +56,11 @@ export default function UpdatesPage() {
           covered it yet. We do not publish unverified event data, so themed fish, trial NPCs or exclusive rods
           land here only once confirmed on video.
         </p>
-        <p className="text-xs text-gray-500">
+        <p className="text-xs text-gray-500 mb-2">
           Status: actively tracking. Verified catches and rods will be added to the <Link href="/fish" className="underline">Fish Index</Link> and <Link href="/rods" className="underline">Rod Tier List</Link> once confirmed.
+        </p>
+        <p className="text-xs text-gray-500">
+          Sept 22: the game received a follow-up patch (per the Roblox game API); title and description unchanged — contents unverified, no creator coverage yet.
         </p>
       </article>
 
