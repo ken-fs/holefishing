@@ -70,7 +70,7 @@ export default function CodesPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-10">
       <h1 className="text-3xl font-black mb-2">Hole Fishing Codes</h1>
-      <p className="text-gray-500 mb-8">Last checked {getCurrentDateString()} — monitored daily by our pipeline.</p>
+      <p className="text-gray-500 mb-8">Last checked {getCurrentDateString()} — monitored daily by our pipeline. Hole Fishing codes are checked against the Roblox game page and the developer group every morning.</p>
 
       {/* Status */}
       <section className="mb-10">
@@ -94,6 +94,23 @@ export default function CodesPage() {
             </p>
           </div>
         )}
+      </section>
+
+      {/* Roblox variant targeting — direct answer for the "roblox codes" query family */}
+      <section className="mb-10">
+        <h2 className="text-xl font-bold mb-3">Are There Hole Fishing Roblox Codes?</h2>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          <strong>No.</strong> Hole Fishing on Roblox has no code redemption system as of the Desert Event update
+          (September 2026). There is no codes button, no redemption box, and no codes menu anywhere in the game —
+          which means any list of &quot;Hole Fishing Roblox codes&quot; you find elsewhere is fabricated. This page
+          tracks the official sources daily and publishes real codes the hour they exist.
+        </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">
+          If you searched for <em>Roblox Hole Fishing codes</em>, <em>codes for Hole Fishing Roblox</em>, or
+          <em> code Hole Fishing Roblox</em> — they all point to the same answer, and this is it. The closest
+          substitutes that <em>do</em> exist are below: the free reward chest, the Server Hole event, and index
+          milestones.
+        </p>
       </section>
 
       {/* Milestone monitor — the real signal */}

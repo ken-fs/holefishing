@@ -84,7 +84,7 @@ export default function FAQPage() {
       <section className="prose prose-gray dark:prose-invert max-w-none">
         <h2>Go Deeper</h2>
         <ul>
-          <li><Link href="/codes">Codes status</Link> — monitored daily</li>
+          <li><Link href="/codes">Hole Fishing codes status</Link> — monitored daily</li>
           <li><Link href="/rods">Rod tier list</Link> — all 16 rods with prices and capacity</li>
           <li><Link href="/money-guide">Money guide</Link> — stage-by-stage income plan</li>
           <li><Link href="/server-hole">Server Hole event</Link> — the 4x window strategy</li>

@@ -115,7 +115,7 @@ export default function UpdatesPage() {
 
       <p className="text-sm text-gray-500">
         Hole Fishing updates typically land alongside event rotations. Bookmark this page — or check the{' '}
-        <Link href="/codes" className="underline">codes page</Link>, which we check daily for new redemption systems.
+        <Link href="/codes" className="underline">Hole Fishing Roblox codes page</Link>, which we check daily for new redemption systems.
       </p>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />

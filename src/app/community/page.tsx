@@ -81,7 +81,7 @@ export default function CommunityPage() {
         <p>
           What the group does give you is in-game value. Joining it (plus liking the game) feeds the{' '}
           <strong>free reward chest</strong> near spawn — the same chest covered in the{' '}
-          <Link href="/codes">codes page</Link> as the legitimate substitute for codes, since Hole Fishing has no code
+          <Link href="/codes">Hole Fishing codes page</Link> as the legitimate substitute for codes, since Hole Fishing has no code
           system.
         </p>
 

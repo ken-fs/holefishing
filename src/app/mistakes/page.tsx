@@ -213,7 +213,7 @@ export default function MistakesPage() {
           or patch notes, so fan sites fill the gap with invented drop rates, fake multipliers and made-up codes. This
           site does the opposite — approximate values are marked <strong>~</strong>, single-source sightings are marked{' '}
           <span className="text-[10px] px-1.5 py-0.5 rounded border border-amber-400/50 text-amber-600 dark:text-amber-400 font-semibold">unverified</span>,
-          and the <Link href="/codes">codes page</Link> says plainly that no code system exists rather than inventing one.
+          and the <Link href="/codes">Hole Fishing Roblox codes page</Link> says plainly that no code system exists rather than inventing one.
         </p>
       </section>
 
