@@ -52,15 +52,15 @@ export default function UpdatesPage() {
           <strong>☯️ YINYANG</strong> — the Desert Event has rotated out after roughly one week live.
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-          What the Yin-Yang update adds is still being verified against gameplay footage — creators have not
-          covered it yet. We do not publish unverified event data, so themed fish, trial NPCs or exclusive rods
-          land here only once confirmed on video.
+          First creator coverage landed on Sept 24 (details below): the Yin-Yang event runs as a live in-game
+          event — the creator watched it trigger mid-session and immediately landed a $1M sea turtle. Everything
+          from that footage is still single-source, so it is marked unverified until a second creator confirms it.
         </p>
         <p className="text-xs text-gray-500 mb-2">
           Status: actively tracking. Verified catches and rods will be added to the <Link href="/fish" className="underline">Fish Index</Link> and <Link href="/rods" className="underline">Rod Tier List</Link> once confirmed.
         </p>
         <p className="text-xs text-gray-500">
-          Sept 22 &amp; 24: the game received follow-up patches (per the Roblox game API); title and description unchanged — contents unverified, no creator coverage yet.
+          Sept 22 &amp; 24: the game received follow-up patches (per the Roblox game API); title and description unchanged. Sept 24 creator footage also shows a separate <strong>Hacker Event</strong> running live — hole-size gain observed boosted from 40% → 50% — plus catches not yet in our Fish Index: <strong>Glass Fish</strong> (mythic, ~$475M — added as unverified), Shrine Koi, Crown Spike, Forge Fin and a Humpback Whale. All single-source sightings.
         </p>
       </article>
 

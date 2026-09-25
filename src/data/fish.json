@@ -279,6 +279,15 @@
       "note": "Half a billion base. One of the best non-secret catches in the game."
     },
     {
+      "slug": "glass-fish",
+      "name": "Glass Fish",
+      "rarity": "Mythical",
+      "time": "any",
+      "valueRange": "~$475,000,000",
+      "note": "Single sighting in Sept 24, 2026 creator footage: caught with a Royal Rod, sold for ~$475M. The same creator says only three mythics exist — if so, Glass Fish may have rotated in with the Sept 22/24 patches. Unverified until a second sighting.",
+      "unverified": true
+    },
+    {
       "slug": "squid",
       "name": "Squid",
       "rarity": "Rare",
