@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getGameConfig, getAllFish, getRods, RARITY_COLORS } from '@/lib/data';
 import { generateVideoGameSchema, generateWebSiteSchema, getCurrentDateString } from '@/lib/seo';
+import FishIndexLinks from '@/components/FishIndexLinks';
 
 const config = getGameConfig();
 
@@ -131,6 +132,9 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* 全鱼种内链模块（2026-09-28 加，修复鱼页零收录的内链发现问题） */}
+      <FishIndexLinks />
 
       {/* About the game */}
       <section className="prose prose-gray dark:prose-invert max-w-none">
