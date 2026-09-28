@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getCodes, getGameConfig } from '@/lib/data';
 import { generateSEOMetadata, generateBreadcrumbSchema, generateFAQSchema, getCurrentDateString } from '@/lib/seo';
-import FishIndexLinks from '@/components/FishIndexLinks';
+import SiteIndexLinks from '@/components/SiteIndexLinks';
 
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Codes (${getCurrentDateString()}) — Working Codes & Status`,
@@ -229,7 +229,7 @@ export default function CodesPage() {
       </section>
 
       {/* 全鱼种内链模块（2026-09-28 加，借全站最强页的爬取热度带鱼页收录） */}
-      <FishIndexLinks />
+      <SiteIndexLinks />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faq) }} />
