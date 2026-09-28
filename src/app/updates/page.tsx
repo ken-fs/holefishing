@@ -6,8 +6,8 @@ import { generateSEOMetadata, generateBreadcrumbSchema, getCurrentDateString } f
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Updates (${getCurrentDateString()}) — Patch Notes & Events`,
   description:
-    'Latest Hole Fishing updates: the ☯️ Yin-Yang update, the 🏜️ Desert Event, new fish, rod changes and patch notes. Updated whenever the game updates.',
-  keywords: ['hole fishing update', 'hole fishing desert event', 'hole fishing patch notes', 'hole fishing new update'],
+    'Latest Hole Fishing updates: the 🎣 Baits update (Sept 27, 2026), the ☯️ Yin-Yang update, the 🏜️ Desert Event, new fish, rod changes and patch notes.',
+  keywords: ['hole fishing update', 'hole fishing baits update', 'hole fishing desert event', 'hole fishing patch notes', 'hole fishing new update'],
   path: '/updates',
 });
 
@@ -45,8 +45,35 @@ export default function UpdatesPage() {
       <article className="mb-8 p-5 rounded-xl border border-amber-300 dark:border-amber-800 bg-amber-50 dark:bg-amber-950/20">
         <div className="flex items-center gap-2 mb-2">
           <span className="text-xs px-2 py-0.5 rounded-full bg-amber-400/20 text-amber-600 dark:text-amber-400 font-bold uppercase border border-amber-400/40">Live</span>
-          <h2 className="text-xl font-black">☯️ Yin-Yang Update (Sept 21, 2026)</h2>
+          <h2 className="text-xl font-black">🎣 Baits Update (Sept 27, 2026)</h2>
         </div>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          The Roblox game API shows the place updated on <strong>27 September 2026</strong> and the title tag flipped from{' '}
+          <strong>☯️ YINYANG</strong> to <strong>🎣 BAITS</strong>. Sept 27 creator footage confirms a major systems patch:
+        </p>
+        <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2 list-disc list-inside mb-3">
+          <li><strong>Bait Shop</strong> — a restocking bait store (&quot;NEW STOCK IN&quot; countdown). Seen on video: <strong>Classic Bait</strong> ($500, x2 fish value), <strong>Meadow Bait</strong> (x5 fish value, sold out at the time), and a <strong>guaranteed-mutation bait</strong> at $5,000. Each bait has limited stock per restock.</li>
+          <li><strong>Rebirth system</strong> — resets your cash for permanent rewards: each rebirth gives +10% more cash; the first reward shown is a <strong>x1.3 Cash Boost</strong> (threshold $175,000 cash, Skip Rebirth R$64).</li>
+          <li><strong>Hire a Fisher</strong> — an NPC fishes your hole for <strong>15 minutes for $0.2M</strong>, using a setup as strong as yours.</li>
+          <li><strong>Luck Potion (5m)</strong> — a timed luck consumable shown in the hotbar.</li>
+          <li><strong>Auto Sell</strong> — new toggle next to Auto Fish.</li>
+          <li><strong>Server-wide event banners</strong> — GLOBAL LUCK (x2/x3), VOID MUTATION, BURNING MUTATION and DOUBLE CAST rotate live in-session.</li>
+          <li><strong>Admin Abuse events</strong> — a scheduled in-game countdown (e.g. &quot;ADMIN ABUSE IN 4:51&quot;); devs drop prizes and teased &quot;admin codes&quot; in chat during the window.</li>
+          <li><strong>In-game polls</strong> — players vote on upcoming features (a &quot;2x cast?&quot; poll was live mid-session).</li>
+        </ul>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Also visible: a <strong>Knight Rod</strong> pedestal (300 KG, R$64 Robux skip-price — cash price unverified) and a{' '}
+          <strong>Lava Rod</strong> gamepass (90,000 KG, +250 speed, R$199, seen on Sept 15 footage). New fish sightings from this
+          session — <strong>Minnow</strong> and <strong>Sturgeon</strong> — are in the <Link href="/fish" className="underline">Fish Index</Link> as unverified.
+        </p>
+        <p className="text-xs text-gray-500">
+          Source: Roblox game API (title + update timestamp) and Sept 27, 2026 creator gameplay footage. Bait stock,
+          rebirth scaling and pedestal prices are single-source — treat exact numbers as provisional.
+        </p>
+      </article>
+
+      <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
+        <h2 className="text-xl font-black mb-2">☯️ Yin-Yang Update (Sept 21–27, 2026)</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
           The game updated on 21 September 2026 and the title tag flipped from 🏜️ EVENT to{' '}
           <strong>☯️ YINYANG</strong> — the Desert Event has rotated out after roughly one week live.
@@ -76,7 +103,8 @@ export default function UpdatesPage() {
           <li>Trials seen on video: <strong>catch 5 fish at night</strong> and <strong>catch 3 epic fish</strong>.</li>
         </ul>
         <p className="text-xs text-gray-500">
-          Sources: CurryBlox (Sept 18) and TAMPAN GAMING (Sept 19) gameplay footage.
+          Sources: CurryBlox (Sept 18), TAMPAN GAMING (Sept 19) and Jeloy (Sept 15) gameplay footage. Sept 15 footage confirms
+          the reward message — &quot;The trials are done. The Egyptian Rod is yours&quot; — with a ~5-day event countdown visible.
         </p>
       </article>
 
@@ -107,7 +135,9 @@ export default function UpdatesPage() {
         <h2 className="text-xl font-black mb-2">What to Watch For</h2>
         <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2 list-disc list-inside">
           <li><strong>Event rotations</strong> — confirmed pattern: the 🏜️ Desert Event (Sept 15–21) rotated into the ☯️ Yin-Yang update. Expect the current event&apos;s themed content to leave when the next one lands.</li>
-          <li><strong>Codes system</strong> — not in the game yet; likely to arrive with a milestone celebration. Tracked on the <Link href="/codes" className="underline">codes page</Link>.</li>
+          <li><strong>Codes</strong> — no permanent redemption system yet; during Admin Abuse events the dev teased temporary &quot;admin codes&quot; in chat (Sept 27). Any verified code lands on the <Link href="/codes" className="underline">codes page</Link>.</li>
+          <li><strong>Bait economy</strong> — the new Bait Shop restocks on a timer; watch whether rare baits (guaranteed-mutation tier) rotate on a schedule.</li>
+          <li><strong>Rebirth scaling</strong> — first reward is x1.3 cash; later thresholds and boosts unverified.</li>
           <li><strong>New secrets</strong> — the index currently hides two secret slots (Glacial Wyrm, Alien). Updates historically add more.</li>
           <li><strong>Rod ladder extensions</strong> — the Hacker Rod caps at $320M today; new top-end rods are the natural update lever.</li>
         </ul>

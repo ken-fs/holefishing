@@ -375,6 +375,24 @@
       "valueRange": "~$400,000,000",
       "note": "Reported as a third secret: a huge finned catch that arrived with a cutscene and sold for roughly $400M in a single creator video. Only one sighting so far — treat as unconfirmed until more players report it.",
       "unverified": true
+    },
+    {
+      "slug": "minnow",
+      "name": "Minnow",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "First seen in Sept 27, 2026 creator footage (the Baits update session) as a caught fish. Rarity and sell value not readable on screen. Unverified until a second source confirms details.",
+      "unverified": true
+    },
+    {
+      "slug": "sturgeon",
+      "name": "Sturgeon",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Spotted swimming in a player's hole during Sept 27, 2026 footage while GLOBAL LUCK x3 and DOUBLE CAST banners were active. Rarity and sell value not captured. Unverified until a second source confirms details.",
+      "unverified": true
     }
   ]
 }
