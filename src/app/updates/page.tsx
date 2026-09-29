@@ -89,6 +89,13 @@ export default function UpdatesPage() {
         <p className="text-xs text-gray-500">
           Sept 22 &amp; 24: the game received follow-up patches (per the Roblox game API); title and description unchanged. Sept 24 creator footage also shows a separate <strong>Hacker Event</strong> running live — hole-size gain observed boosted from 40% → 50% — plus catches not yet in our Fish Index: <strong>Glass Fish</strong> (mythic, ~$475M — added as unverified), Shrine Koi, Crown Spike, Forge Fin and a Humpback Whale. All single-source sightings.
         </p>
+        <p className="text-xs text-gray-500">
+          Sept 29 review: re-scanning Yin-Yang-era creator footage added four more catches to the{' '}
+          <Link href="/fish" className="underline">Fish Index</Link> as unverified — <strong>Mackerel</strong> (two independent sightings:{' '}
+          RoBros Sept 23 + a Sept 26 creator), <strong>Perch</strong> and <strong>Tadpole</strong> (RoBros Sept 23), and a possible{' '}
+          <strong>Yin Yang</strong> fish read on another player&apos;s best-catch board with a &quot;Primordial&quot; rarity tier (above Mythical —{' '}
+          single secondhand sighting, treat as rumor until confirmed).
+        </p>
       </article>
 
       <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
@@ -135,7 +142,7 @@ export default function UpdatesPage() {
         <h2 className="text-xl font-black mb-2">What to Watch For</h2>
         <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2 list-disc list-inside">
           <li><strong>Event rotations</strong> — confirmed pattern: the 🏜️ Desert Event (Sept 15–21) rotated into the ☯️ Yin-Yang update. Expect the current event&apos;s themed content to leave when the next one lands.</li>
-          <li><strong>Codes</strong> — no permanent redemption system yet; during Admin Abuse events the dev teased temporary &quot;admin codes&quot; in chat (Sept 27). Any verified code lands on the <Link href="/codes" className="underline">codes page</Link>.</li>
+          <li><strong>Codes</strong> — no permanent redemption system yet; during Admin Abuse events the dev teased temporary &quot;admin codes&quot; in chat (Sept 27). Sept 29 check: aggregator sites now list five &quot;working codes&quot; (BIGGERHOLE, MUTATIONHUNT, DESERTCAST, RAREFISH, CASTANDSELL) but no redemption menu exists in any gameplay footage and the &quot;codes&quot; YouTube videos are clickbait — treat those lists as fabricated. Any verified code lands on the <Link href="/codes" className="underline">codes page</Link>.</li>
           <li><strong>Bait economy</strong> — the new Bait Shop restocks on a timer; watch whether rare baits (guaranteed-mutation tier) rotate on a schedule.</li>
           <li><strong>Rebirth scaling</strong> — first reward is x1.3 cash; later thresholds and boosts unverified.</li>
           <li><strong>New secrets</strong> — the index currently hides two secret slots (Glacial Wyrm, Alien). Updates historically add more.</li>

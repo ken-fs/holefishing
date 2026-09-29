@@ -393,6 +393,42 @@
       "valueRange": "Unknown",
       "note": "Spotted swimming in a player's hole during Sept 27, 2026 footage while GLOBAL LUCK x3 and DOUBLE CAST banners were active. Rarity and sell value not captured. Unverified until a second source confirms details.",
       "unverified": true
+    },
+    {
+      "slug": "mackerel",
+      "name": "Mackerel",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Two independent sightings: RoBros' Sept 23, 2026 video (a big catch — \"holy mackerel, that's what it was\") and a Sept 26 creator reading \"Mackerel\" off a fresh catch. Rarity and sell value not readable on screen.",
+      "unverified": true
+    },
+    {
+      "slug": "perch",
+      "name": "Perch",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Caught on camera in RoBros' Sept 23, 2026 footage (\"I caught a perch\"). Single source so far — rarity and sell value not readable on screen. Unverified until a second sighting.",
+      "unverified": true
+    },
+    {
+      "slug": "tadpole",
+      "name": "Tadpole",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Caught on camera in RoBros' Sept 23, 2026 footage — \"It's a tadpole\", a small fish. Single source so far — rarity and sell value not readable on screen. Unverified until a second sighting.",
+      "unverified": true
+    },
+    {
+      "slug": "yin-yang",
+      "name": "Yin Yang",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Seen on another player's best-catch display in Sept 26, 2026 footage: a fish named \"Yin Yang\" whose rarity tier was read on camera as \"Primordial\" — a tier above Mythical, if the reading is right. Caught Sept 25 during the YINYANG event window. Single, secondhand sighting — heavily unverified.",
+      "unverified": true
     }
   ]
 }
