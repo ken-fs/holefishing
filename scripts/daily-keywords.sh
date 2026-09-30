@@ -68,7 +68,7 @@ fi
 KEY="e806fbee77f140daaac27f6e1193da54"
 if [ -f "$PROJ/out/sitemap.xml" ]; then
   # 整段交给 python：macOS 的 sed 对 \? 支持不可靠，之前踩过（标签没剥掉 → IndexNow 400）
-  PAYLOAD=$(SITEMAP="$PROJ/out/sitemap.xml" KEY="$KEY" python3 - <<'PYEOF'
+  PAYLOAD=$(SITEMAP="$PROJ/out/sitemap.xml" KEY="$KEY" python3 - 2>>"$LOG" <<'PYEOF'
 import json, os, re
 urls = re.findall(r'<loc>([^<]+)</loc>', open(os.environ['SITEMAP'], encoding='utf-8').read())
 print(json.dumps({
@@ -80,10 +80,16 @@ print(json.dumps({
 PYEOF
 )
   echo "$PAYLOAD" > /tmp/holefishing-indexnow.json
+  if [ -z "$PAYLOAD" ]; then
+    # payload 为空 = python 没跑成（stderr 已并入 LOG）。以前只记 "HTTP 400 ( URLs)"
+    # 看不出是 payload 空还是接口拒，诊断信息全丢给了 cron mail。
+    echo "⚠️ INDEXNOW_FAILED：payload 为空（sitemap=$(wc -c < "$PROJ/out/sitemap.xml" 2>/dev/null | tr -d ' ')B, python3=$(command -v python3), urls=$(grep -c '<loc>' "$PROJ/out/sitemap.xml" 2>/dev/null)）" >> "$LOG"
+  else
   CODE=$(curl -s -o /dev/null -w '%{http_code}' --max-time 60 -X POST "https://api.indexnow.org/indexnow" \
     -H "Content-Type: application/json; charset=utf-8" --data-binary @/tmp/holefishing-indexnow.json 2>/dev/null)
-  echo "IndexNow: HTTP $CODE ($(python3 -c "import json;print(len(json.load(open('/tmp/holefishing-indexnow.json'))['urlList']))") URLs)" >> "$LOG"
+  echo "IndexNow: HTTP $CODE ($(python3 -c "import json;print(len(json.load(open('/tmp/holefishing-indexnow.json'))['urlList']))" 2>>"$LOG") URLs)" >> "$LOG"
   [ "$CODE" = "200" ] || echo "⚠️ INDEXNOW_FAILED：HTTP $CODE" >> "$LOG"
+  fi
 fi
 
 echo "=== $(date '+%Y-%m-%d %H:%M') run end (exit $RC) ===" >> "$LOG"
