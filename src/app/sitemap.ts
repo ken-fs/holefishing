@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const entries: MetadataRoute.Sitemap = config.routes.map((r) => ({
     // 尾斜杠必须与 canonical 一致（非斜杠 URL 会 307 跳转，浪费抓取预算）
-    url: `${base}${r.path === '/' ? '' : `${r.path}/`}`,
+    url: `${base}${r.path === '/' ? '/' : `${r.path}/`}`,
     lastModified: now,
     changeFrequency: r.path === '/codes' || r.path === '/updates' ? 'daily' : 'weekly',
     priority: Number(r.priority),
