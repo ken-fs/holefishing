@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+# Next.js 静态导出在每个页面旁写 __next.*.txt（RSC payload），内容重复但不是 HTML → soft 404
+Disallow: /*__next
 
 Sitemap: https://holefishing.xyz/sitemap.xml
