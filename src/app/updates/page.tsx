@@ -42,6 +42,27 @@ export default function UpdatesPage() {
         </div>
       </div>
 
+      <article className="mb-8 p-5 rounded-xl border border-sky-300 dark:border-sky-800 bg-sky-50 dark:bg-sky-950/20">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-sky-400/20 text-sky-600 dark:text-sky-400 font-bold uppercase border border-sky-400/40">Scheduled</span>
+          <h2 className="text-xl font-black">🎉 New Content + Admin Abuse — Sunday, Oct 4, 2026</h2>
+        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          The Events tab on the official Roblox game page lists a scheduled event:{' '}
+          <strong>&quot;NEW CONTENT + ADMIN ABUSE&quot; — Sun, Oct 4, 8:00 AM</strong> (time as shown on the game page), with the
+          description <strong>&quot;New rods, fish and more!&quot;</strong> This is the first confirmed content drop since the Baits update.
+        </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Why it matters: Admin Abuse windows are exactly where the devs have teased temporary &quot;admin codes&quot; in
+          chat (first seen Sept 27). If a real code string appears during this event, it lands on the{' '}
+          <Link href="/codes" className="underline">codes page</Link> within hours. New rods and fish from the drop go into the{' '}
+          <Link href="/rods" className="underline">Rod Tier List</Link> and <Link href="/fish" className="underline">Fish Index</Link> once verified on footage.
+        </p>
+        <p className="text-xs text-gray-500">
+          Source: official Roblox game page Events tab, checked October 1, 2026.
+        </p>
+      </article>
+
       <article className="mb-8 p-5 rounded-xl border border-amber-300 dark:border-amber-800 bg-amber-50 dark:bg-amber-950/20">
         <div className="flex items-center gap-2 mb-2">
           <span className="text-xs px-2 py-0.5 rounded-full bg-amber-400/20 text-amber-600 dark:text-amber-400 font-bold uppercase border border-amber-400/40">Live</span>

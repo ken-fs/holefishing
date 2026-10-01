@@ -144,7 +144,9 @@ export default function CodesPage() {
           <li>
             The only real code talk: during scheduled <Link href="/updates" className="underline">Admin Abuse events</Link>,
             the developers have teased temporary &quot;admin codes&quot; in chat. No code string has been shown working on
-            screen yet — if one is, it goes straight into the Active Codes box above.
+            screen yet — if one is, it goes straight into the Active Codes box above. The next scheduled Admin
+            Abuse window is <strong>Sunday, October 4, 2026, 8:00 AM</strong> (per the official game page Events tab) —
+            that is the window to watch.
           </li>
         </ul>
       </section>
