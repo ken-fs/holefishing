@@ -6,7 +6,7 @@ import { generateSEOMetadata, generateBreadcrumbSchema, generateFAQSchema, getCu
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Rod Tier List (${getCurrentDateString()}) — All Rods Ranked`,
   description:
-    'Complete Hole Fishing rod tier list: every rod from Starter to the $320M Hacker Rod with prices, max weight, and which rods are worth buying vs skipping.',
+    'Complete Hole Fishing rod tier list: every rod from Starter past the $320M Hacker Rod with prices, max weight, and which rods are worth buying vs skipping.',
   keywords: ['hole fishing rod tier list', 'hole fishing best rod', 'hole fishing rods', 'hacker rod hole fishing', 'hole fishing rod progression'],
   path: '/rods',
 });
@@ -30,7 +30,7 @@ export default function RodsPage() {
     {
       question: 'What is the best rod in Hole Fishing?',
       answer:
-        'The Hacker Rod ($320,000,000) is the final and best rod — its weight capacity is effectively unlimited. Before that, the Candy Cane Rod (~$26M) is the best value late-game rod.',
+        'The Hacker Rod ($320,000,000) is the best rod on the standard ladder — its weight capacity is effectively unlimited. Late-game shop footage (Sept 15) shows the ladder continuing far above it: a Lava Rod at $45B and a Cosmic Rod at $600B (single-source, marked est.). Before that stretch, the Candy Cane Rod (~$26M) is the best value late-game rod.',
     },
     {
       question: 'Which rods should I skip in Hole Fishing?',
@@ -45,7 +45,7 @@ export default function RodsPage() {
     {
       question: 'How much does the Hacker Rod cost in Hole Fishing?',
       answer:
-        '$320,000,000 — it is the 12th and final rod, with effectively unlimited weight capacity. Expect a long grind funded by night fishing and Server Hole events.',
+        '$320,000,000 — it is the top of the standard 16-rod ladder, with effectively unlimited weight capacity. It is not the last rod in the shop, though: Lava ($45B) and Cosmic ($600B) listings appear above it on late-game footage. Expect a long grind funded by night fishing and Server Hole events.',
     },
     {
       question: 'Is the Cactus Rod worth buying in Hole Fishing?',
@@ -104,7 +104,7 @@ export default function RodsPage() {
         <ul>
           <li><strong>Early ($0–$150K):</strong> Stone → Golden → Leaf → Cactus. Buy every tier, they&apos;re cheap.</li>
           <li><strong>Mid ($150K–$5M):</strong> Night Rod → Tree → Magma → Pirate ($2M, 1,200 kg — the biggest jump in the game) → Magic.</li>
-          <li><strong>Late ($5M+):</strong> Consider skipping Bone Rod → Candy Cane → Alien → Royal → Hacker ($320M, final).</li>
+          <li><strong>Late ($5M+):</strong> Consider skipping Bone Rod → Candy Cane → Alien → Royal → Hacker ($320M). Beyond the standard ladder, shop listings for Lava ($45B) and Cosmic ($600B) are confirmed on footage — the gap between Hacker and Lava is still being mapped.</li>
         </ul>
         <p>
           The <strong>Night Rod</strong> is the one most players miss: it sits between Cactus and Tree and is built for the

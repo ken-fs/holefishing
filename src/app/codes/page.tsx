@@ -7,7 +7,7 @@ import SiteIndexLinks from '@/components/SiteIndexLinks';
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Codes (${getCurrentDateString()}) — Working Codes & Status`,
   description:
-    'Are there Hole Fishing codes on Roblox? Verified status, the milestones that would trigger a code drop, how redemption would work, and the free rewards that exist right now.',
+    'Are there Hole Fishing codes on Roblox? Verified status: the redemption box now exists in the Exclusive Store — no working codes released yet. How to redeem, fakes to avoid, and free rewards.',
   keywords: ['hole fishing codes', 'hole fishing codes 2026', 'hole fishing roblox codes', 'hole fishing redeem codes', 'hole fishing code'],
   path: '/codes',
 });
@@ -21,7 +21,7 @@ const MILESTONES = [
   { label: 'Group members', now: 104145, passed: 100000, next: 125000, note: 'The 67K CCU group crossed 100K members without announcing codes.' },
 ];
 
-// 聚合站 9/26 起集体列出的 5 个「码」——游戏无兑换 UI，9/29 巡检判定伪造
+// 聚合站 9/26 起集体列出的 5 个「码」——10/2 逐帧实证：游戏已有兑换 UI（Exclusive Store→Codes），但无任何成功兑换画面
 const FAKE_CODES = ['BIGGERHOLE', 'MUTATIONHUNT', 'DESERTCAST', 'RAREFISH', 'CASTANDSELL'];
 
 function fmt(n: number): string {
@@ -44,12 +44,12 @@ export default function CodesPage() {
     {
       question: 'Are there any working Hole Fishing codes right now?',
       answer:
-        `No. As of the ${version} (September 2026), Hole Fishing does not have a code redemption system in-game. The developers (67K CCU) have not released any codes. This page will list verified codes the moment they exist.`,
+        `No working codes yet. As of October 2026 the game DOES have a redemption box — a Codes section inside the Exclusive Store, verified on Sept 28 gameplay footage — but the developers (67K CCU) have not released a single code string for it. This page will list verified codes the moment they exist.`,
     },
     {
-      question: 'How would I redeem codes in Hole Fishing?',
+      question: 'How do I redeem codes in Hole Fishing?',
       answer:
-        'The game currently has no codes button or redemption menu. If codes are added, Roblox simulators almost always put the redemption box in the shop or settings menu — we will publish exact steps the moment a real menu exists rather than guessing now.',
+        'Open the Store on the left-hand menu to bring up the Exclusive Store window, then scroll down to the Codes section. Type the code into the box exactly as written and press the green Redeem button. The menu exists today; there is just nothing official to type into it yet.',
     },
     {
       question: 'How do I get free rewards in Hole Fishing without codes?',
@@ -57,19 +57,19 @@ export default function CodesPage() {
         'Claim the free reward chest near the spawn (pays out for liking the game and joining the 67K CCU group), fish during the Server Hole event for 4x cash, fish at night for the highest-value species, and complete your fish index for permanent index luck.',
     },
     {
-      question: 'When will Hole Fishing add codes?',
+      question: 'When will Hole Fishing release its first codes?',
       answer:
-        'No official date has been announced. Hole Fishing has already passed every classic trigger — 40K likes, 10M visits, 200K favourites and 100K group members — without adding codes, so a code drop is not tied to a milestone yet. The next round numbers (400K favourites, 60K likes) are tracked on this page.',
+        'No official date has been announced — but the redemption box shipping in late September means the infrastructure is ready, and the developers have teased temporary "admin codes" during scheduled Admin Abuse events (the next one is Sunday, October 4, 2026, 8:00 AM). That event window is the most likely first code drop.',
     },
     {
       question: 'Are the Hole Fishing codes on other websites real?',
       answer:
-        'No. Any site currently listing "working Hole Fishing codes" is fabricating them — the game has no redemption UI, so there is nothing for a code to do. Those pages exist to capture the search traffic. This page says so plainly instead.',
+        'No. The redemption box in the Exclusive Store is real, but every "working Hole Fishing codes" list on aggregator sites is fabricated — none of those codes were ever announced by the developers, and no footage shows any of them redeeming successfully. Those pages exist to capture the search traffic. This page says so plainly instead.',
     },
     {
       question: 'Do BIGGERHOLE, MUTATIONHUNT or CASTANDSELL work in Hole Fishing?',
       answer:
-        'No. BIGGERHOLE, MUTATIONHUNT, DESERTCAST, RAREFISH and CASTANDSELL are circulating on code aggregator sites, but Hole Fishing has no redemption box to type them into. No gameplay footage shows a code menu, and the "Hole Fishing codes" videos listing them are clickbait with no in-game redemption shown.',
+        'No. BIGGERHOLE, MUTATIONHUNT, DESERTCAST, RAREFISH and CASTANDSELL are circulating on code aggregator sites, but the developers have never announced them and no gameplay footage shows any of them redeeming. The "Hole Fishing codes" YouTube videos are clickbait — in one, the creator literally types "THANKS FOR WATCHING" into the box instead of a working code.',
     },
     {
       question: 'Why does this page rank if there are no codes?',
@@ -97,10 +97,11 @@ export default function CodesPage() {
           </div>
         ) : (
           <div className="p-5 rounded-xl border border-amber-300 dark:border-amber-800 bg-amber-50 dark:bg-amber-950/30">
-            <p className="font-semibold mb-1">⚠️ No codes exist yet</p>
+            <p className="font-semibold mb-1">⚠️ Redemption box confirmed — no working codes yet</p>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              Hole Fishing launched without a code system, and the {version} did not add one.
-              Any site claiming &quot;working Hole Fishing codes&quot; right now is making them up. We watch the game
+              The game DOES have a codes box now: a Codes section inside the Exclusive Store, verified on
+              Sept 28 ({version}) gameplay footage. But the developers have not released a single code for it —
+              any site claiming &quot;working Hole Fishing codes&quot; right now is making them up. We watch the game
               page and the developer group for a code announcement — real codes will be listed here first.
             </p>
           </div>
@@ -111,10 +112,12 @@ export default function CodesPage() {
       <section className="mb-10">
         <h2 className="text-xl font-bold mb-3">Are There Hole Fishing Roblox Codes?</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-          <strong>No.</strong> Hole Fishing on Roblox has no code redemption system as of the {version}
-          (September 2026). There is no codes button, no redemption box, and no codes menu anywhere in the game —
-          which means any list of &quot;Hole Fishing Roblox codes&quot; you find elsewhere is fabricated. This page
-          tracks the official sources and publishes real codes as soon as one is verified.
+          <strong>No working codes — but the redemption box is real.</strong> The {version} era brought a Codes
+          section inside the game&apos;s Exclusive Store (input box + green Redeem button + the line &quot;Join our
+          group &amp; community for more codes!&quot;), verified on September 28, 2026 gameplay footage. What does
+          not exist yet is any official code string to type into it — which means every list of &quot;Hole Fishing
+          Roblox codes&quot; you find elsewhere is fabricated. This page tracks the official sources and publishes
+          real codes as soon as one is verified.
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400">
           If you searched for <em>Roblox Hole Fishing codes</em>, <em>codes for Hole Fishing Roblox</em>, or
@@ -129,7 +132,8 @@ export default function CodesPage() {
         <h2 className="text-xl font-bold mb-3">Fake Hole Fishing Codes Going Around</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
           Since late September, several code sites list the same five &quot;working&quot; Hole Fishing codes. None of
-          them can be redeemed — there is no box in the game to type them into:
+          them is real — the developers never announced them, and no footage shows any of them redeeming in the
+          game&apos;s codes box:
         </p>
         <div className="flex flex-wrap gap-2 mb-3">
           {FAKE_CODES.map((c) => (
@@ -139,8 +143,8 @@ export default function CodesPage() {
           ))}
         </div>
         <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1 list-disc list-inside">
-          <li>The sites listing them describe redemption with template wording (&quot;if Hole Fishing has a code menu&quot;) — they have not seen one.</li>
-          <li>The &quot;Hole Fishing codes&quot; YouTube videos behind these lists show no in-game redemption at all.</li>
+          <li>The sites listing them describe redemption with template wording (&quot;if Hole Fishing has a code menu&quot;) — they have not seen the real one in the Exclusive Store.</li>
+          <li>The &quot;Hole Fishing codes&quot; YouTube videos behind these lists never show a successful redemption — one creator types strings like FIRST, UNDERWATER and finally &quot;THANKS FOR WATCHING&quot; into the box with zero results.</li>
           <li>
             The only real code talk: during scheduled <Link href="/updates" className="underline">Admin Abuse events</Link>,
             the developers have teased temporary &quot;admin codes&quot; in chat. No code string has been shown working on
@@ -198,14 +202,17 @@ export default function CodesPage() {
         <h2>Why There Are No Hole Fishing Codes Yet</h2>
         <p>
           Hole Fishing is a young game — it went viral only weeks ago and has already rotated through several limited events (Desert, Yin-Yang, Baits).
-          The developers (67K CCU) built the economy around four in-game systems instead of codes: the free reward chest,
+          The developers (67K CCU) built the economy around four in-game systems instead of code giveaways: the free reward chest,
           the <Link href="/server-hole">Server Hole event</Link>, index luck milestones, and Robux potions/gamepasses.
+          The codes box that appeared in the Exclusive Store in late September is the infrastructure arriving first —
+          the codes themselves have not followed yet.
         </p>
         <p>
-          That is a deliberate design choice, not an oversight. Codes exist to paper over a weak early economy — they
-          hand out starter cash so new players do not bounce. Hole Fishing does not need that: the free reward chest and
-          4x Server Hole windows already give new players a fast start. A group with {config.stats.favorites} favourites
-          and a {fmt(groupMembers)}-member community has no reason to add a redemption system until a celebration calls for it.
+          That sequencing is normal for Roblox simulators: the redemption UI ships in a systems update, then the first
+          code strings arrive with a milestone celebration or a scheduled Admin Abuse event. With the box already
+          in-game and an Admin Abuse event scheduled for October 4, a first code drop looks close rather than
+          hypothetical. A group with {config.stats.favorites} favourites and a {fmt(groupMembers)}-member community
+          now has every reason to use it.
         </p>
         <p>
           The practical consequence for you: there is nothing to redeem today, and any list you find is fiction. But the
@@ -242,30 +249,37 @@ export default function CodesPage() {
           &quot;codes&quot; for a game with no redemption menu.
         </p>
 
-        <h2>How Redemption Would Likely Work</h2>
+        <h2>How to Redeem Codes in Hole Fishing</h2>
         <p>
-          We are not going to invent a menu that does not exist. What is verifiable: Hole Fishing currently has{' '}
-          <strong>no codes button, no redemption box, and no codes menu</strong> anywhere in the UI. When one is added,
-          Roblox simulators follow a consistent pattern — a code box inside the shop or the settings menu, entered
-          exactly as written (they are usually case-sensitive). We will publish the exact click path the day a real menu
-          ships, with a screenshot, rather than guessing at one now.
+          The redemption menu is real and here is the exact path, verified on September 28 gameplay footage:
+        </p>
+        <ol>
+          <li>Launch Hole Fishing and let your fishing area load.</li>
+          <li>Open the <strong>Store</strong> on the left-hand menu — this brings up the <strong>Exclusive Store</strong> window (the one with the Robux cash packs at the top).</li>
+          <li>Scroll down to the <strong>Codes</strong> section — it reads &quot;Join our group &amp; community for more codes!&quot;</li>
+          <li>Type the code into the box exactly as written (Roblox codes are usually case-sensitive) and press the green <strong>Redeem</strong> button.</li>
+        </ol>
+        <p>
+          The only step missing today is an official code to enter. When the first real one lands, it goes into the
+          Active Codes box at the top of this page.
         </p>
 
         <h2>Why This Page Says &quot;No Codes&quot; Instead of Inventing Them</h2>
         <p>
           Search for &quot;Hole Fishing codes&quot; and you will find plenty of pages with lists. Every one of them is
-          fabricated — the game has no redemption system, so there is nothing for a code to unlock. Those pages exist
-          purely to capture the search traffic, and they will never update because there is nothing to update.
+          fabricated — none of their codes was ever announced by the developers, and none is shown redeeming
+          successfully anywhere. Those pages exist purely to capture the search traffic, and they will never update
+          because there is nothing real to update.
         </p>
         <p>
           This page takes the opposite approach, and it turns out to be the better one: &quot;are there codes&quot; is
-          itself the search. Most players looking for Hole Fishing codes do not know the game has no code system, and
-          finding a straight answer is more useful than a fake list. It also means that when codes <em>do</em> launch, we
-          are already the page players trust — and the first one with the real codes.
+          itself the search. Most players looking for Hole Fishing codes do not know the redemption box exists but has
+          no codes yet, and finding a straight answer is more useful than a fake list. It also means that when codes
+          <em> do</em> launch, we are already the page players trust — and the first one with the real codes.
         </p>
         <p className="text-sm text-gray-500">
           Tracked automatically: the game page and developer group are watched for changes, and a daily review searches
-          for new code drops. The current status file is verified empty.
+          for new code drops. The current status file is verified empty of codes — the redemption UI is verified present.
         </p>
       </section>
 

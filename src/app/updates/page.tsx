@@ -84,8 +84,18 @@ export default function UpdatesPage() {
         </ul>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
           Also visible: a <strong>Knight Rod</strong> pedestal (300 KG, R$64 Robux skip-price — cash price unverified) and a{' '}
-          <strong>Lava Rod</strong> gamepass (90,000 KG, +250 speed, R$199, seen on Sept 15 footage). New fish sightings from this
+          <strong>Godly Rod</strong> pedestal (800 KG, Reel x2.00, 399 luck, price not shown). New fish sightings from this
           session — <strong>Minnow</strong> and <strong>Sturgeon</strong> — are in the <Link href="/fish" className="underline">Fish Index</Link> as unverified.
+        </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          <strong>Oct 2 frame re-reads</strong>: ① the Exclusive Store contains a <strong>Codes redemption section</strong>{' '}
+          (input box + Redeem button, "Join our group &amp; community for more codes!") — the first confirmed redemption UI,
+          seen on Sept 28 footage, though no working code string exists yet (tracked on the <Link href="/codes" className="underline">codes page</Link>).
+          ② The earlier "Lava Rod gamepass (R$199)" note was a misread of the same Sept 15 footage — the Lava Rod is a{' '}
+          <strong>$45,000,000,000 cash shop rod</strong> (Reel Speed x6.90, 90,000 kg); the "199" on its pedestal is its luck
+          stat, not a Robux price. A <strong>Cosmic Rod</strong> sits right after it at $600,000,000,000 (x7.80, 150,000 kg),
+          with at least one further slot ("Toy Rod", unread price). Both are now in the <Link href="/rods" className="underline">Rod Tier List</Link>{' '}
+          as single-source estimates.
         </p>
         <p className="text-xs text-gray-500">
           Source: Roblox game API (title + update timestamp) and Sept 27, 2026 creator gameplay footage. Bait stock,
@@ -127,7 +137,7 @@ export default function UpdatesPage() {
         </p>
         <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2 list-disc list-inside mb-3">
           <li><strong>Mummy NPC</strong> at the desert pyramids — &quot;do the trials and I reward you.&quot; Trials are handed out one at a time; return to the Mummy to collect the next.</li>
-          <li><strong>Reward: the exclusive Egyptian Rod</strong>. Its in-game description notes a very slow reel; exact stats are still unverified, and whether it remains obtainable after the rotation is unknown.</li>
+          <li><strong>Reward: the exclusive Egyptian Rod</strong> — stats now verified from the Sept 15 reward screen: Reel Speed x3.00 (deliberately slow), 102,000 kg capacity, and the perk <strong>"Obtains Exclusive Mutations"</strong>. Whether it remains obtainable after the rotation is unknown.</li>
           <li>Trials seen on video: <strong>catch 5 fish at night</strong> and <strong>catch 3 epic fish</strong>.</li>
         </ul>
         <p className="text-xs text-gray-500">
@@ -163,11 +173,11 @@ export default function UpdatesPage() {
         <h2 className="text-xl font-black mb-2">What to Watch For</h2>
         <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2 list-disc list-inside">
           <li><strong>Event rotations</strong> — confirmed pattern: the 🏜️ Desert Event (Sept 15–21) rotated into the ☯️ Yin-Yang update. Expect the current event&apos;s themed content to leave when the next one lands.</li>
-          <li><strong>Codes</strong> — no permanent redemption system yet; during Admin Abuse events the dev teased temporary &quot;admin codes&quot; in chat (Sept 27). Sept 29 check: aggregator sites now list five &quot;working codes&quot; (BIGGERHOLE, MUTATIONHUNT, DESERTCAST, RAREFISH, CASTANDSELL) but no redemption menu exists in any gameplay footage and the &quot;codes&quot; YouTube videos are clickbait — treat those lists as fabricated. Any verified code lands on the <Link href="/codes" className="underline">codes page</Link>.</li>
+          <li><strong>Codes</strong> — the redemption box is now confirmed in-game (Exclusive Store → Codes, Sept 28 footage, verified Oct 2), but no working code string exists: aggregator lists (BIGGERHOLE, MUTATIONHUNT, DESERTCAST, RAREFISH, CASTANDSELL) are fabricated and the &quot;codes&quot; YouTube videos never show a successful redemption. During Admin Abuse events the dev teased temporary &quot;admin codes&quot; in chat (Sept 27) — the <strong>Oct 4, 8:00 AM</strong> window is the prime suspect for the first real drop. Any verified code lands on the <Link href="/codes" className="underline">codes page</Link>.</li>
           <li><strong>Bait economy</strong> — the new Bait Shop restocks on a timer; watch whether rare baits (guaranteed-mutation tier) rotate on a schedule.</li>
           <li><strong>Rebirth scaling</strong> — first reward is x1.3 cash; later thresholds and boosts unverified.</li>
           <li><strong>New secrets</strong> — the index currently hides two secret slots (Glacial Wyrm, Alien). Updates historically add more.</li>
-          <li><strong>Rod ladder extensions</strong> — the Hacker Rod caps at $320M today; new top-end rods are the natural update lever.</li>
+          <li><strong>Rod ladder extensions</strong> — confirmed real: the ladder continues past the Hacker Rod with at least Lava ($45B) and Cosmic ($600B) on late-game shop footage. The gap between $320M and $45B is unmapped — more mid-tier rods almost certainly exist.</li>
         </ul>
       </article>
 
