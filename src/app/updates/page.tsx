@@ -127,6 +127,13 @@ export default function UpdatesPage() {
           <strong>Yin Yang</strong> fish read on another player&apos;s best-catch board with a &quot;Primordial&quot; rarity tier (above Mythical —{' '}
           single secondhand sighting, treat as rumor until confirmed).
         </p>
+        <p className="text-xs text-gray-500">
+          Oct 3 review: <strong>Shrine Koi</strong> lands a second independent sighting — RoBros&apos; Sept 23 video shows one caught
+          live for ~$70,000 during an admin-abuse cash boost (value possibly inflated) — so it joins the{' '}
+          <Link href="/fish" className="underline">Fish Index</Link> as unverified. Re-scanning the same Sept 24 footage also surfaced a
+          sighting we missed: an <strong>Ancient Turtle</strong> (~$2M, caught at night). Single source, and the name reading could be a
+          mishearing of the night Legendary Asian Turtle — it stays on the watch list alongside Crown Spike, Forge Fin and Humpback Whale.
+        </p>
       </article>
 
       <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">

@@ -429,6 +429,15 @@
       "valueRange": "Unknown",
       "note": "Seen on another player's best-catch display in Sept 26, 2026 footage: a fish named \"Yin Yang\" whose rarity tier was read on camera as \"Primordial\" — a tier above Mythical, if the reading is right. Caught Sept 25 during the YINYANG event window. Single, secondhand sighting — heavily unverified.",
       "unverified": true
+    },
+    {
+      "slug": "shrine-koi",
+      "name": "Shrine Koi",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Two independent sightings: RoBros' Sept 23, 2026 video (caught live for ~$70,000 during an admin-abuse cash boost — value possibly inflated) and Sept 24, 2026 creator footage (\"we got a shrine koi — that's my best catch\"). Rarity and true sell value not readable on screen.",
+      "unverified": true
     }
   ]
 }
