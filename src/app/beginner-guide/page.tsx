@@ -57,7 +57,7 @@ export default function BeginnerGuidePage() {
         <ol>
           <li>Fish commons until ~$1,000 → buy the <strong>Stone Rod</strong>.</li>
           <li>Claim the <strong>free reward chest</strong> near spawn (like the game + join the group).</li>
-          <li>Alternate rod → sell value → hole size upgrades. Aim for Golden Rod ($7.5K) fast.</li>
+          <li>Alternate rod → sell value → hole size upgrades. Aim for the Golden Rod ($2.5K) and Cactus Rod ($7.5K) fast.</li>
           <li>Catch a <strong>Crocodile</strong> (~30 kg, $3,000) — the classic early jackpot.</li>
           <li>When you hear spinning — <strong>sprint to the Server Hole</strong>. 4x cash for ~60 seconds. See the <Link href="/server-hole">Server Hole guide</Link>.</li>
         </ol>

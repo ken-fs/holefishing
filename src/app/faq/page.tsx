@@ -34,7 +34,7 @@ const FAQS = [
   {
     question: 'Is night fishing worth it?',
     answer:
-      'Yes. A separate set of night-exclusive fish spawns during the in-game night cycle, and they sell for significantly more than day catches. The Night Rod is built for this and sits between the Cactus and Tree Rod on the ladder.',
+      'Yes. A separate set of night-exclusive fish spawns during the in-game night cycle, and they sell for significantly more than day catches. (The old Night Rod is no longer in the shop — any rod with enough capacity works.)',
   },
   {
     question: 'How do mutations work?',
@@ -44,7 +44,7 @@ const FAQS = [
   {
     question: 'What rod should I buy next?',
     answer:
-      'Follow the ladder without skipping tiers: early — Stone → Golden → Leaf → Cactus; mid — Night → Tree → Magma → Pirate → Magic; late — Candy Cane → Alien → Royal → Hacker. Use the progression calculator to see the exact breakpoint for your income.',
+      'Follow the shop ladder and don\'t skip more than one rod: early — Stone → Golden → Cactus → Tree → Knight; mid — Magma → Pirate → Magic → Bone → Candy Cane; late — Alien → Royal → Hacker, then Bluesteel and up. Use the progression calculator to see the exact breakpoint for your income.',
   },
   {
     question: 'How many fish are in Hole Fishing?',
@@ -85,10 +85,10 @@ export default function FAQPage() {
         <h2>Go Deeper</h2>
         <ul>
           <li><Link href="/codes">Hole Fishing codes status</Link> — monitored daily</li>
-          <li><Link href="/rods">Rod tier list</Link> — all 16 rods with prices and capacity</li>
+          <li><Link href="/rods">Rod tier list</Link> — every rod with prices and capacity</li>
           <li><Link href="/money-guide">Money guide</Link> — stage-by-stage income plan</li>
           <li><Link href="/server-hole">Server Hole event</Link> — the 4x window strategy</li>
-          <li><Link href="/night-fishing">Night fishing</Link> — the exclusive set and the Night Rod</li>
+          <li><Link href="/night-fishing">Night fishing</Link> — the night-only fish and when to fish them</li>
           <li><Link href="/mutations">Mutations</Link> — roll mechanics and confirmed sightings</li>
           <li><Link href="/fish">Fish index</Link> — all 45 fish, one page each</li>
           <li><Link href="/mistakes">Common mistakes</Link> — the traps that stall progression</li>

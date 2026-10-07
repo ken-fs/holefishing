@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getRods } from '@/lib/data';
+import { getRods, formatKg } from '@/lib/data';
 import { generateSEOMetadata, generateBreadcrumbSchema, generateFAQSchema, getCurrentDateString } from '@/lib/seo';
 
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Rod Tier List (${getCurrentDateString()}) — All Rods Ranked`,
   description:
-    'Complete Hole Fishing rod tier list: every rod from Starter past the $320M Hacker Rod with prices, max weight, and which rods are worth buying vs skipping.',
-  keywords: ['hole fishing rod tier list', 'hole fishing best rod', 'hole fishing rods', 'hacker rod hole fishing', 'hole fishing rod progression'],
+    'Every Hole Fishing rod from the Starter Rod to the $10Qi Rainbow Godly Rod, re-read from the in-game shop: prices, reel speed, max weight and which to skip.',
+  keywords: ['hole fishing rod tier list', 'hole fishing best rod', 'hole fishing rods', 'hole fishing rod', 'rainbow godly rod hole fishing', 'hacker rod hole fishing', 'hole fishing rod progression'],
   path: '/rods',
 });
 
@@ -30,7 +30,7 @@ export default function RodsPage() {
     {
       question: 'What is the best rod in Hole Fishing?',
       answer:
-        'The Hacker Rod ($320,000,000) is the best rod on the standard ladder — its weight capacity is effectively unlimited. Late-game shop footage (Sept 15) shows the ladder continuing far above it: a Lava Rod at $45B and a Cosmic Rod at $600B (single-source, marked est.). Before that stretch, the Candy Cane Rod (~$26M) is the best value late-game rod.',
+        'Right now the top cash rod is the Rainbow Godly Rod: x20.50 reel speed and 6.5M kg for $10Qi (Oct 4 shop). Below it sit the Planet (4.5M kg), Frosty (3M kg) and Moon (2M kg) rods. For most players the realistic goal is the Hacker Rod ($320M) and then the Bluesteel Rod ($26B).',
     },
     {
       question: 'Which rods should I skip in Hole Fishing?',
@@ -45,12 +45,17 @@ export default function RodsPage() {
     {
       question: 'How much does the Hacker Rod cost in Hole Fishing?',
       answer:
-        '$320,000,000 — it is the top of the standard 16-rod ladder, with effectively unlimited weight capacity. It is not the last rod in the shop, though: Lava ($45B) and Cosmic ($600B) listings appear above it on late-game footage. Expect a long grind funded by night fishing and Server Hole events.',
+        '$320,000,000 for x4.75 reel speed and 20,000 kg. It used to be the last rod, but the Oct 4 shop has more than a dozen rods above it, starting with the Bluesteel Rod at $26B.',
     },
     {
       question: 'Is the Cactus Rod worth buying in Hole Fishing?',
       answer:
-        'Yes. At ~$150,000 the Cactus Rod sits in the critical early-mid game bracket (~80 kg capacity). It bridges the gap between the cheap early rods and the $650K Tree Rod tier.',
+        'Yes. It only costs $7,500 for 80 kg and x1.36 reel speed, so it pays for itself fast. After it, save for the Tree Rod and then the Knight Rod ($150,000).',
+    },
+    {
+      question: 'What happened to the Leaf Rod and Night Rod?',
+      answer:
+        'They are not in the shop anymore. On Oct 4 footage the ladder goes Golden → Cactus → Tree → Knight with no Leaf or Night Rod in between, so they look removed. Their old pages are kept here with a "Not in shop" label.',
     },
   ]);
 
@@ -58,7 +63,7 @@ export default function RodsPage() {
     <div className="max-w-4xl mx-auto px-4 py-10">
       <h1 className="text-3xl font-black mb-2">Hole Fishing Rod Tier List</h1>
       <p className="text-gray-500 mb-8">
-        All {rods.length} rods in progression order. Prices verified from gameplay — {getCurrentDateString()}.
+        All {rods.length} rods we know about, in shop order. Re-read from the in-game Rods shop on Oct 4–5 footage — {getCurrentDateString()}.
       </p>
       <div className="overflow-x-auto mb-10">
         <table className="w-full text-sm border-collapse">
@@ -86,7 +91,7 @@ export default function RodsPage() {
                   <span className={`text-xs px-2 py-0.5 rounded border font-black ${TIER_STYLE[r.tier] ?? TIER_STYLE.C}`}>{r.tier}</span>
                 </td>
                 <td className="py-3 pr-3 font-mono text-emerald-600 dark:text-emerald-400 whitespace-nowrap">{r.priceText}</td>
-                <td className="py-3 pr-3 font-mono whitespace-nowrap">{r.maxWeightKg >= 999999 ? '∞' : `~${r.maxWeightKg.toLocaleString()} kg`}</td>
+                <td className="py-3 pr-3 font-mono whitespace-nowrap">{formatKg(r.maxWeightKg)}</td>
                 <td className="py-3 text-gray-500">{r.note}</td>
               </tr>
             ))}
@@ -102,19 +107,23 @@ export default function RodsPage() {
           &quot;too strong&quot; escapes; a strong rod with a tiny hole wastes its weight capacity.
         </p>
         <ul>
-          <li><strong>Early ($0–$150K):</strong> Stone → Golden → Leaf → Cactus. Buy every tier, they&apos;re cheap.</li>
-          <li><strong>Mid ($150K–$5M):</strong> Night Rod → Tree → Magma → Pirate ($2M, 1,200 kg — the biggest jump in the game) → Magic.</li>
-          <li><strong>Late ($5M+):</strong> Consider skipping Bone Rod → Candy Cane → Alien → Royal → Hacker ($320M). Beyond the standard ladder, shop listings for Lava ($45B) and Cosmic ($600B) are confirmed on footage — the gap between Hacker and Lava is still being mapped.</li>
+          <li><strong>Early (up to $150K):</strong> Stone ($1K) → Golden ($2.5K) → Cactus ($7.5K) → Tree → Knight ($150K). They&apos;re all cheap, so buy every one.</li>
+          <li><strong>Mid ($150K–$26M):</strong> Magma ($650K) → Pirate ($2M, 1,200 kg, the biggest jump) → Magic → Bone ($11M) → Candy Cane ($26M). Bone is the one people skip.</li>
+          <li><strong>Late ($26M–$320M):</strong> Alien ($60M) → Royal ($140M) → Hacker ($320M).</li>
+          <li><strong>Past Hacker:</strong> Bluesteel ($26B) → Candy Rod ($720B) → Lava → Cosmic → Toy ($55T) → Jungle ($96T) → Radioactive ($200T) → Beach ($240T) → Moon → Frosty → Planet → Rainbow Godly ($10Qi). The Lucky Rod only comes from the spin wheel.</li>
         </ul>
         <p>
-          The <strong>Night Rod</strong> is the one most players miss: it sits between Cactus and Tree and is built for the
-          night cycle — creators skip the Tree Rod entirely to reach it around $190K. See the{' '}
-          <Link href="/night-fishing">night fishing guide</Link> for why that matters.
+          Heads up: the current shop doesn&apos;t match older guides, including our own September list. The Leaf Rod and
+          Night Rod aren&apos;t in it, early prices are lower (Golden is $2,500, Cactus is $7,500), and there&apos;s a Knight
+          Rod at $150,000. Two rods are
+          Robux-only lobby pedestals rather than shop rods: the Godly Rod and the limited-stock Void Ghost Rod. Night fish
+          still pay more, so the <Link href="/night-fishing">night fishing guide</Link> still applies.
         </p>
         <p className="text-sm text-gray-500">
-          Note: prices marked ~ are community-verified approximations. Rods tagged <span className="text-[10px] px-1.5 py-0.5 rounded border border-amber-400/50 text-amber-600 dark:text-amber-400 font-semibold">est.</span>{' '}
-          are confirmed to exist by multiple creators but their exact shop price and ladder position are still being
-          verified — they are excluded from the <Link href="/calculator">calculator</Link> until confirmed.
+          Rods tagged <span className="text-[10px] px-1.5 py-0.5 rounded border border-amber-400/50 text-amber-600 dark:text-amber-400 font-semibold">est.</span>{' '}
+          exist, but we haven&apos;t read their cash price off the shop yet (or they&apos;re Robux-only, spin-wheel-only,
+          an event reward, or no longer sold). They&apos;re left out of the <Link href="/calculator">calculator</Link>.
+          T = trillion, Qi = quintillion.
         </p>
       </section>
 

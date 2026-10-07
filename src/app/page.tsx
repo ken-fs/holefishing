@@ -154,7 +154,7 @@ export default function HomePage() {
         <p>
           Progression is built on four upgrade tracks: <strong>rods</strong> (max weight + reel speed),
           <strong> hole size</strong> (luck and fish size), <strong>sell value</strong> (a multiplier on every sale) and
-          <strong> backpack</strong> capacity. The rod ladder runs from the free Starter Rod to the $320M Hacker Rod —
+          <strong> backpack</strong> capacity. The rod ladder runs from the free Starter Rod to the $10Qi Rainbow Godly Rod —
           see the full <Link href="/rods">rod tier list</Link> for prices and which tiers to skip. Use the{' '}
           <Link href="/calculator">progression calculator</Link> to plan exactly how many casts stand between you and your next rod.
         </p>

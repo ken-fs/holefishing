@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getRods, getRodBySlug, getAllFish } from '@/lib/data';
+import { getRods, getRodBySlug, getAllFish, formatKg } from '@/lib/data';
 import { generateBreadcrumbSchema, generateFAQSchema, getCurrentDateString } from '@/lib/seo';
 
 const TIER_STYLE: Record<string, string> = {
+  'S+': 'border-red-400 text-red-500',
   S: 'border-amber-400 text-amber-500',
   A: 'border-violet-400 text-violet-500',
   B: 'border-sky-400 text-sky-500',
@@ -20,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const rod = getRodBySlug(slug);
   if (!rod) return {};
-  const weight = rod.maxWeightKg >= 999999 ? 'unlimited weight' : `~${rod.maxWeightKg.toLocaleString()} kg max weight`;
+  const weight = `${formatKg(rod.maxWeightKg)} max weight`;
   return {
     title: `${rod.name} — Hole Fishing Rod Guide`,
     description: `${rod.name} in Hole Fishing (Roblox): ${rod.priceText}, tier ${rod.tier}, ${weight}. ${rod.note}`,
@@ -62,9 +63,7 @@ export default async function RodDetailPage({ params }: { params: Promise<{ slug
     {
       question: `What is the max weight of the ${rod.name}?`,
       answer:
-        rod.maxWeightKg >= 999999
-          ? `The ${rod.name} has effectively unlimited weight capacity — nothing in the game escapes it on weight alone.`
-          : `The ${rod.name} handles fish up to ~${rod.maxWeightKg.toLocaleString()} kg. Heavier fish escape with the "too strong" message — upgrade before targeting them.`,
+        `The ${rod.name} handles fish up to ${formatKg(rod.maxWeightKg)}. Heavier fish escape with the "too strong" message — upgrade before targeting them.`,
     },
   ];
   const faq = generateFAQSchema(FAQS);
@@ -93,7 +92,7 @@ export default async function RodDetailPage({ params }: { params: Promise<{ slug
         </div>
         <div className="p-4 rounded-xl border border-gray-200 dark:border-gray-800 text-center">
           <p className="text-xs text-gray-400 mb-1">Max Weight</p>
-          <p className="font-mono font-bold">{rod.maxWeightKg >= 999999 ? '∞' : `~${rod.maxWeightKg.toLocaleString()} kg`}</p>
+          <p className="font-mono font-bold">{formatKg(rod.maxWeightKg)}</p>
         </div>
         <div className="p-4 rounded-xl border border-gray-200 dark:border-gray-800 text-center">
           <p className="text-xs text-gray-400 mb-1">Ladder Position</p>

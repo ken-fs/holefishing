@@ -88,6 +88,12 @@ export function getRodBySlug(slug: string): Rod | undefined {
   return rods.find((r) => r.slug === slug);
 }
 
+/** 承重展示：1.3M kg / 320,000 kg（梯子已超百万 kg，不再有「∞」档） */
+export function formatKg(kg: number): string {
+  if (kg >= 1_000_000) return `${+(kg / 1_000_000).toFixed(1)}M kg`;
+  return `${kg.toLocaleString('en-US')} kg`;
+}
+
 export function getCodes(): { note: string; active: { code: string; reward: string }[]; expired: { code: string; reward: string }[] } {
   return codesData;
 }

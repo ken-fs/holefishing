@@ -35,8 +35,8 @@ function rodAdviceFor(fish: Fish): { text: string; rodSlug?: string; rodName?: s
   const byRarity: Record<string, string> = {
     Common: 'Any rod lands commons — including the free Starter Rod you spawn with.',
     Uncommon: 'Any rod works, though the Stone Rod ($1,000) makes uncommons noticeably more consistent.',
-    Rare: 'Rares show up once your hole has grown a few sizes. A Golden Rod ($7,500) or better is recommended.',
-    Epic: 'Epics are heavy and luck-gated — aim for the Cactus Rod (~$150K) or Pirate Rod ($2M) tier before farming them.',
+    Rare: 'Rares show up once your hole has grown a few sizes. A Golden Rod ($2,500) or better is recommended.',
+    Epic: 'Epics are heavy and luck-gated — aim for the Knight Rod ($150K) or Pirate Rod ($2M) tier before farming them.',
     Legendary: 'Legendaries need serious weight capacity and stacked luck. Magic Rod tier (~$4.8M) or better, plus index milestones.',
     Mythical: 'Mythicals are end-game catches. Bring a Candy Cane Rod (~$26M) or better and every luck source you own.',
     Secret: 'Secrets are the rarest rolls in the game — Hacker Rod territory with maxed luck stacking (index + potions + big hole).',

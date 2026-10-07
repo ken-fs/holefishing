@@ -28,6 +28,10 @@ const CATCH_PRESETS = [
 ];
 
 function fmt(n: number): string {
+  // 梯子顶端已到 $10Qi（1e19），游戏内同样用 T / Qa / Qi 缩写
+  if (n >= 1e18) return `$${(n / 1e18).toFixed(2)}Qi`;
+  if (n >= 1e15) return `$${(n / 1e15).toFixed(2)}Qa`;
+  if (n >= 1e12) return `$${(n / 1e12).toFixed(2)}T`;
   if (n >= 1e9) return `$${(n / 1e9).toFixed(2)}B`;
   if (n >= 1e6) return `$${(n / 1e6).toFixed(2)}M`;
   if (n >= 1e3) return `$${(n / 1e3).toFixed(1)}K`;
@@ -130,8 +134,8 @@ export default function CalculatorClient() {
             <a href="/server-hole" className="underline">Server Hole guide</a>.
             {UNVERIFIED_COUNT > 0 && (
               <>
-                {' '}Excludes {UNVERIFIED_COUNT} rods whose shop price is still being verified (Night, Magma, Alien, Royal) —
-                see the <a href="/rods" className="underline">full ladder</a>.
+                {' '}Leaves out {UNVERIFIED_COUNT} rods with no confirmed cash price (unread prices, Robux-only, spin-wheel, event
+                and removed rods) — see the <a href="/rods" className="underline">full ladder</a>.
               </>
             )}
           </p>

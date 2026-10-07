@@ -116,7 +116,7 @@ export default function UpgradesPage() {
 
         <h2>The Correct Upgrade Order</h2>
         <ol>
-          <li><strong>Rod</strong> — first upgrade of any session where catches are escaping. The Stone Rod ($1,000) and Golden Rod ($7,500) come fast; see the <Link href="/rods">tier list</Link>.</li>
+          <li><strong>Rod</strong> — first upgrade of any session where catches are escaping. The Stone Rod ($1,000), Golden Rod ($2,500) and Cactus Rod ($7,500) come fast; see the <Link href="/rods">tier list</Link>.</li>
           <li><strong>Sell value</strong> — a multiplier on every single sale, forever. Buy a tier whenever it costs less than one Server Hole session.</li>
           <li><strong>Hole size</strong> — your luck engine and the source of rarer species. Grow it only when your rod can handle the heavier spawns.</li>
           <li><strong>Backpack</strong> — convenience. Buy it when shop trips start interrupting your Server Hole timing, not before.</li>
@@ -124,7 +124,7 @@ export default function UpgradesPage() {
 
         <h2>What Each Track Actually Buys You</h2>
         <ul>
-          <li><strong>Rod tiers</strong> are the biggest single power spikes — the jump from Tree Rod (~$650K, 250 kg) to <Link href="/rods">Pirate Rod</Link> ($2M, 1,200 kg) unlocks turtles and big sharks outright.</li>
+          <li><strong>Rod tiers</strong> are the biggest single power spikes — the jump from Magma Rod ($650K, 600 kg) to <Link href="/rods">Pirate Rod</Link> ($2M, 1,200 kg) unlocks turtles and big sharks outright.</li>
           <li><strong>Hole size</strong> is the only upgrade that changes <em>what species you see</em>, which is why it feeds the <Link href="/fish">index</Link> and its permanent +10 index luck milestones.</li>
           <li><strong>Sell value</strong> is the only upgrade that pays out on a catch you already would have caught anyway.</li>
           <li><strong>Backpack</strong> is the only upgrade with no effect on income per cast.</li>
