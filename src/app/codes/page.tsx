@@ -59,7 +59,7 @@ export default function CodesPage() {
     {
       question: 'When will Hole Fishing release its first codes?',
       answer:
-        'No official date has been announced — but the redemption box shipping in late September means the infrastructure is ready, and the developers have teased temporary "admin codes" during scheduled Admin Abuse events (the next one is Sunday, October 4, 2026, 8:00 AM). That event window is the most likely first code drop.',
+        'No official date yet. The redemption box has been in the game since late September, and the developers have teased "admin codes" in chat before — but the big Oct 4, 2026 Admin Abuse came and went without a code (it ended with a x20 luck finale instead). The next Admin Abuse or a group milestone is still the most likely moment for a first code.',
     },
     {
       question: 'Are the Hole Fishing codes on other websites real?',
@@ -146,11 +146,11 @@ export default function CodesPage() {
           <li>The sites listing them describe redemption with template wording (&quot;if Hole Fishing has a code menu&quot;) — they have not seen the real one in the Exclusive Store.</li>
           <li>The &quot;Hole Fishing codes&quot; YouTube videos behind these lists never show a successful redemption — one creator types strings like FIRST, UNDERWATER and finally &quot;THANKS FOR WATCHING&quot; into the box with zero results.</li>
           <li>
-            The only real code talk: during scheduled <Link href="/updates" className="underline">Admin Abuse events</Link>,
+            The only real code talk: during scheduled <Link href="/events" className="underline">Admin Abuse events</Link>,
             the developers have teased temporary &quot;admin codes&quot; in chat. No code string has been shown working on
-            screen yet — if one is, it goes straight into the Active Codes box above. The next scheduled Admin
-            Abuse window is <strong>Sunday, October 4, 2026, 8:00 AM</strong> (per the official game page Events tab) —
-            that is the window to watch.
+            screen yet — if one is, it goes straight into the Active Codes box above. We watched the full{' '}
+            <strong>Oct 4, 2026 Admin Abuse</strong> (about an hour of mutations and luck boosts, hosted by the dev in
+            chat): <strong>no code was given out</strong>. The next Admin Abuse is the window to watch.
           </li>
         </ul>
       </section>
@@ -209,8 +209,8 @@ export default function CodesPage() {
         </p>
         <p>
           That sequencing is normal for Roblox simulators: the redemption UI ships in a systems update, then the first
-          code strings arrive with a milestone celebration or a scheduled Admin Abuse event. With the box already
-          in-game and an Admin Abuse event scheduled for October 4, a first code drop looks close rather than
+          code strings arrive with a milestone celebration or a scheduled Admin Abuse event. The Oct 4 Admin Abuse
+          went by without one, but with the box already in-game, a first code drop still looks close rather than
           hypothetical. A group with {config.stats.favorites} favourites and a {fmt(groupMembers)}-member community
           now has every reason to use it.
         </p>
