@@ -15,6 +15,8 @@ const GUIDE_LINKS = [
   { href: '/rods', label: 'Rod Tier List' },
   { href: '/fish', label: 'Fish Index' },
   { href: '/server-hole', label: 'Server Hole' },
+  { href: '/events', label: 'Events' },
+  { href: '/baits', label: 'Baits' },
   { href: '/secret-fish', label: 'Secret Fish' },
 ];
 

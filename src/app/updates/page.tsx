@@ -6,8 +6,8 @@ import { generateSEOMetadata, generateBreadcrumbSchema, getCurrentDateString } f
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Updates (${getCurrentDateString()}) — Patch Notes & Events`,
   description:
-    'Latest Hole Fishing updates: the 🎣 Baits update (Sept 27, 2026), the ☯️ Yin-Yang update, the 🏜️ Desert Event, new fish, rod changes and patch notes.',
-  keywords: ['hole fishing update', 'hole fishing baits update', 'hole fishing desert event', 'hole fishing patch notes', 'hole fishing new update'],
+    'Latest Hole Fishing updates: the Oct 4 update and Admin Abuse (ice, void and burning mutations, x20 luck), the new rod ladder up to $10Qi, the Baits update and patch notes.',
+  keywords: ['hole fishing update', 'hole fishing new update', 'hole fishing admin abuse', 'hole fishing october update', 'hole fishing baits update', 'hole fishing patch notes'],
   path: '/updates',
 });
 
@@ -44,22 +44,37 @@ export default function UpdatesPage() {
 
       <article className="mb-8 p-5 rounded-xl border border-sky-300 dark:border-sky-800 bg-sky-50 dark:bg-sky-950/20">
         <div className="flex items-center gap-2 mb-2">
-          <span className="text-xs px-2 py-0.5 rounded-full bg-sky-400/20 text-sky-600 dark:text-sky-400 font-bold uppercase border border-sky-400/40">Scheduled</span>
-          <h2 className="text-xl font-black">🎉 New Content + Admin Abuse — Sunday, Oct 4, 2026</h2>
+          <span className="text-xs px-2 py-0.5 rounded-full bg-sky-400/20 text-sky-600 dark:text-sky-400 font-bold uppercase border border-sky-400/40">Latest</span>
+          <h2 className="text-xl font-black">🐟 Oct 4 Update + Admin Abuse (Oct 4, 2026)</h2>
         </div>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-          The Events tab on the official Roblox game page lists a scheduled event:{' '}
-          <strong>&quot;NEW CONTENT + ADMIN ABUSE&quot; — Sun, Oct 4, 8:00 AM</strong> (time as shown on the game page), with the
-          description <strong>&quot;New rods, fish and more!&quot;</strong> This is the first confirmed content drop since the Baits update.
+          The scheduled &quot;NEW CONTENT + ADMIN ABUSE&quot; event happened on Oct 4. The Roblox game API shows two patches that
+          day, and the title went from <strong>[🎣BAITS]</strong> to <strong>[NOW]</strong> to <strong>[🐟UPDATE]</strong>.
         </p>
+        <p className="text-sm font-bold mb-1">What the Admin Abuse looked like</p>
+        <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2 list-disc list-inside mb-3">
+          <li>It ran for about an hour, hosted in chat by the developer <strong>JuanArtxz</strong> (&quot;ADMIN ABUSE IS LIVE! ICE FISH ONLY&quot;).</li>
+          <li>Server-wide mutations rotated through it: <strong>Ice</strong>, <strong>Burning</strong>, <strong>Huge + Electric</strong>, <strong>Big</strong> and <strong>Void</strong>.</li>
+          <li>Boosts stacked on top: <strong>Global Luck x5 → x6</strong>, then <strong>x20 for the last minute</strong>, plus <strong>Sell Cash x2/x3</strong> and <strong>Double Cast</strong>.</li>
+          <li>The dev teased &quot;a surprise at the end&quot;, which turned out to be the x20 luck finale. <strong>No code was posted</strong> — the <Link href="/codes" className="underline">codes page</Link> still has zero working codes.</li>
+        </ul>
+        <p className="text-sm font-bold mb-1">What the shop looks like now (Oct 4–5 footage)</p>
+        <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2 list-disc list-inside mb-3">
+          <li><strong>The rod ladder is much longer than older guides say.</strong> Past the $320M Hacker Rod it keeps going: Bluesteel ($26B), Candy Rod ($720B), Toy ($55T), Jungle ($96T), Radioactive ($200T), Beach ($240T), then Moon, Frosty, Planet and the <strong>Rainbow Godly Rod ($10Qi, 6.5M kg)</strong>. Full list on the <Link href="/rods" className="underline">rod tier list</Link>.</li>
+          <li><strong>Early prices are lower</strong> than we had them (Golden $2,500, Cactus $7,500), there&apos;s a <strong>Knight Rod</strong> at $150,000, and the Leaf and Night rods aren&apos;t in the shop.</li>
+          <li>The <strong>Bait Shop has 9 baits</strong> now, up to the R$1,200 Holo Bait (guaranteed Ethereal+). See the <Link href="/baits" className="underline">bait guide</Link>.</li>
+          <li>Two Robux-only rods sit on lobby pedestals: the <strong>Godly Rod</strong> and the limited-stock <strong>Void Ghost Rod</strong> (944/999 left on Oct 6). The <strong>Lucky Rod</strong> only comes from the spin wheel.</li>
+          <li>Gamepasses on screen: <strong>Speedy Fisher</strong> (x2 speed, R$160) and <strong>Infinite Backpack</strong> (R$160).</li>
+        </ul>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-          Why it matters: Admin Abuse windows are exactly where the devs have teased temporary &quot;admin codes&quot; in
-          chat (first seen Sept 27). If a real code string appears during this event, it lands on the{' '}
-          <Link href="/codes" className="underline">codes page</Link> within hours. New rods and fish from the drop go into the{' '}
-          <Link href="/rods" className="underline">Rod Tier List</Link> and <Link href="/fish" className="underline">Fish Index</Link> once verified on footage.
+          One honest caveat: both videos we read were recorded right around the patch (the in-game &quot;NEXT UPDATE&quot; timer was
+          at 1–2 minutes), and the top rods were already in the shop before it hit. So we can&apos;t say exactly which items this
+          update added — only what the shop looks like now. For how the timed events work, see the{' '}
+          <Link href="/events" className="underline">events guide</Link>.
         </p>
         <p className="text-xs text-gray-500">
-          Source: official Roblox game page Events tab, checked October 1, 2026.
+          Sources: Roblox game API (Oct 4 patches + title changes), Maskednoobgy&apos;s Oct 4 live stream of the Admin Abuse, and
+          G0Dx&apos;s Oct 4 fresh-account run (full Rods and Bait Shop scroll). Shop prices are read straight off the game screen.
         </p>
       </article>
 
@@ -83,8 +98,8 @@ export default function UpdatesPage() {
           <li><strong>In-game polls</strong> — players vote on upcoming features (a &quot;2x cast?&quot; poll was live mid-session).</li>
         </ul>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-          Also visible: a <strong>Knight Rod</strong> pedestal (300 KG, R$64 Robux skip-price — cash price unverified) and a{' '}
-          <strong>Godly Rod</strong> pedestal (800 KG, Reel x2.00, 399 luck, price not shown). New fish sightings from this
+          Also visible: a <strong>Knight Rod</strong> pedestal (300 kg, a Robux shortcut — its cash price is $150,000 in the
+          shop) and a <strong>Godly Rod</strong> pedestal (800 kg, x2.00 reel — a Robux-only rod, R$264–329 on later footage). New fish sightings from this
           session — <strong>Minnow</strong> and <strong>Sturgeon</strong> — are in the <Link href="/fish" className="underline">Fish Index</Link> as unverified.
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
@@ -92,10 +107,10 @@ export default function UpdatesPage() {
           (input box + Redeem button, "Join our group &amp; community for more codes!") — the first confirmed redemption UI,
           seen on Sept 28 footage, though no working code string exists yet (tracked on the <Link href="/codes" className="underline">codes page</Link>).
           ② The earlier "Lava Rod gamepass (R$199)" note was a misread of the same Sept 15 footage — the Lava Rod is a{' '}
-          <strong>$45,000,000,000 cash shop rod</strong> (Reel Speed x6.90, 90,000 kg); the "199" on its pedestal is its luck
-          stat, not a Robux price. A <strong>Cosmic Rod</strong> sits right after it at $600,000,000,000 (x7.80, 150,000 kg),
-          with at least one further slot ("Toy Rod", unread price). Both are now in the <Link href="/rods" className="underline">Rod Tier List</Link>{' '}
-          as single-source estimates.
+          <strong>$45,000,000,000 cash shop rod</strong> (Reel Speed x6.90, 90,000 kg); the &quot;199&quot; on its pedestal is a Robux
+          shortcut for the rod, not a separate gamepass. A <strong>Cosmic Rod</strong> sits right after it at $600,000,000,000 (x7.80, 150,000 kg),
+          with at least one further slot (&quot;Toy Rod&quot;). <em>Oct 7 note: the Oct 4 shop puts both after a $720B rod, so these
+          Sept 15 prices look out of date — they&apos;re marked unconfirmed on the <Link href="/rods" className="underline">Rod Tier List</Link>.</em>
         </p>
         <p className="text-xs text-gray-500">
           Source: Roblox game API (title + update timestamp) and Sept 27, 2026 creator gameplay footage. Bait stock,
@@ -180,11 +195,11 @@ export default function UpdatesPage() {
         <h2 className="text-xl font-black mb-2">What to Watch For</h2>
         <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2 list-disc list-inside">
           <li><strong>Event rotations</strong> — confirmed pattern: the 🏜️ Desert Event (Sept 15–21) rotated into the ☯️ Yin-Yang update. Expect the current event&apos;s themed content to leave when the next one lands.</li>
-          <li><strong>Codes</strong> — the redemption box is now confirmed in-game (Exclusive Store → Codes, Sept 28 footage, verified Oct 2), but no working code string exists: aggregator lists (BIGGERHOLE, MUTATIONHUNT, DESERTCAST, RAREFISH, CASTANDSELL) are fabricated and the &quot;codes&quot; YouTube videos never show a successful redemption. During Admin Abuse events the dev teased temporary &quot;admin codes&quot; in chat (Sept 27) — the <strong>Oct 4, 8:00 AM</strong> window is the prime suspect for the first real drop. Any verified code lands on the <Link href="/codes" className="underline">codes page</Link>.</li>
-          <li><strong>Bait economy</strong> — the new Bait Shop restocks on a timer; watch whether rare baits (guaranteed-mutation tier) rotate on a schedule.</li>
-          <li><strong>Rebirth scaling</strong> — first reward is x1.3 cash; later thresholds and boosts unverified.</li>
+          <li><strong>Codes</strong> — the redemption box is now confirmed in-game (Exclusive Store → Codes, Sept 28 footage, verified Oct 2), but no working code string exists: aggregator lists (BIGGERHOLE, MUTATIONHUNT, DESERTCAST, RAREFISH, CASTANDSELL) are fabricated and the &quot;codes&quot; YouTube videos never show a successful redemption. The dev has teased &quot;admin codes&quot; in chat before (Sept 27), but the Oct 4 Admin Abuse came and went without one. Any verified code lands on the <Link href="/codes" className="underline">codes page</Link>.</li>
+          <li><strong>Bait economy</strong> — the Bait Shop restocks every few minutes and the rare Robux baits are often sold out. Prices and odds are on the <Link href="/baits" className="underline">bait guide</Link>.</li>
+          <li><strong>Rebirth scaling</strong> — first reward is x1.3 cash; a maxed-out player&apos;s rebirth screen shows x3 Cash Boost. Steps in between are unverified.</li>
           <li><strong>New secrets</strong> — the index currently hides two secret slots (Glacial Wyrm, Alien). Updates historically add more.</li>
-          <li><strong>Rod ladder extensions</strong> — confirmed real: the ladder continues past the Hacker Rod with at least Lava ($45B) and Cosmic ($600B) on late-game shop footage. The gap between $320M and $45B is unmapped — more mid-tier rods almost certainly exist.</li>
+          <li><strong>Rod prices still unread</strong> — Tree, Magic, Lava, Cosmic, Moon, Frosty and Planet only showed up already owned on the Oct footage. We&apos;ll fill them in once someone scrolls the shop without owning them.</li>
         </ul>
       </article>
 

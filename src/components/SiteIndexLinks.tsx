@@ -21,6 +21,8 @@ const GUIDES = [
   { href: '/calculator/', title: 'Progression Calculator' },
   { href: '/secret-fish/', title: 'Secret Fish' },
   { href: '/server-hole/', title: 'Server Hole' },
+  { href: '/events/', title: 'Events & Admin Abuse' },
+  { href: '/baits/', title: 'Bait Guide' },
   { href: '/faq/', title: 'FAQ' },
   { href: '/community/', title: 'Community & Group' },
   { href: '/scripts/', title: 'Scripts & Bans' },

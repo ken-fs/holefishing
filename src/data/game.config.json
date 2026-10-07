@@ -119,6 +119,16 @@
       "priority": "0.8"
     },
     {
+      "path": "/baits",
+      "title": "Bait Guide",
+      "priority": "0.8"
+    },
+    {
+      "path": "/events",
+      "title": "Events Guide",
+      "priority": "0.8"
+    },
+    {
       "path": "/faq",
       "title": "FAQ",
       "priority": "0.7"
