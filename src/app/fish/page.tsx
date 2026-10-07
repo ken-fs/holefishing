@@ -25,13 +25,16 @@ export default function FishIndexPage() {
         {fish.length} fish documented — day &amp; night catches, all rarities. Updated {getCurrentDateString()}.
       </p>
 
-      {RARITY_ORDER.map((rarity) => {
+      {/* 稀有度未定的未验证鱼（如 Unknown）排在最后，否则图鉴和内链都漏掉它们 */}
+      {[...RARITY_ORDER, ...new Set(fish.map((f) => f.rarity).filter((r) => !(RARITY_ORDER as readonly string[]).includes(r)))].map((rarity) => {
         const group = fish.filter((f) => f.rarity === rarity);
         if (!group.length) return null;
         return (
           <section key={rarity} className="mb-8">
             <h2 className="text-xl font-black mb-3 flex items-center gap-2">
-              <span className={`text-xs px-2 py-0.5 rounded-full border font-bold uppercase ${RARITY_COLORS[rarity]}`}>{rarity}</span>
+              <span className={`text-xs px-2 py-0.5 rounded-full border font-bold uppercase ${RARITY_COLORS[rarity] ?? 'border-gray-300 text-gray-500 dark:border-gray-600'}`}>
+                {rarity === 'Unknown' ? 'Rarity unknown' : rarity}
+              </span>
               <span className="text-sm text-gray-400 font-normal">({group.length})</span>
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -64,8 +67,7 @@ export default function FishIndexPage() {
           page. Community wikis covering the same game deliberately publish only &quot;illustrative&quot; examples rather than a
           full catalog. We publish what creators have actually shown on camera and mark anything single-source as{' '}
           <span className="text-[10px] px-1.5 py-0.5 rounded border border-amber-400/50 text-amber-600 dark:text-amber-400 font-semibold">unverified</span>.
-          Species sighted but not yet confirmed — including <strong>Stingray</strong>, <strong>Humpback Whale</strong> and{' '}
-          <strong>Mackerel</strong> — are being tracked and will get pages once a second source lands.
+          Species sighted but not yet confirmed — including <strong>Stingray</strong> and <strong>Humpback Whale</strong> — are being tracked and will get pages once a second source lands.
         </p>
         <h2>Day vs Night Fishing</h2>
         <p>

@@ -10,7 +10,8 @@ import configData from '@/data/game.config.json';
 export interface Fish {
   slug: string;
   name: string;
-  rarity: 'Common' | 'Uncommon' | 'Rare' | 'Epic' | 'Legendary' | 'Mythical' | 'Secret';
+  /** Unknown = 未验证鱼，稀有度还没确认 */
+  rarity: 'Common' | 'Uncommon' | 'Rare' | 'Epic' | 'Legendary' | 'Mythical' | 'Secret' | 'Unknown';
   time: 'day' | 'night' | 'any';
   valueRange: string;
   weightKg?: number;

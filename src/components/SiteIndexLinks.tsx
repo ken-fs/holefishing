@@ -63,6 +63,21 @@ export default function SiteIndexLinks() {
               </div>
             );
           })}
+          {/* 稀有度未定（rarity 不在 RARITY_ORDER，如 Unknown）的未验证鱼也要有入口，否则成孤岛页（10-07 GSC 查出 7 页从未被发现） */}
+          {fish.some((f) => !(RARITY_ORDER as readonly string[]).includes(f.rarity)) && (
+            <div className="flex flex-wrap items-center gap-1.5">
+              <span className="text-[10px] px-2 py-0.5 rounded-full border font-bold uppercase mr-1 border-gray-300 text-gray-500 dark:border-gray-600">
+                Unverified
+              </span>
+              {fish
+                .filter((f) => !(RARITY_ORDER as readonly string[]).includes(f.rarity))
+                .map((f) => (
+                  <Link key={f.slug} href={`/fish/${f.slug}`} className={chip}>
+                    {f.name}
+                  </Link>
+                ))}
+            </div>
+          )}
         </div>
       </section>
 

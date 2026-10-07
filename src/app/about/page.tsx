@@ -1,6 +1,10 @@
 import type { Metadata } from 'next';
 
-export const metadata: Metadata = { title: 'About', description: 'About this Hole Fishing fan guide site.' };
+export const metadata: Metadata = {
+  title: 'About',
+  description: 'About this Hole Fishing fan guide site.',
+  alternates: { canonical: '/about/' },
+};
 
 export default function AboutPage() {
   return (
