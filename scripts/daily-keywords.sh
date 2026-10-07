@@ -67,27 +67,25 @@ fi
 # Google 侧的收录只能靠 sitemap + 内链 + 外链，没有可用的推送 API。
 KEY="e806fbee77f140daaac27f6e1193da54"
 if [ -f "$PROJ/out/sitemap.xml" ]; then
-  # 整段交给 python：macOS 的 sed 对 \? 支持不可靠，之前踩过（标签没剥掉 → IndexNow 400）
-  PAYLOAD=$(SITEMAP="$PROJ/out/sitemap.xml" KEY="$KEY" python3 - 2>>"$LOG" <<'PYEOF'
-import json, os, re
-urls = re.findall(r'<loc>([^<]+)</loc>', open(os.environ['SITEMAP'], encoding='utf-8').read())
-print(json.dumps({
-    'host': 'holefishing.xyz',
-    'key': os.environ['KEY'],
-    'keyLocation': f"https://holefishing.xyz/{os.environ['KEY']}.txt",
-    'urlList': urls,
-}))
-PYEOF
-)
+  # 只用系统 grep/sed，不用 python：cron 下 Homebrew python3 没有 ~/Desktop 的 TCC 权限，
+  # 读 sitemap 直接 PermissionError（10-01 ~ 10-06 每天 payload 为空的根因）。
+  # 不用 sed 的 \?（macOS 上不可靠，之前标签没剥掉 → IndexNow 400）：grep -o 只取整段 <loc>…</loc>，再剥标签。
+  URLS=$(grep -o '<loc>[^<]*</loc>' "$PROJ/out/sitemap.xml" 2>>"$LOG" | sed -e 's/<[^>]*>//g' -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')
+  N_URLS=$(printf '%s\n' "$URLS" | grep -c '^https://')
+  if [ "$N_URLS" -gt 0 ]; then
+    URL_LIST=$(printf '%s\n' "$URLS" | grep '^https://' | sed 's/.*/"&"/' | paste -sd, -)
+    PAYLOAD="{\"host\":\"holefishing.xyz\",\"key\":\"$KEY\",\"keyLocation\":\"https://holefishing.xyz/$KEY.txt\",\"urlList\":[$URL_LIST]}"
+  else
+    PAYLOAD=""
+  fi
   echo "$PAYLOAD" > /tmp/holefishing-indexnow.json
   if [ -z "$PAYLOAD" ]; then
-    # payload 为空 = python 没跑成（stderr 已并入 LOG）。以前只记 "HTTP 400 ( URLs)"
-    # 看不出是 payload 空还是接口拒，诊断信息全丢给了 cron mail。
-    echo "⚠️ INDEXNOW_FAILED：payload 为空（sitemap=$(wc -c < "$PROJ/out/sitemap.xml" 2>/dev/null | tr -d ' ')B, python3=$(command -v python3), urls=$(grep -c '<loc>' "$PROJ/out/sitemap.xml" 2>/dev/null)）" >> "$LOG"
+    # payload 为空 = sitemap 读不到或没有 <loc>（stderr 已并入 LOG）
+    echo "⚠️ INDEXNOW_FAILED：payload 为空（sitemap=$(wc -c < "$PROJ/out/sitemap.xml" 2>/dev/null | tr -d ' ')B, urls=$(grep -c '<loc>' "$PROJ/out/sitemap.xml" 2>/dev/null)）" >> "$LOG"
   else
   CODE=$(curl -s -o /dev/null -w '%{http_code}' --max-time 60 -X POST "https://api.indexnow.org/indexnow" \
     -H "Content-Type: application/json; charset=utf-8" --data-binary @/tmp/holefishing-indexnow.json 2>/dev/null)
-  echo "IndexNow: HTTP $CODE ($(python3 -c "import json;print(len(json.load(open('/tmp/holefishing-indexnow.json'))['urlList']))" 2>>"$LOG") URLs)" >> "$LOG"
+  echo "IndexNow: HTTP $CODE ($N_URLS URLs)" >> "$LOG"
   [ "$CODE" = "200" ] || echo "⚠️ INDEXNOW_FAILED：HTTP $CODE" >> "$LOG"
   fi
 fi
