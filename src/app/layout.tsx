@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import { Rubik, Inter } from 'next/font/google';
+import localFont from 'next/font/local';
 import { getGameConfig } from '@/lib/data';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -9,8 +9,11 @@ import './globals.css';
 
 const config = getGameConfig();
 
-const display = Rubik({ subsets: ['latin'], weight: ['500', '600', '700'], variable: '--font-display' });
-const body = Inter({ subsets: ['latin'], variable: '--font-body' });
+// Fonts are self-hosted (src/fonts, OFL). next/font/google downloads them during the build,
+// and when that download flakes on Cloudflare's builders the whole build fails
+// ("Can't resolve '@vercel/turbopack-next/internal/font/google/font'", 2026-10-06).
+const display = localFont({ src: '../fonts/rubik-latin-wght-normal.woff2', weight: '300 900', variable: '--font-display' });
+const body = localFont({ src: '../fonts/inter-latin-wght-normal.woff2', weight: '100 900', variable: '--font-body' });
 
 export const metadata: Metadata = {
   metadataBase: new URL(config.seo.baseUrl),
