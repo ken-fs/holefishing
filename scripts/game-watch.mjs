@@ -25,16 +25,20 @@ function notify(title, body, sound = 'Glass') {
   } catch {}
 }
 
-// Roblox API 偶发瞬时 SSL 错误 → 3 次重试
+// Roblox API 偶发瞬时 SSL 错误 → 短重试；429 限流 → 长等待再试。
+// 2026-10-08：游戏雷达每天 13 点前后扫 Roblox（几百个游戏详情），同一 IP 撞上 13:17 这次监控被 429，
+// 原来只等 3 / 6 秒就放弃，整点漏检。现在 429 等 30 / 60 / 90 / 120 秒，最多 5 次。
 async function getJson(url) {
   for (let i = 1; ; i++) {
+    let limited = false;
     try {
       const r = await fetch(url, { signal: AbortSignal.timeout(20000) });
+      limited = r.status === 429;
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
       return await r.json();
     } catch (e) {
-      if (i >= 3) throw new Error(`${url}: ${e.message}`);
-      await new Promise((res) => setTimeout(res, 3000 * i));
+      if (i >= (limited ? 5 : 3)) throw new Error(`${url}: ${e.message}`);
+      await new Promise((res) => setTimeout(res, limited ? 30000 * i : 3000 * i));
     }
   }
 }
