@@ -6,7 +6,7 @@ import { generateSEOMetadata, generateBreadcrumbSchema, getCurrentDateString } f
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Updates (${getCurrentDateString()}) — Patch Notes & Events`,
   description:
-    'Latest Hole Fishing updates: the Oct 4 update and Admin Abuse (ice, void and burning mutations, x20 luck), the new rod ladder up to $10Qi, the Baits update and patch notes.',
+    'Latest Hole Fishing updates: next event is New Content + Admin Abuse on Oct 11 (new rods and fish), plus the Oct 4 update recap, the rod ladder up to $10Qi, the Baits update and patch notes.',
   keywords: ['hole fishing update', 'hole fishing new update', 'hole fishing admin abuse', 'hole fishing october update', 'hole fishing baits update', 'hole fishing patch notes'],
   path: '/updates',
 });
@@ -41,6 +41,33 @@ export default function UpdatesPage() {
           <div className="text-xs text-gray-500 uppercase">Last Game Update</div>
         </div>
       </div>
+
+      <article className="mb-8 p-5 rounded-xl border border-green-300 dark:border-green-800 bg-green-50 dark:bg-green-950/20">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-green-400/20 text-green-600 dark:text-green-400 font-bold uppercase border border-green-400/40">Upcoming</span>
+          <h2 className="text-xl font-black">📅 Next Event: New Content + Admin Abuse (Oct 11, 2026)</h2>
+        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          The official Roblox game page has an event listing up: <strong>&quot;NEW CONTENT + ADMIN ABUSE&quot;</strong> scheduled for{' '}
+          <strong>Sun, Oct 11, 8:00 AM</strong> (the game page shows the time in your local timezone), promising{' '}
+          <strong>&quot;New rods, fish and more!&quot;</strong>
+        </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Based on how the Oct 4 session ran, expect roughly an hour of rotating server-wide mutations (Ice, Burning, Void…),
+          stacking global luck boosts with the biggest multiplier saved for the finale, and sell-cash bonuses. Be online when it
+          starts — the best boosts hit in the last minutes. New rods and fish mean the{' '}
+          <Link href="/rods" className="underline">rod ladder</Link> and the <Link href="/fish" className="underline">Fish Index</Link> will
+          grow; we&apos;ll verify everything off gameplay footage the same day.
+        </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Will a code finally drop? The redemption box has been sitting in the Exclusive Store since late September and the dev
+          teased &quot;admin codes&quot; once before — but the Oct 4 event gave none. We&apos;re watching; any real code lands on the{' '}
+          <Link href="/codes" className="underline">codes page</Link> within hours.
+        </p>
+        <p className="text-xs text-gray-500">
+          Source: the Events listing on the official Roblox game page, checked Oct 8, 2026.
+        </p>
+      </article>
 
       <article className="mb-8 p-5 rounded-xl border border-sky-300 dark:border-sky-800 bg-sky-50 dark:bg-sky-950/20">
         <div className="flex items-center gap-2 mb-2">
