@@ -59,7 +59,7 @@ export default function CodesPage() {
     {
       question: 'When will Hole Fishing release its first codes?',
       answer:
-        'No official date yet. The redemption box has been in the game since late September, and the developers have teased "admin codes" in chat before — but the big Oct 4, 2026 Admin Abuse came and went without a code (it ended with a x20 luck finale instead). The next Admin Abuse or a group milestone is still the most likely moment for a first code.',
+        'No official date yet. The redemption box has been in the game since late September, and the developers have teased "admin codes" in chat before — but the big Oct 4, 2026 Admin Abuse came and went without a code (it ended with a x20 luck finale instead). The next one is the New Content + Admin Abuse on Sunday, Oct 11, 2026 (8 AM PT / 15:00 UTC) — the most likely moment for a first code.',
     },
     {
       question: 'Are the Hole Fishing codes on other websites real?',
@@ -106,6 +106,22 @@ export default function CodesPage() {
             </p>
           </div>
         )}
+      </section>
+
+      {/* 10/11 活动预告——时间来自 Roblox virtual-events API（startUtc 2026-10-11T15:00Z）；活动结束当天改成实况 */}
+      <section className="mb-10 p-5 rounded-xl border border-cyan-300 dark:border-cyan-800 bg-cyan-50 dark:bg-cyan-950/20">
+        <h2 className="text-lg font-bold mb-2">📅 Next Code Window: Admin Abuse on Sunday, Oct 11</h2>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+          The official game page lists <strong>&quot;NEW CONTENT + ADMIN ABUSE&quot;</strong> for{' '}
+          <strong>Sunday, October 11, 2026 at 8 AM PT / 11 AM ET / 4 PM UK</strong> (15:00 UTC), with new rods and
+          fish. The devs have teased &quot;admin codes&quot; around these events before, so this is the most likely
+          moment for the first real Hole Fishing code.
+        </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">
+          No promises — the <Link href="/events" className="underline">Oct 4 Admin Abuse</Link> ended with no code.
+          We&apos;ll be watching this one live: if a code shows up, it goes in the Active Codes box above the same day.
+          New rods and fish will land in the <Link href="/updates" className="underline">updates log</Link>.
+        </p>
       </section>
 
       {/* Roblox variant targeting — direct answer for the "roblox codes" query family */}

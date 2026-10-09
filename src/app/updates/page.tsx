@@ -49,7 +49,7 @@ export default function UpdatesPage() {
         </div>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
           The official Roblox game page has an event listing up: <strong>&quot;NEW CONTENT + ADMIN ABUSE&quot;</strong> scheduled for{' '}
-          <strong>Sun, Oct 11, 8:00 AM</strong> (the game page shows the time in your local timezone), promising{' '}
+          <strong>Sun, Oct 11, 8 AM PT / 11 AM ET / 4 PM UK</strong> (15:00 UTC), promising{' '}
           <strong>&quot;New rods, fish and more!&quot;</strong>
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
