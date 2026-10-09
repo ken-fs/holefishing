@@ -53,6 +53,8 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-QX57H8KJLJ');`}
         </Script>
+        {/* Google AdSense — plain <script> on purpose: next/script adds a data-nscript attribute AdSense warns about */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4969757168101127" crossOrigin="anonymous" />
         {/* Monetag Social Bar */}
         <Script src="https://pl31416016.profitableratecpmnetwork.com/fa/1d/18/fa1d1800bfe5400eb119f31a65c2d9aa.js" strategy="afterInteractive" />
       </head>
