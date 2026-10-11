@@ -12,13 +12,13 @@ export const metadata: Metadata = generateSEOMetadata({
   path: '/codes',
 });
 
-// 里程碑数据来自 Roblox 公开 API（09-30 实测：votes / games / groups 端点）
+// 里程碑数据来自 Roblox 公开 API（09-30 实测：votes / games / groups 端点；10-11 [NOW] 更新后重拉）
 // passed = 经典触发线（均已越过、仍无码）；next = 下一档整数里程碑
 const MILESTONES = [
-  { label: 'Likes', now: 55798, passed: 40000, next: 60000, note: 'Like milestones are the most frequent celebration trigger — 60K is the next round number.' },
-  { label: 'Visits', now: 10942522, passed: 10000000, next: 15000000, note: 'The classic simulator code trigger. 10M came and went on the Baits update with no code drop.' },
-  { label: 'Favorites', now: 377147, passed: 200000, next: 400000, note: 'Favourites milestones are commonly paired with a code drop — 400K is close.' },
-  { label: 'Group members', now: 104145, passed: 100000, next: 125000, note: 'The 67K CCU group crossed 100K members without announcing codes.' },
+  { label: 'Likes', now: 62696, passed: 60000, next: 75000, note: '60K crossed on the Oct 11 "[NOW]" update — no code dropped with it. 75K is the next watch line.' },
+  { label: 'Visits', now: 13833240, passed: 10000000, next: 15000000, note: 'The classic simulator code trigger. 10M and the Baits update both passed with no code; 15M is approaching fast.' },
+  { label: 'Favorites', now: 471644, passed: 400000, next: 500000, note: '400K favorites also crossed without a code — the devs are clearly not milestone-driven. 500K next.' },
+  { label: 'Group members', now: 117885, passed: 100000, next: 125000, note: 'The 67K CCU group crossed 100K members without announcing codes.' },
 ];
 
 // 聚合站 9/26 起集体列出的 5 个「码」——10/2 逐帧实证：游戏已有兑换 UI（Exclusive Store→Codes），但无任何成功兑换画面
@@ -59,7 +59,7 @@ export default function CodesPage() {
     {
       question: 'When will Hole Fishing release its first codes?',
       answer:
-        'No official date yet. The redemption box has been in the game since late September, and the developers have teased "admin codes" in chat before — but the big Oct 4, 2026 Admin Abuse came and went without a code (it ended with a x20 luck finale instead). The next one is the New Content + Admin Abuse on Sunday, Oct 11, 2026 (8 AM PT / 15:00 UTC) — the most likely moment for a first code.',
+        'No official date yet. The redemption box has been in the game since late September, and the developers have teased "admin codes" in chat before — but the big Oct 4, 2026 Admin Abuse came and went without a code (it ended with a x20 luck finale instead), and the Oct 11 New Content + Admin Abuse event (live until Oct 12, 3 PM ET) has not dropped one either so far. We re-check during and after every event.',
     },
     {
       question: 'Are the Hole Fishing codes on other websites real?',
@@ -108,19 +108,20 @@ export default function CodesPage() {
         )}
       </section>
 
-      {/* 10/11 活动预告——时间来自 Roblox virtual-events API（startUtc 2026-10-11T15:00Z）；活动结束当天改成实况 */}
+      {/* 10-11 实况：virtual-events API 确认 NEW CONTENT + ADMIN ABUSE 进行中（15:00Z 起 ~29h，10-12T20:00Z 结束）；结束后补结论 */}
       <section className="mb-10 p-5 rounded-xl border border-cyan-300 dark:border-cyan-800 bg-cyan-50 dark:bg-cyan-950/20">
-        <h2 className="text-lg font-bold mb-2">📅 Next Code Window: Admin Abuse on Sunday, Oct 11</h2>
+        <h2 className="text-lg font-bold mb-2">🔴 LIVE: New Content + Admin Abuse — until Monday, Oct 12 (3 PM ET)</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-          The official game page lists <strong>&quot;NEW CONTENT + ADMIN ABUSE&quot;</strong> for{' '}
-          <strong>Sunday, October 11, 2026 at 8 AM PT / 11 AM ET / 4 PM UK</strong> (15:00 UTC), with new rods and
-          fish. The devs have teased &quot;admin codes&quot; around these events before, so this is the most likely
-          moment for the first real Hole Fishing code.
+          The <strong>&quot;NEW CONTENT + ADMIN ABUSE&quot;</strong> event is running right now — new rods, fish and
+          more, ending <strong>October 12, 2026 at 8 PM UTC</strong> (3 PM ET / noon PT). This is the most likely
+          moment for the first real Hole Fishing code: the devs have teased &quot;admin codes&quot; around these
+          events before.
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400">
-          No promises — the <Link href="/events" className="underline">Oct 4 Admin Abuse</Link> ended with no code.
-          We&apos;ll be watching this one live: if a code shows up, it goes in the Active Codes box above the same day.
-          New rods and fish will land in the <Link href="/updates" className="underline">updates log</Link>.
+          We are watching this one live — if a code shows up during the event, it goes in the Active Codes box above
+          the same hour. New rods and fish will land in the{' '}
+          <Link href="/updates" className="underline">updates log</Link> as they are verified. Past form check: the{' '}
+          <Link href="/events" className="underline">Oct 4 Admin Abuse</Link> ended with no code.
         </p>
       </section>
 
