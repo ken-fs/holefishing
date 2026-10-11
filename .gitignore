@@ -7,3 +7,6 @@ out/
 
 # 部署标记由 prebuild 写入（scripts/write-deploy-marker.mjs），不入库
 public/.well-known/
+
+# TS 增量构建缓存（本地构建产物）
+tsconfig.tsbuildinfo
