@@ -89,7 +89,7 @@ const added = ['name', 'description', 'shout']
   .join('\n');
 if (CODE_RE.test(added)) {
   log('🚨 CODE_SIGNAL');
-  notify('🚨 Hole Fishing 可能上线兑换码', `${changed.join('/')} 变化含 code 字样 → 立即更新 codes.json（详情 ${LOG}）`, 'Sosumi');
+  notify('🚨 数据更新提醒', `${changed.join('/')} 变化含 code 字样 → 立即更新 codes.json（详情 ${LOG}）`, 'Sosumi');
 } else {
-  notify('Hole Fishing 游戏有变化', `${changed.join(' / ')}：${now.name}（详情 ${LOG}）`);
+  notify('数据有变化', `${changed.join(' / ')}：${now.name}（详情 ${LOG}）`);
 }
