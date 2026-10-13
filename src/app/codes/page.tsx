@@ -12,13 +12,13 @@ export const metadata: Metadata = generateSEOMetadata({
   path: '/codes',
 });
 
-// 里程碑数据来自 Roblox 公开 API（09-30 实测：votes / games / groups 端点；10-11 [NOW] 更新后重拉）
+// 里程碑数据来自 Roblox 公开 API（09-30 实测：votes / games / groups 端点；10-14 重拉）
 // passed = 经典触发线（均已越过、仍无码）；next = 下一档整数里程碑
 const MILESTONES = [
-  { label: 'Likes', now: 62696, passed: 60000, next: 75000, note: '60K crossed on the Oct 11 "[NOW]" update — no code dropped with it. 75K is the next watch line.' },
-  { label: 'Visits', now: 13833240, passed: 10000000, next: 15000000, note: 'The classic simulator code trigger. 10M and the Baits update both passed with no code; 15M is approaching fast.' },
-  { label: 'Favorites', now: 471644, passed: 400000, next: 500000, note: '400K favorites also crossed without a code — the devs are clearly not milestone-driven. 500K next.' },
-  { label: 'Group members', now: 117885, passed: 100000, next: 125000, note: 'The 67K CCU group crossed 100K members without announcing codes.' },
+  { label: 'Likes', now: 63660, passed: 60000, next: 75000, note: '60K crossed on the Oct 11 "[NOW]" update — no code dropped with it. 75K is the next watch line.' },
+  { label: 'Visits', now: 14245720, passed: 10000000, next: 15000000, note: 'The classic simulator code trigger. 10M and the Baits update both passed with no code; 15M is approaching fast.' },
+  { label: 'Favorites', now: 482663, passed: 400000, next: 500000, note: '400K favorites also crossed without a code — the devs are clearly not milestone-driven. 500K next.' },
+  { label: 'Group members', now: 119448, passed: 100000, next: 125000, note: 'The 67K CCU group crossed 100K members without announcing codes.' },
 ];
 
 // 聚合站 9/26 起集体列出的 5 个「码」——10/2 逐帧实证：游戏已有兑换 UI（Exclusive Store→Codes），但无任何成功兑换画面
@@ -35,7 +35,7 @@ export default function CodesPage() {
   const config = getGameConfig();
   const hasCodes = codes.active.length > 0;
   const version = config.game.currentVersion;
-  const groupMembers = 104145; // Roblox groups API, 2026-09-30
+  const groupMembers = 119448; // Roblox groups API, 2026-10-14
   const breadcrumb = generateBreadcrumbSchema([
     { name: 'Home', url: '/' },
     { name: 'Codes', url: '/codes' },
@@ -59,7 +59,7 @@ export default function CodesPage() {
     {
       question: 'When will Hole Fishing release its first codes?',
       answer:
-        'No official date yet. The redemption box has been in the game since late September, and the developers have teased "admin codes" in chat before — but the big Oct 4, 2026 Admin Abuse came and went without a code (it ended with a x20 luck finale instead), and the Oct 11 New Content + Admin Abuse event (live until Oct 12, 3 PM ET) has not dropped one either so far. We re-check during and after every event.',
+        'No official date yet. The redemption box has been in the game since late September, and the developers have teased "admin codes" in chat before — but the big Oct 4, 2026 Admin Abuse came and went without a code (it ended with a x20 luck finale instead), and the Oct 11 New Content + Admin Abuse event (ended Oct 12) had no code either. The next chance is the New Content + Admin Abuse event on Oct 18, 2026 at 15:00 UTC. We re-check during and after every event.',
     },
     {
       question: 'Are the Hole Fishing codes on other websites real?',
@@ -108,20 +108,23 @@ export default function CodesPage() {
         )}
       </section>
 
-      {/* 10-11 实况：virtual-events API 确认 NEW CONTENT + ADMIN ABUSE 进行中（15:00Z 起 ~29h，10-12T20:00Z 结束）；结束后补结论 */}
+      {/* 10-14 复查：10-11 场已结束（10-12T20:00Z），无码；virtual-events API 下一场 10-18T15:00Z → 10-19T20:00Z */}
       <section className="mb-10 p-5 rounded-xl border border-cyan-300 dark:border-cyan-800 bg-cyan-50 dark:bg-cyan-950/20">
-        <h2 className="text-lg font-bold mb-2">🔴 LIVE: New Content + Admin Abuse — until Monday, Oct 12 (3 PM ET)</h2>
+        <h2 className="text-lg font-bold mb-2">📅 Next code watch: New Content + Admin Abuse — Sunday, Oct 18</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-          The <strong>&quot;NEW CONTENT + ADMIN ABUSE&quot;</strong> event is running right now — new rods, fish and
-          more, ending <strong>October 12, 2026 at 8 PM UTC</strong> (3 PM ET / noon PT). This is the most likely
-          moment for the first real Hole Fishing code: the devs have teased &quot;admin codes&quot; around these
-          events before.
+          The next <strong>&quot;NEW CONTENT + ADMIN ABUSE&quot;</strong> event starts <strong>Sunday, October 18, 2026
+          at 15:00 UTC</strong> (8 AM PT / 11 AM ET / 4 PM UK). It runs until <strong>Monday, Oct 19 at 20:00 UTC</strong>.
+          The official Roblox listing says &quot;New rods, fish and more!&quot;
+        </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+          <strong>The Oct 11 event gave out no code.</strong> It ended on Oct 12. We watched the full Admin Abuse on a
+          creator&apos;s live stream, and the dev signed off with &quot;thanks for attending&quot; and no code. The game
+          description and the 67K CCU group still show no code either.
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400">
-          We are watching this one live — if a code shows up during the event, it goes in the Active Codes box above
-          the same hour. New rods and fish will land in the{' '}
-          <Link href="/updates" className="underline">updates log</Link> as they are verified. Past form check: the{' '}
-          <Link href="/events" className="underline">Oct 4 Admin Abuse</Link> ended with no code.
+          So that&apos;s two Admin Abuse events (<Link href="/events" className="underline">Oct 4 and Oct 11</Link>) with
+          no code. If one shows up on Oct 18, it goes in the Active Codes box above. What the Oct 11 update added is in
+          the <Link href="/updates" className="underline">updates log</Link>.
         </p>
       </section>
 
@@ -167,7 +170,8 @@ export default function CodesPage() {
             the developers have teased temporary &quot;admin codes&quot; in chat. No code string has been shown working on
             screen yet — if one is, it goes straight into the Active Codes box above. We watched the full{' '}
             <strong>Oct 4, 2026 Admin Abuse</strong> (about an hour of mutations and luck boosts, hosted by the dev in
-            chat): <strong>no code was given out</strong>. The next Admin Abuse is the window to watch.
+            chat): <strong>no code was given out</strong>. The <strong>Oct 11</strong> one ended the same way, with no code.
+            The next window to watch is the Oct 18 event.
           </li>
         </ul>
       </section>
@@ -178,7 +182,7 @@ export default function CodesPage() {
         <p className="text-sm text-gray-500 mb-4">
           Roblox simulators usually drop their first codes on a milestone. Hole Fishing has already{' '}
           <strong>passed all four classic triggers without adding codes</strong> — so milestones alone are not a
-          reliable signal for this game. Counters below are from the Roblox public API (checked September 30, 2026).
+          reliable signal for this game. Counters below are from the Roblox public API (checked October 14, 2026).
         </p>
         <div className="space-y-3">
           {MILESTONES.map((m) => {
@@ -226,7 +230,7 @@ export default function CodesPage() {
         </p>
         <p>
           That sequencing is normal for Roblox simulators: the redemption UI ships in a systems update, then the first
-          code strings arrive with a milestone celebration or a scheduled Admin Abuse event. The Oct 4 Admin Abuse
+          code strings arrive with a milestone celebration or a scheduled Admin Abuse event. The Oct 4 and Oct 11 Admin Abuse events
           went by without one, but with the box already in-game, a first code drop still looks close rather than
           hypothetical. A group with {config.stats.favorites} favourites and a {fmt(groupMembers)}-member community
           now has every reason to use it.

@@ -51,7 +51,7 @@ export default function UpdatesPage() {
           The official Roblox events listing (re-scanned after the Oct 11 event) shows the next{' '}
           <strong>&quot;NEW CONTENT + ADMIN ABUSE&quot;</strong> scheduled for <strong>Sun, Oct 18, 8 AM PT / 11 AM ET / 4 PM UK</strong>{' '}
           (15:00 UTC), running through <strong>Mon, Oct 19, 20:00 UTC</strong>, with the same subtitle:{' '}
-          <strong>&quot;New rods, fish and more!&quot;</strong> That&apos;s now a confirmed weekly Saturday pattern (Oct 4 → Oct 11 → Oct 18).
+          <strong>&quot;New rods, fish and more!&quot;</strong> That&apos;s now a weekly Sunday pattern (Oct 4 → Oct 11 → Oct 18).
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
           Based on the last two sessions, expect roughly an hour of rotating server-wide mutations with countdown banners, a dev-run
@@ -61,7 +61,7 @@ export default function UpdatesPage() {
           the same day — and if a code ever drops, it lands on the <Link href="/codes" className="underline">codes page</Link> within hours.
         </p>
         <p className="text-xs text-gray-500">
-          Source: Roblox virtual-events API for universe 9906378607, re-checked Oct 12, 2026 (event updated Oct 11 16:47 UTC).
+          Source: Roblox virtual-events API for universe 9906378607, re-checked Oct 14, 2026 (event updated Oct 11 16:47 UTC). The game itself hasn&apos;t been republished since Oct 11, 19:00 UTC.
         </p>
       </article>
 

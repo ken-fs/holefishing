@@ -24,12 +24,12 @@ export default function EventsPage() {
     {
       question: 'When is Admin Abuse in Hole Fishing?',
       answer:
-        'It is scheduled by the developers and shows up as an in-game countdown ("ADMIN ABUSE IN mm:ss"), and sometimes on the Events tab of the Roblox game page. The Oct 4, 2026 one ran for about an hour.',
+        'The developers schedule it, and it shows up as an in-game countdown ("ADMIN ABUSE IN mm:ss") and on the Events tab of the Roblox game page. So far it has been weekly on Sundays: Oct 4 and Oct 11, 2026. The next one is the New Content + Admin Abuse event on Sunday, Oct 18, 2026, running from 15:00 UTC to Oct 19, 20:00 UTC.',
     },
     {
       question: 'Do you get codes during Admin Abuse?',
       answer:
-        'Not so far. The dev has teased "admin codes" in chat, but the Oct 4 Admin Abuse ended with a x20 luck finale and no code. We track it on the codes page.',
+        'Not so far. The dev has teased "admin codes" in chat, but the Oct 4 Admin Abuse ended with a x20 luck finale and no code, and the Oct 11 one ended with 50x Global Luck and no code either. We track it on the codes page.',
     },
     {
       question: 'What does Global Luck do in Hole Fishing?',
@@ -71,6 +71,31 @@ export default function EventsPage() {
           to use them. No code dropped on Oct 4 — if one ever does, it&apos;ll be on the <Link href="/codes">codes page</Link>.
         </p>
 
+        <h3>Oct 11 Admin Abuse</h3>
+        <p>
+          The second one ran on <strong>Oct 11, 2026</strong> as part of a &quot;New Content + Admin Abuse&quot; event that ended
+          Oct 12. It was louder than Oct 4. We watched the full 32-minute session on a creator&apos;s live stream:
+        </p>
+        <ul>
+          <li>Mutations now come with start banners and countdowns, like &quot;BURNING MUTATION STARTED&quot; and &quot;HUGE MUTATION 1:02&quot;. Void showed up too.</li>
+          <li>Global Luck started at x3. Then the dev ran a &quot;50x luck?&quot; poll in chat and switched on <strong>50x Global Luck</strong>.</li>
+          <li>There were Double Cast, Double Catch and <strong>x3 Sell Cash</strong> windows, plus giant fish spawned by the dev.</li>
+          <li>A Server Hole opened in the middle of it.</li>
+          <li>The dev closed with &quot;thanks for attending ❤️&quot; and &quot;next weekend will be way better&quot;. <strong>No code again.</strong></li>
+        </ul>
+
+        <h3>Next: Oct 18 New Content + Admin Abuse</h3>
+        <p>
+          The official Roblox events listing has the next <strong>&quot;NEW CONTENT + ADMIN ABUSE&quot;</strong> on{' '}
+          <strong>Sunday, Oct 18, 2026 at 15:00 UTC</strong> (8 AM PT / 11 AM ET / 4 PM UK). It runs until{' '}
+          <strong>Monday, Oct 19 at 20:00 UTC</strong>, and the subtitle reads &quot;New rods, fish and more!&quot;
+        </p>
+        <p>
+          So far these land every Sunday (Oct 4, Oct 11, Oct 18). The listing doesn&apos;t say what time the Admin Abuse part
+          starts inside that window. Watch for the in-game countdown, and check the <Link href="/updates">updates page</Link>{' '}
+          for the new rods and fish once they&apos;re confirmed.
+        </p>
+
         <h2>Hacker Event</h2>
         <p>
           A shorter server event. On Sept 24 footage, the hole-size upgrade gain jumped from <strong>40% to 50%</strong> while it
@@ -107,6 +132,7 @@ export default function EventsPage() {
           <li><strong>🏜️ Desert Event (Sept 15–21)</strong> — a Mummy NPC handed out trials (catch 5 fish at night, catch 3 epics) and the reward was the <Link href="/rods/egyptian-rod">Egyptian Rod</Link>.</li>
           <li><strong>☯️ Yin-Yang Update (Sept 21–27)</strong> — a themed event with its own catches.</li>
           <li><strong>🐟 Oct 4 Update</strong> — paired with the Admin Abuse above.</li>
+          <li><strong>🌈 Rainbow Event (Oct 11)</strong> — the game title switched to [🌈EVENT] with the Oct 11 update. It shows a &quot;🌈 RAINBOW&quot; countdown banner and a rainbow in the sky. We haven&apos;t confirmed what bonus it gives yet.</li>
         </ul>
         <p>
           The full timeline, with sources, is on the <Link href="/updates">updates page</Link>. Night also works a bit like an
@@ -114,8 +140,8 @@ export default function EventsPage() {
         </p>
 
         <p className="text-sm text-gray-500">
-          Sources: Oct 4, 2026 live stream of the Admin Abuse (Maskednoobgy), Sept 24 and Sept 27 creator footage, and the
-          Roblox game page. Event odds and timers aren&apos;t published by the developers, so treat the numbers as what we saw,
+          Sources: Oct 4, 2026 live stream of the Admin Abuse (Maskednoobgy), Oct 11 live stream (NOTVOIDY), Sept 24 and
+          Sept 27 creator footage, the Roblox game page, and the Roblox events listing (checked Oct 14, 2026). Event odds and timers aren&apos;t published by the developers, so treat the numbers as what we saw,
           not fixed rules.
         </p>
       </section>
