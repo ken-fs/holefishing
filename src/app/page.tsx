@@ -43,10 +43,10 @@ export default function HomePage() {
               ☯️ Yin-Yang update live now
             </p>
             <h1 className="text-5xl md:text-6xl font-black tracking-tight text-gray-950 dark:text-gray-50 leading-[1.02] mb-5">
-              One hole. One rod. <span className="bg-cyan-300 dark:bg-cyan-400 px-1.5 rounded-sm box-decoration-clone">Endless</span> fish.
+              Hole Fishing <span className="bg-cyan-300 dark:bg-cyan-400 px-1.5 rounded-sm box-decoration-clone">Wiki</span>
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-xl mb-7 leading-relaxed">
-              The complete companion for Roblox&apos;s viral fishing game — rod tier lists,
+              One hole. One rod. Endless fish. The complete companion for Roblox&apos;s viral fishing game — rod tier lists,
               full fish index, progression calculator and secret fish guides. Updated {getCurrentDateString()}.
             </p>
             <div className="flex flex-wrap items-center gap-4">
