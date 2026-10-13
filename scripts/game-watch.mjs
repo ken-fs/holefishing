@@ -9,6 +9,7 @@
 // cron: 17 * * * * NODE_USE_ENV_PROXY=1 https_proxy=http://127.0.0.1:7897 /opt/homebrew/bin/node <本文件>
 import { readFileSync, writeFileSync, appendFileSync, existsSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
+import { join } from 'node:path';
 
 const UNIVERSE_ID = 9906378607; // placeId 80158232099900
 const GROUP_ID = 612510500; // 67K CCU
@@ -50,6 +51,16 @@ async function getJson(url) {
   }
 }
 
+// 2026-10-13：变化交给自动更新引擎（Ship/scripts/autopilot）——它多源确认后改数据、构建、上线，再推飞书说改了什么；
+// 引擎不在才退回原来的「请手动更新」通知
+async function handoff(reason, fallback) {
+  try {
+    const { trigger } = await import(join('/Users/david/Desktop/david/Ship', 'scripts', 'autopilot', 'trigger.mjs'));
+    if (trigger('holefishing', reason)) { log(`AUTOPILOT ${reason}`); return; }
+  } catch {}
+  fallback();
+}
+
 let now;
 try {
   const [game, group] = await Promise.all([
@@ -89,7 +100,7 @@ const added = ['name', 'description', 'shout']
   .join('\n');
 if (CODE_RE.test(added)) {
   log('🚨 CODE_SIGNAL');
-  notify('🚨 数据更新提醒', `${changed.join('/')} 变化含 code 字样 → 立即更新 codes.json（详情 ${LOG}）`, 'Sosumi');
+  await handoff(`游戏${changed.join('/')}变化，新文字里出现 code / redeem 字样：${added.slice(0, 300)}`, () => notify('🚨 数据更新提醒', `${changed.join('/')} 变化含 code 字样 → 立即更新 codes.json（详情 ${LOG}）`, 'Sosumi'));
 } else {
-  notify('数据有变化', `${changed.join(' / ')}：${now.name}（详情 ${LOG}）`);
+  await handoff(`游戏 ${changed.join('/')} 变化（标题：${now.name}${changed.includes('shout') ? `；群组公告：${now.shout.slice(0, 150)}` : ''}）：查有没有新内容 / 新码，同步 updates 页`, () => notify('数据有变化', `${changed.join(' / ')}：${now.name}（详情 ${LOG}）`));
 }
