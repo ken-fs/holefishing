@@ -61,18 +61,22 @@ export default function UpdatesPage() {
           the same day — and if a code ever drops, it lands on the <Link href="/codes" className="underline">codes page</Link> within hours.
         </p>
         <p className="text-xs text-gray-500">
-          Source: Roblox virtual-events API for universe 9906378607, re-checked Oct 14, 2026 (event updated Oct 11 16:47 UTC). The game itself was last republished Oct 13, 23:32 UTC (see below).
+          Source: Roblox virtual-events API for universe 9906378607, re-checked Oct 14, 2026 (event updated Oct 11 16:47 UTC). The game itself was last republished Oct 14, 01:04 UTC (see below).
         </p>
       </article>
 
       <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
         <div className="flex items-center gap-2 mb-2">
           <span className="text-xs px-2 py-0.5 rounded-full bg-gray-400/20 text-gray-600 dark:text-gray-400 font-bold uppercase border border-gray-400/40">New patch</span>
-          <h2 className="text-xl font-black">🔧 Oct 13 Patch (contents not confirmed yet)</h2>
+          <h2 className="text-xl font-black">🔧 Oct 13–14 Patches (contents not confirmed yet)</h2>
         </div>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
           The game got a new patch on <strong>Oct 13, 23:32 UTC</strong>, per the Roblox game API. The title is still{' '}
           <strong>[🌈EVENT]</strong> and the description didn&apos;t change. So the Rainbow event is still the headline.
+        </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          A second patch went out about 90 minutes later, on <strong>Oct 14, 01:04 UTC</strong>. Title and description
+          stayed the same again. Quick follow-ups like this are often small fixes, but we can&apos;t confirm what changed.
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
           We don&apos;t know what this patch changed yet. No patch notes, group shout or new gameplay video showed up in the first
@@ -81,11 +85,11 @@ export default function UpdatesPage() {
           Ghost Rod out, is unconfirmed.
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-          The game still has no badges, and the patch didn&apos;t come with a code. The big content drop is still the Oct 18
+          The game still has no badges, and neither patch came with a code. The big content drop is still the Oct 18
           event above. We&apos;ll add confirmed changes here once a video or the game itself shows them.
         </p>
         <p className="text-xs text-gray-500">
-          Sources: Roblox game API (update time + title + description, checked Oct 14, 00:17 UTC), Roblox group API (no shout),
+          Sources: Roblox game API (update time + title + description, re-checked Oct 14, 01:18 UTC), Roblox group API (no shout),
           Roblox badges API (no badges), YouTube search (no footage newer than Oct 11).
         </p>
       </article>
