@@ -438,6 +438,15 @@
       "valueRange": "Unknown",
       "note": "Two independent sightings: RoBros' Sept 23, 2026 video (caught live for ~$70,000 during an admin-abuse cash boost — value possibly inflated) and Sept 24, 2026 creator footage (\"we got a shrine koi — that's my best catch\"). Rarity and true sell value not readable on screen.",
       "unverified": true
+    },
+    {
+      "slug": "mandarin-fish",
+      "name": "Mandarin Fish",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Caught on camera in ReadyToReady's Oct 14, 2026 gameplay (Indonesian commentary, auto-subtitled): a yellow \"Mandarin Fish\" called out as a new catch at roughly 39 kg. Single source with machine transcription — rarity and sell value not readable on screen. Unverified until a second sighting.",
+      "unverified": true
     }
   ]
 }
