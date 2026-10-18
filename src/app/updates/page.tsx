@@ -68,6 +68,25 @@ export default function UpdatesPage() {
       <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
         <div className="flex items-center gap-2 mb-2">
           <span className="text-xs px-2 py-0.5 rounded-full bg-gray-400/20 text-gray-600 dark:text-gray-400 font-bold uppercase border border-gray-400/40">New patch</span>
+          <h2 className="text-xl font-black">🔧 Oct 18 Patch (contents not confirmed yet)</h2>
+        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          The game was republished on <strong>Oct 18, 14:56 UTC</strong>, about an hour before the scheduled New Content + Admin Abuse
+          event. The title changed from <strong>[🌈EVENT]</strong> to <strong>[NOW]</strong>. The description didn&apos;t change.
+        </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          We don&apos;t know yet what is new. No patch notes, group shout or footage was available at check time. There are still no
+          badges and no working codes. We&apos;ll add confirmed rods, fish or changes once a video or the game shows them.
+        </p>
+        <p className="text-xs text-gray-500">
+          Sources: Roblox game API (update time, title, description), Roblox group API (no shout), Roblox badges API (none),
+          UrGameTips codes page (no working codes, checked Oct 18).
+        </p>
+      </article>
+
+      <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-gray-400/20 text-gray-600 dark:text-gray-400 font-bold uppercase border border-gray-400/40">New patch</span>
           <h2 className="text-xl font-black">🔧 Oct 13–14 Patches (contents not confirmed yet)</h2>
         </div>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
