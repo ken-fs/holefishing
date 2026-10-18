@@ -75,12 +75,16 @@ export default function UpdatesPage() {
           event. The title changed from <strong>[🌈EVENT]</strong> to <strong>[NOW]</strong>. The description didn&apos;t change.
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          A second republish landed at <strong>Oct 18, 16:25 UTC</strong>, during the event window. The title is now{' '}
+          <strong>[🎣UPDATE]</strong>. The description is still the same short text, with no code in it.
+        </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
           We don&apos;t know yet what is new. No patch notes, group shout or footage was available at check time. There are still no
           badges and no working codes. We&apos;ll add confirmed rods, fish or changes once a video or the game shows them.
         </p>
         <p className="text-xs text-gray-500">
           Sources: Roblox game API (update time, title, description), Roblox group API (no shout), Roblox badges API (none),
-          UrGameTips codes page (no working codes, checked Oct 18).
+          UrGameTips codes page (no working codes, re-checked Oct 19).
         </p>
       </article>
 
