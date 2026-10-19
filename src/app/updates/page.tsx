@@ -6,7 +6,7 @@ import { generateSEOMetadata, generateBreadcrumbSchema, getCurrentDateString } f
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Updates (${getCurrentDateString()}) — Patch Notes & Events`,
   description:
-    'Latest Hole Fishing updates: Oct 11 update + Admin Abuse recap — the game is now [🌈EVENT] with a RAINBOW event, and the next New Content + Admin Abuse is scheduled Oct 18, 2026. Plus the rod ladder up to $10Qi, the Baits update and patch notes.',
+    'Latest Hole Fishing updates: Oct 18 patch ([🎣UPDATE]) plus a 2-hour full-playthrough verification — new Celestial rarity tier, the Rainbow event fish pool, and Tree/Lava/Cosmic rod prices confirmed. Rainbow event, Baits update and patch notes.',
   keywords: ['hole fishing update', 'hole fishing new update', 'hole fishing admin abuse', 'hole fishing october update', 'hole fishing baits update', 'hole fishing patch notes'],
   path: '/updates',
 });
@@ -44,7 +44,7 @@ export default function UpdatesPage() {
 
       <article className="mb-8 p-5 rounded-xl border border-green-300 dark:border-green-800 bg-green-50 dark:bg-green-950/20">
         <div className="flex items-center gap-2 mb-2">
-          <span className="text-xs px-2 py-0.5 rounded-full bg-green-400/20 text-green-600 dark:text-green-400 font-bold uppercase border border-green-400/40">Upcoming</span>
+          <span className="text-xs px-2 py-0.5 rounded-full bg-green-400/20 text-green-600 dark:text-green-400 font-bold uppercase border border-green-400/40">Live now</span>
           <h2 className="text-xl font-black">📅 Next Event: New Content + Admin Abuse (Oct 18, 2026)</h2>
         </div>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
@@ -85,6 +85,34 @@ export default function UpdatesPage() {
         <p className="text-xs text-gray-500">
           Sources: Roblox game API (update time, title, description), Roblox group API (no shout), Roblox badges API (none),
           UrGameTips codes page (no working codes, re-checked Oct 19).
+        </p>
+      </article>
+
+      <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-blue-400/20 text-blue-600 dark:text-blue-400 font-bold uppercase border border-blue-400/40">Footage verified</span>
+          <h2 className="text-xl font-black">🎥 Oct 18–19: biggest gameplay deep-dive yet — Celestial tier, Rainbow pool, rod prices</h2>
+        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          A 718K-subscriber creator (VitaminSleepy) posted a <strong>2h20m full progression run on Oct 18</strong> — recorded on the
+          Oct 11 rainbow-event build (the in-game board still read &quot;Update October 11&quot;), so it does <em>not</em> show what the
+          Oct 18 patch changed. It is still the deepest look at the game we have, and it confirmed a lot:
+        </p>
+        <ul className="list-disc pl-5 space-y-1.5 text-sm text-gray-600 dark:text-gray-400 mb-3">
+          <li><strong>Rarity ladder goes past Secret</strong>: he reads the index legend as Common → … → Mythical → Secret → <strong>Celestial</strong> (orange slots). Catches with an <strong>&quot;Abyssal&quot;</strong> prefix (Deep Sea Shark ~$98B, Tiger Fish, Abyss Angler ~$740B, Moon Veil ~$1.39T — all with multipliers) and one mention of <strong>&quot;ethereal&quot;</strong> catches sit somewhere up there too; tier vs mutation is still being pinned down, so those fish are in the index as unverified.</li>
+          <li><strong>Rainbow event pool</strong>: seals, dolphins, <strong>Sea Lion</strong> (the event&apos;s one Secret — a Huge sold for $50.5B), <strong>Rainbow Manta Ray</strong> (Mythical) and the <strong>Walrus</strong> — read as Celestial, worth <strong>$357 trillion</strong>, the most valuable catch we have ever seen on camera.</li>
+          <li><strong>Rod prices finally read and bought on camera</strong>: Tree Rod <strong>$25,000</strong>, Lava Rod <strong>$1.4T</strong>, Cosmic Rod <strong>$5T</strong>. The ladder now reads Candy $720B → Lava $1.4T → Cosmic $5T → Toy $55T → Jungle $96T → Rainbow Godly $10Qi. The <Link href="/rods" className="underline">Rod Tier List</Link> and calculator are updated.</li>
+          <li><strong>Mechanics confirmed on camera</strong>: rebirth resets your cash for a permanent cash boost (costs escalate $175K → $500K → $15M → $12B); you can <strong>gift fish to other players (hold G)</strong> — a stranger handed him a fish worth 4.99Qi; index milestones grant +10% luck (Big/Huge variants count as separate index entries); free wheel spin every hour (Lucky Rod ~1%); bait ladder — Classic ($500) / Tide (guaranteed mutation) / Meadow (×5 value, $50K) / Frost (×5 value + mutation) / Reef (×10 value) / King (needs the Hacker Rod) / Divine (×25 value). His 6,600% stacked luck potions produced mostly rares — treat luck potions as unproven value.</li>
+          <li><strong>New species added to the <Link href="/fish" className="underline">Fish Index</Link> as unverified</strong>: Walleye (night), Bristle Worm (night), Delta Ray (yin-yang event), Crown Spike (hacker event, two creators), Moon Veil (hacker event), Abyss Angler (night), Deep Sea Shark, Tiger Fish (34,000 kg specimen), Humpback Whale, Stingray, Seal, Dolphin — plus Sea Lion, Walrus, Rainbow Manta Ray and Rift Jaw with banner reads.</li>
+          <li><strong>Two fish we still can&apos;t name</strong>: one that looks like Travis Scott (two creators, name never legible on screen) and a high-heel-shaped one he nicknamed &quot;Louboutin&quot;. Both stay out of the index until a name is readable. Also pending: the &quot;Asian Turtle&quot; may actually be an &quot;Ancient Turtle&quot; — two creators read it as &quot;ancient&quot;; we&apos;re verifying before renaming.</li>
+        </ul>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          <strong>Codes: still zero.</strong> No code appeared in 2h20m of footage (store included), and UrGameTips still lists no
+          working codes. The Oct 18 admin-abuse window runs through Oct 19 20:00 UTC — we&apos;ll check post-event footage next.
+        </p>
+        <p className="text-xs text-gray-500">
+          Sources: VitaminSleepy &quot;I Went Fishing in a Hole 🐟&quot; (Oct 18, 2026, 2h20m), Pangolin.x &quot;Catching Unknown Fish in Roblox
+          Hole Fishing&quot; (Sept 24, 2026), UrGameTips codes page (re-checked Oct 19).
         </p>
       </article>
 

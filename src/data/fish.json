@@ -1,5 +1,5 @@
 {
-  "note": "Fish index sourced from real gameplay (Sept 2026). Values are base-range observations — your sell-value upgrades multiply them. Rarities: Common > Uncommon > Rare > Epic > Legendary > Mythical > Secret. Newly sighted species are marked unverified until confirmed by multiple creators.",
+  "note": "Fish index sourced from real gameplay (Sept–Oct 2026). Values are base-range observations — your sell-value upgrades multiply them. Rarities: Common > Uncommon > Rare > Epic > Legendary > Mythical > Secret — and Oct 18 footage read the index legend continuing to a new 'Celestial' tier (orange slots), with 'Abyssal' catches and one 'ethereal' mention still being pinned down as tier vs mutation. Newly sighted species are marked unverified until confirmed by multiple creators.",
   "fish": [
     {
       "slug": "goldfish",
@@ -446,6 +446,149 @@
       "time": "any",
       "valueRange": "Unknown",
       "note": "Caught on camera in ReadyToReady's Oct 14, 2026 gameplay (Indonesian commentary, auto-subtitled): a yellow \"Mandarin Fish\" called out as a new catch at roughly 39 kg. Single source with machine transcription — rarity and sell value not readable on screen. Unverified until a second sighting.",
+      "unverified": true
+    },
+    {
+      "slug": "walleye",
+      "name": "Walleye",
+      "rarity": "Unknown",
+      "time": "night",
+      "valueRange": "Unknown",
+      "note": "Night catch read on screen in VitaminSleepy's Oct 18, 2026 full-run footage: \"A walleye — can you only get this at night?\" Rarity and value unread.",
+      "unverified": true
+    },
+    {
+      "slug": "bristle-worm",
+      "name": "Bristle Worm",
+      "rarity": "Unknown",
+      "time": "night",
+      "valueRange": "Unknown",
+      "weightKg": 39.9,
+      "note": "Night catch (Oct 18, 2026 footage). A 39.9 kg specimen was the creator's early-game best catch at ~$16,000 with starter upgrades; base rarity and value unread.",
+      "unverified": true
+    },
+    {
+      "slug": "delta-ray",
+      "name": "Delta Ray",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Caught during a yin-yang event in Oct 18, 2026 footage (\"that yin-yang… delta ray\"). Rarity and value unread.",
+      "unverified": true
+    },
+    {
+      "slug": "sea-lion",
+      "name": "Sea Lion",
+      "rarity": "Secret",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Rainbow-event catch — explicitly read as the event's one Secret in Oct 18, 2026 footage (\"There's only one secret in the rainbow event. We got it.\"). A Huge Sea Lion sold for $50.5B with late-game multipliers; base value unknown."
+    },
+    {
+      "slug": "walrus",
+      "name": "Walrus",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Rainbow-event catch read as \"Celestial\" — a tier above Secret seen for the first time in Oct 18, 2026 footage — worth $357 trillion on camera (Rainbow Walrus, caught on a Planet Rod). Rarity tier not yet in our data model, so it stays unverified.",
+      "unverified": true
+    },
+    {
+      "slug": "rainbow-manta-ray",
+      "name": "Rainbow Manta Ray",
+      "rarity": "Mythical",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Rainbow-event catch identified as the event's Mythical in Oct 18, 2026 footage (single source). Value unread."
+    },
+    {
+      "slug": "seal",
+      "name": "Seal",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Rainbow-event filler catch in Oct 18, 2026 footage (a \"rainbow seal\" mutation was also seen). Rarity and value unread.",
+      "unverified": true
+    },
+    {
+      "slug": "dolphin",
+      "name": "Dolphin",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Rainbow-event catch in Oct 18, 2026 footage: \"all we're getting from the rainbow event are seals and dolphins.\" Rarity and value unread.",
+      "unverified": true
+    },
+    {
+      "slug": "humpback-whale",
+      "name": "Humpback Whale",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Two sightings: Sept 24, 2026 footage (the creator's best catch, presented like a legendary) and Oct 18, 2026 footage. No clear rarity banner read yet.",
+      "unverified": true
+    },
+    {
+      "slug": "crown-spike",
+      "name": "Crown Spike",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Hacker-event catch in two creators' footage (Sept 24 and Oct 18, 2026): \"What exactly is this crown spike? Is it a fish?\" Rarity and value unread.",
+      "unverified": true
+    },
+    {
+      "slug": "stingray",
+      "name": "Stingray",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Caught on camera in Sept 24, 2026 footage (\"I got a stingray\"). Single source — rarity and value unread.",
+      "unverified": true
+    },
+    {
+      "slug": "rift-jaw",
+      "name": "Rift Jaw",
+      "rarity": "Mythical",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Catch banner read \"Mythic Rift Jaw\" in Oct 18, 2026 footage (single source). Value unread."
+    },
+    {
+      "slug": "deep-sea-shark",
+      "name": "Deep Sea Shark",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Caught as \"Abyssal Deep Sea Shark\" in Oct 18, 2026 footage, ~$98B with late-game multipliers; the creator noted eight different 'abyssal' catches in one index section. Whether 'Abyssal' is a rarity tier or a mutation prefix is still being verified.",
+      "unverified": true
+    },
+    {
+      "slug": "abyss-angler",
+      "name": "Abyss Angler",
+      "rarity": "Unknown",
+      "time": "night",
+      "valueRange": "Unknown",
+      "note": "Night catch in Oct 18, 2026 footage: a Huge Abyss Angler worth ~$740B with multipliers. Same unresolved 'Abyss' naming family as the Deep Sea Shark.",
+      "unverified": true
+    },
+    {
+      "slug": "moon-veil",
+      "name": "Moon Veil",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Hacker-event catch in Oct 18, 2026 footage: \"Abyssal Moon Veil\" worth ~$1.39 trillion with multipliers, counted as both the section's abyssal and secret slot. Base value unknown.",
+      "unverified": true
+    },
+    {
+      "slug": "tiger-fish",
+      "name": "Tiger Fish",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "weightKg": 34000,
+      "note": "Oct 18, 2026 footage: caught as \"Abyssal Tiger Fish\" and shown on the best-catch board as a 34,000 kg specimen (~$146B with ~4x multipliers). Captions also read \"Tiger Angel Fish\", so the exact name is unconfirmed.",
       "unverified": true
     }
   ]

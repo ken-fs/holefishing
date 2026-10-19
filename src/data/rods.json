@@ -1,5 +1,5 @@
 {
-  "note": "Rod ladder re-read from Oct 4–5, 2026 shop footage (G0Dx fresh-account run + Maskednoobgy live). Cash prices with priceVerified=true were read directly off the in-game Rods shop. priceVerified=false = rod exists but price is unconfirmed, Robux-only, event/spin-wheel only, or no longer in the shop — those are excluded from the calculator.",
+  "note": "Rod ladder re-read from Oct 4–5, 2026 shop footage (G0Dx fresh-account run + Maskednoobgy live), with Tree/Lava/Cosmic prices verified on VitaminSleepy's Oct 18, 2026 full-run video (read off the shop and bought on camera). Cash prices with priceVerified=true were read directly off the in-game Rods shop. priceVerified=false = rod exists but price is unconfirmed, Robux-only, event/spin-wheel only, or no longer in the shop — those are excluded from the calculator.",
   "rods": [
     {
       "slug": "starter-rod",
@@ -49,12 +49,12 @@
       "slug": "tree-rod",
       "name": "Tree Rod",
       "order": 5,
-      "price": 0,
-      "priceText": "Unconfirmed",
+      "price": 25000,
+      "priceText": "$25,000",
       "maxWeightKg": 150,
       "tier": "B",
-      "priceVerified": false,
-      "note": "x1.52 reel, 150 kg. Sits between Cactus ($7,500) and Knight ($150,000); the Oct footage only shows it already owned, so the exact price isn't read yet."
+      "priceVerified": true,
+      "note": "x1.52 reel, 150 kg for $25,000 — price read in the shop and bought on camera in Oct 18 footage (VitaminSleepy). Sits between Cactus ($7,500) and Knight ($150,000)."
     },
     {
       "slug": "knight-rod",
@@ -192,23 +192,23 @@
       "slug": "lava-rod",
       "name": "Lava Rod",
       "order": 18,
-      "price": 45000000000,
-      "priceText": "Unconfirmed",
+      "price": 1400000000000,
+      "priceText": "$1.4T",
       "maxWeightKg": 90000,
       "tier": "S+",
-      "priceVerified": false,
-      "note": "x6.90 reel, 90,000 kg. Sept 15 footage read its price as $45B, but the Oct 4 shop puts it after the $720B Candy Rod, so that old read is probably out of date."
+      "priceVerified": true,
+      "note": "x6.90 reel, 90,000 kg for $1.4T — read twice off the Oct 18 shop and bought on camera (VitaminSleepy), right after the $720B Candy Rod. Replaces the stale Sept $45B read."
     },
     {
       "slug": "cosmic-rod",
       "name": "Cosmic Rod",
       "order": 19,
-      "price": 600000000000,
-      "priceText": "Unconfirmed",
+      "price": 5000000000000,
+      "priceText": "$5T",
       "maxWeightKg": 150000,
       "tier": "S+",
-      "priceVerified": false,
-      "note": "x7.80 reel, 150,000 kg (seen on both Sept 15 and Oct 4 footage). The old $600B read doesn't fit the Oct ladder, so the price is unconfirmed for now."
+      "priceVerified": true,
+      "note": "x7.80 reel, 150,000 kg for $5T — read off the Oct 18 shop (VitaminSleepy): Lava $1.4T → Cosmic $5T → Toy $55T → Jungle $96T. Replaces the stale Sept $600B read."
     },
     {
       "slug": "toy-rod",
