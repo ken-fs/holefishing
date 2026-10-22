@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getCodes, getGameConfig } from '@/lib/data';
 import { generateSEOMetadata, generateBreadcrumbSchema, generateFAQSchema, getCurrentDateString } from '@/lib/seo';
+import { CODES_LANGS } from '@/data/i18n/codes';
 import SiteIndexLinks from '@/components/SiteIndexLinks';
 
 export const metadata: Metadata = generateSEOMetadata({
@@ -10,6 +11,7 @@ export const metadata: Metadata = generateSEOMetadata({
     'Are there Hole Fishing codes on Roblox? Verified status: the redemption box now exists in the Exclusive Store — no working codes released yet. How to redeem, fakes to avoid, and free rewards.',
   keywords: ['hole fishing codes', 'hole fishing codes 2026', 'hole fishing roblox codes', 'hole fishing redeem codes', 'hole fishing code'],
   path: '/codes',
+  languages: CODES_LANGS,
 });
 
 // 里程碑数据来自 Roblox 公开 API（09-30 实测：votes / games / groups 端点；10-14 重拉）
@@ -59,7 +61,7 @@ export default function CodesPage() {
     {
       question: 'When will Hole Fishing release its first codes?',
       answer:
-        'No official date yet. The redemption box has been in the game since late September, and the developers have teased "admin codes" in chat before — but the big Oct 4, 2026 Admin Abuse came and went without a code (it ended with a x20 luck finale instead), and the Oct 11 New Content + Admin Abuse event (ended Oct 12) had no code either. The next chance is the New Content + Admin Abuse event on Oct 18, 2026 at 15:00 UTC. We re-check during and after every event.',
+        'No official date yet. The redemption box has been in the game since late September, and the developers have teased "admin codes" in chat before — but the Oct 4, Oct 11 and Oct 18, 2026 Admin Abuse events all came and went without a code. The next chance is the 🎃 EVENT + ADMIN ABUSE on Oct 25, 2026. We re-check during and after every event.',
     },
     {
       question: 'Are the Hole Fishing codes on other websites real?',
@@ -81,7 +83,15 @@ export default function CodesPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-10">
       <h1 className="text-3xl font-black mb-2">Hole Fishing Codes</h1>
-      <p className="text-gray-500 mb-8">Last checked {getCurrentDateString()} ({version}). Hole Fishing codes are checked against the Roblox game page and the developer group.</p>
+      <p className="text-gray-500 mb-3">Last checked {getCurrentDateString()} ({version}). Hole Fishing codes are checked against the Roblox game page and the developer group.</p>
+      {/* 本地语言版：泰国 / 印尼 / 韩国这三个市场的查询已经是本地语言，用英文页在接 */}
+      <p className="text-sm text-gray-500 mb-8 flex flex-wrap items-center gap-2">
+        <span>This page in</span>
+        <span className="px-2 py-0.5 rounded border border-gray-300 dark:border-gray-700 font-semibold">English</span>
+        <Link href="/th/codes" className="px-2 py-0.5 rounded border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800" hrefLang="th" lang="th">ไทย</Link>
+        <Link href="/id/codes" className="px-2 py-0.5 rounded border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800" hrefLang="id" lang="id">Bahasa Indonesia</Link>
+        <Link href="/ko/codes" className="px-2 py-0.5 rounded border border-gray-200 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800" hrefLang="ko" lang="ko">한국어</Link>
+      </p>
 
       {/* Status */}
       <section className="mb-10">
@@ -108,23 +118,59 @@ export default function CodesPage() {
         )}
       </section>
 
-      {/* 10-14 复查：10-11 场已结束（10-12T20:00Z），无码；virtual-events API 下一场 10-18T15:00Z → 10-19T20:00Z */}
+      {/* 10-22 复查：Oct 18 场（10-19T20:00Z 结束）无码；virtual-events API 下一场 10-25T16:00Z → 10-26T16:00Z */}
       <section className="mb-10 p-5 rounded-xl border border-cyan-300 dark:border-cyan-800 bg-cyan-50 dark:bg-cyan-950/20">
-        <h2 className="text-lg font-bold mb-2">📅 Next code watch: New Content + Admin Abuse — Sunday, Oct 18</h2>
+        <h2 className="text-lg font-bold mb-2">📅 Next code watch: 🎃 EVENT + ADMIN ABUSE — Sunday, Oct 25</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-          The next <strong>&quot;NEW CONTENT + ADMIN ABUSE&quot;</strong> event starts <strong>Sunday, October 18, 2026
-          at 15:00 UTC</strong> (8 AM PT / 11 AM ET / 4 PM UK). It runs until <strong>Monday, Oct 19 at 20:00 UTC</strong>.
-          The official Roblox listing says &quot;New rods, fish and more!&quot;
+          The next event starts <strong>Sunday, October 25, 2026 at 16:00 UTC</strong> (9 AM PT / 12 PM ET / midnight Monday
+          in the Philippines / 11 PM Sunday in Indonesia and Thailand) and runs until <strong>Monday, Oct 26 at 16:00
+          UTC</strong>. The official Roblox listing says &quot;New rods, fish and more!&quot; — same format as the last two
+          weeks, one hour later, with a Halloween skin on it. Timezone table:{' '}
+          <Link href="/events/halloween" className="underline">Halloween event page</Link>.
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-          <strong>The Oct 11 event gave out no code.</strong> It ended on Oct 12. We watched the full Admin Abuse on a
-          creator&apos;s live stream, and the dev signed off with &quot;thanks for attending&quot; and no code. The game
-          description and the 67K CCU group still show no code either.
+          <strong>Three events, three times no code.</strong> Oct 4 (x20 Global Luck finale), Oct 11 (50x Global Luck) and
+          Oct 18 (patch dropped mid-window) all ended without a code string — the Oct 18 window closed on Oct 19, 20:00 UTC
+          and post-event footage through Oct 22 shows nothing. The game description and the 67K CCU group have no code
+          either.
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400">
-          So that&apos;s two Admin Abuse events (<Link href="/events" className="underline">Oct 4 and Oct 11</Link>) with
-          no code. If one shows up on Oct 18, it goes in the Active Codes box above. What the Oct 11 update added is in
+          If one shows up on Oct 25, it goes in the Active Codes box above. The full event-by-event log is on the{' '}
+          <Link href="/events/admin-abuse" className="underline">Admin Abuse page</Link>, and what each patch changed is in
           the <Link href="/updates" className="underline">updates log</Link>.
+        </p>
+      </section>
+
+      {/* 事件码：yinyang / admin abuse / hacker event 这几个词族一次答完，不另开薄页 */}
+      <section className="mb-10">
+        <h2 className="text-xl font-bold mb-3">Event Codes: Yin-Yang, Admin Abuse and the Hacker Event</h2>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Players search for a code for every themed event the game runs, so here is each one in one place —{' '}
+          <strong>none of them released a code</strong>:
+        </p>
+        <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2 list-disc list-inside">
+          <li>
+            <strong>☯️ Yin-Yang event (Sept 21–27, 2026)</strong> — a themed update with its own catches (the{' '}
+            <Link href="/fish/yin-yang" className="underline">Yin Yang</Link> fish, and later the Delta Ray during the Oct 18
+            yin-yang window). No code was released, and no &quot;yin-yang codes&quot; list you find elsewhere came from the
+            developers.
+          </li>
+          <li>
+            <strong>Admin Abuse (Oct 4, 11, 18)</strong> — the dev teases &quot;admin codes&quot; in chat during these, but no
+            string has ever been posted or shown redeeming. Log:{' '}
+            <Link href="/events/admin-abuse" className="underline">Admin Abuse page</Link>.
+          </li>
+          <li>
+            <strong>Hacker Event</strong> — a separate short server event (hole growth 40% → 50%, Crown Spike and Moon Veil
+            catches). No code attached to it either.
+          </li>
+          <li>
+            <strong>🎃 Halloween event (Oct 25–26)</strong> — upcoming; the listing mentions new rods and fish only, no codes.
+          </li>
+        </ul>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">
+          The pattern is that this developer simply does not use the code system yet. Milestone counters are all past their
+          classic triggers (see below) and still produce nothing.
         </p>
       </section>
 

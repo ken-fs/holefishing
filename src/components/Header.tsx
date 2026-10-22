@@ -12,6 +12,7 @@ const NAV = [
   { href: '/secret-fish', label: 'Secret Fish' },
   { href: '/server-hole', label: 'Server Hole' },
   { href: '/beginner-guide', label: 'Guide' },
+  { href: '/events', label: 'Events' },
   { href: '/updates', label: 'Updates' },
 ];
 

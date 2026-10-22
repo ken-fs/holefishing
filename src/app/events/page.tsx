@@ -24,7 +24,7 @@ export default function EventsPage() {
     {
       question: 'When is Admin Abuse in Hole Fishing?',
       answer:
-        'The developers schedule it, and it shows up as an in-game countdown ("ADMIN ABUSE IN mm:ss") and on the Events tab of the Roblox game page. So far it has been weekly on Sundays: Oct 4 and Oct 11, 2026. The next one is the New Content + Admin Abuse event on Sunday, Oct 18, 2026, running from 15:00 UTC to Oct 19, 20:00 UTC.',
+        'The developers schedule it, and it shows up as an in-game countdown ("ADMIN ABUSE IN mm:ss") and on the Events tab of the Roblox game page. So far it has been weekly on Sundays: Oct 4, Oct 11 and Oct 18, 2026. The next one is the "🎃 EVENT + ADMIN ABUSE" on Sunday, Oct 25, 2026, running from 16:00 UTC to Oct 26, 16:00 UTC.',
     },
     {
       question: 'Do you get codes during Admin Abuse?',
@@ -84,16 +84,29 @@ export default function EventsPage() {
           <li>The dev closed with &quot;thanks for attending ❤️&quot; and &quot;next weekend will be way better&quot;. <strong>No code again.</strong></li>
         </ul>
 
-        <h3>Next: Oct 18 New Content + Admin Abuse</h3>
+        <h3>Oct 18 New Content + Admin Abuse</h3>
         <p>
-          The official Roblox events listing has the next <strong>&quot;NEW CONTENT + ADMIN ABUSE&quot;</strong> on{' '}
-          <strong>Sunday, Oct 18, 2026 at 15:00 UTC</strong> (8 AM PT / 11 AM ET / 4 PM UK). It runs until{' '}
-          <strong>Monday, Oct 19 at 20:00 UTC</strong>, and the subtitle reads &quot;New rods, fish and more!&quot;
+          That one ran from <strong>Oct 18, 15:00 UTC</strong> through <strong>Oct 19, 20:00 UTC</strong>, subtitle &quot;New
+          rods, fish and more!&quot;. The game was republished twice inside the window (<strong>[🌈EVENT] → [NOW] →
+          [🎣UPDATE]</strong>) with no patch notes, so the only confirmed change is the patch itself. <strong>No code again.</strong>{' '}
+        </p>
+
+        <h3>Next: 🎃 EVENT + ADMIN ABUSE — Oct 25</h3>
+        <p>
+          The official Roblox events listing has the next session on <strong>Sunday, Oct 25, 2026 at 16:00 UTC</strong> (9 AM
+          PT / 12 PM ET / midnight Monday in the Philippines / 11 PM Sunday in Indonesia and Thailand). It runs until{' '}
+          <strong>Monday, Oct 26 at 16:00 UTC</strong>, subtitle &quot;New rods, fish and more!&quot; — the same format as the
+          last two weeks, one hour later, with a Halloween skin on it.
         </p>
         <p>
-          So far these land every Sunday (Oct 4, Oct 11, Oct 18). The listing doesn&apos;t say what time the Admin Abuse part
-          starts inside that window. Watch for the in-game countdown, and check the <Link href="/updates">updates page</Link>{' '}
-          for the new rods and fish once they&apos;re confirmed.
+          So far these land every Sunday (Oct 4, 11, 18, 25). The listing doesn&apos;t say what time the Admin Abuse part starts
+          inside the window, but in all three past sessions it was the opening hour. Watch for the in-game countdown, and check
+          the <Link href="/events/halloween">Halloween event page</Link> for the timezone table and the{' '}
+          <Link href="/updates">updates page</Link> for new rods and fish once they&apos;re confirmed.
+        </p>
+        <p>
+          Full event-by-event log, what the multipliers actually do and the separate <strong>Hacker Event</strong>:{' '}
+          <Link href="/events/admin-abuse">Admin Abuse &amp; Hacker Event page</Link>.
         </p>
 
         <h2>Hacker Event</h2>

@@ -13,6 +13,8 @@ interface SEOProps {
   type?: 'website' | 'article';
   publishedTime?: string;
   modifiedTime?: string;
+  /** hreflang 版本表，如 { en: '/codes', th: '/th/codes', 'x-default': '/codes' } */
+  languages?: Record<string, string>;
 }
 
 export function generateSEOMetadata(props: SEOProps): Metadata {
@@ -25,6 +27,7 @@ export function generateSEOMetadata(props: SEOProps): Metadata {
     type = 'website',
     publishedTime,
     modifiedTime,
+    languages,
   } = props;
 
   const url = `${baseUrl}${path}`;
@@ -36,6 +39,7 @@ export function generateSEOMetadata(props: SEOProps): Metadata {
     keywords,
     alternates: {
       canonical: url.endsWith('/') ? url : `${url}/`,
+      ...(languages ? { languages } : {}),
     },
     openGraph: {
       title,
