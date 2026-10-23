@@ -4,7 +4,7 @@ import { getAllFish, RARITY_ORDER, RARITY_COLORS } from '@/lib/data';
 import { generateSEOMetadata, generateBreadcrumbSchema, getCurrentDateString } from '@/lib/seo';
 
 export const metadata: Metadata = generateSEOMetadata({
-  title: `Hole Fishing Fish Index (${getCurrentDateString()}) — All Fish, Rarities & Values`,
+  title: { absolute: 'Hole Fishing Fish Index — All Fish, Rarities & Values' },
   description:
     'Complete Hole Fishing fish list: every fish from Common to Secret, day vs night catches, value ranges and mutation notes. The only complete Hole Fishing wiki.',
   keywords: ['hole fishing fish list', 'hole fishing fish index', 'hole fishing all fish', 'hole fishing wiki', 'hole fishing rarest fish'],

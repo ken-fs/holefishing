@@ -9,7 +9,7 @@ const TOOLS = [
   { href: '/rods', emoji: '🎣', title: 'Rod Tier List', desc: 'All 12 rods ranked — prices, max weight, and which ones to skip.' },
   { href: '/fish', emoji: '🐟', title: 'Fish Index', desc: 'Every fish by rarity: day & night catches, values, mutations.' },
   { href: '/calculator', emoji: '🧮', title: 'Progression Calculator', desc: 'Calculate exactly how much cash you need for your next rod.' },
-  { href: '/codes', emoji: '🎁', title: 'Codes', desc: 'Is there a reward-code system yet? We check every day and update the moment one appears.' },
+  { href: '/codes', emoji: '🎁', title: 'Codes Status', desc: 'Status log and daily check record — kept on one page so it stays current.' },
   { href: '/secret-fish', emoji: '❄️', title: 'Secret Fish', desc: 'Glacial Wyrm & Alien — how to catch the $3B+ secrets.' },
   { href: '/server-hole', emoji: '🕳️', title: 'Server Hole Event', desc: 'Timer, 4x cash strategy, and mutation rolls explained.' },
 ];
@@ -46,8 +46,8 @@ export default function HomePage() {
               Hole Fishing Roblox <span className="bg-cyan-300 dark:bg-cyan-400 px-1.5 rounded-sm box-decoration-clone">Wiki</span>
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-xl mb-7 leading-relaxed">
-              One hole. One rod. Endless fish. The complete companion for Roblox&apos;s viral fishing game — rod tier lists,
-              full fish index, progression calculator and secret fish guides. Updated {getCurrentDateString()}.
+              The complete wiki for Roblox&apos;s viral fishing game — full fish index, rod tier list, baits, progression
+              calculator, secret fish and event guides. Updated {getCurrentDateString()}.
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <Link href="/rods" className="btn-press px-5 py-2.5 rounded-lg bg-gray-950 dark:bg-cyan-400 text-white dark:text-gray-950 font-bold hover:bg-gray-800 dark:hover:bg-cyan-300">
@@ -84,6 +84,25 @@ export default function HomePage() {
             <div className="text-xs text-gray-500 uppercase tracking-wide">{s.label}</div>
           </div>
         ))}
+      </section>
+
+      {/* Codes summary card — 本站不把 codes 词吃在首页，一律导向 /codes/（2026-10-23 修互抢） */}
+      <section className="mb-10">
+        <Link
+          href="/codes"
+          className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5 p-5 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-cyan-500 dark:hover:border-cyan-600 transition-colors group"
+        >
+          <span className="text-2xl">🎁</span>
+          <div className="flex-1">
+            <h2 className="font-bold group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
+              Codes status — none active right now
+            </h2>
+            <p className="text-sm text-gray-500">
+              Re-checked {getCurrentDateString()}. The full dated log and our daily check record live on one page.
+            </p>
+          </div>
+          <span className="text-sm font-bold text-cyan-600 dark:text-cyan-400 whitespace-nowrap">Codes page →</span>
+        </Link>
       </section>
 
       {/* Tools grid */}

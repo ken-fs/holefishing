@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { generateSEOMetadata, generateBreadcrumbSchema, generateFAQSchema, getCurrentDateString } from '@/lib/seo';
 
 export const metadata: Metadata = generateSEOMetadata({
-  title: `Hole Fishing Baits (${getCurrentDateString()}) — All 9 Baits, Prices & Effects`,
+  title: { absolute: 'Hole Fishing Baits — All 9 Baits, Prices & Effects' },
   description:
     'Every bait in the Hole Fishing Bait Shop: Classic, Tide, Meadow, Frost, Reef, King, Ice, Devil and Holo — cash and Robux prices, what each one does, and which are worth it.',
   keywords: ['hole fishing bait', 'hole fishing baits', 'hole fishing bait shop', 'hole fishing best bait', 'hole fishing holo bait', 'hole fishing king bait'],

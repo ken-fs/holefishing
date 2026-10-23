@@ -5,7 +5,8 @@ const config = getGameConfig();
 const baseUrl = config.seo.baseUrl;
 
 interface SEOProps {
-  title: string;
+  /** 传 string 会用 layout 的 `%s | Hole Fishing` 模板；传 { absolute } 可绕开模板，避免标题里游戏名重复（2026-10-23） */
+  title: string | { absolute: string } | { default: string; template: string };
   description: string;
   keywords?: string[];
   path: string;
@@ -32,6 +33,8 @@ export function generateSEOMetadata(props: SEOProps): Metadata {
 
   const url = `${baseUrl}${path}`;
   const imageUrl = `${baseUrl}${ogImage}`;
+  // OG / Twitter 只能吃字符串：对象标题取 absolute（或 default）当纯文本用
+  const plainTitle = typeof title === 'string' ? title : 'absolute' in title ? title.absolute : title.default;
 
   return {
     title,
@@ -42,18 +45,18 @@ export function generateSEOMetadata(props: SEOProps): Metadata {
       ...(languages ? { languages } : {}),
     },
     openGraph: {
-      title,
+      title: plainTitle,
       description,
       url,
       siteName: config.game.name,
-      images: [{ url: imageUrl, width: 1200, height: 630, alt: title }],
+      images: [{ url: imageUrl, width: 1200, height: 630, alt: plainTitle }],
       type,
       ...(publishedTime && { publishedTime }),
       ...(modifiedTime && { modifiedTime }),
     },
     twitter: {
       card: 'summary_large_image',
-      title,
+      title: plainTitle,
       description,
       images: [imageUrl],
     },

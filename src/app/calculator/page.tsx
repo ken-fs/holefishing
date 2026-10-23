@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import CalculatorClient from '@/components/CalculatorClient';
-import { generateSEOMetadata, generateBreadcrumbSchema, generateFAQSchema, getCurrentDateString } from '@/lib/seo';
+import { generateSEOMetadata, generateBreadcrumbSchema, generateFAQSchema } from '@/lib/seo';
 
 export const metadata: Metadata = generateSEOMetadata({
-  title: `Hole Fishing Calculator (${getCurrentDateString()}) — Rod Progression & Cash Planner`,
+  // absolute：page 自带游戏名，绕开 layout 的 `| Hole Fishing` 模板，别让游戏名出现两次（67→58 字符）
+  title: { absolute: 'Hole Fishing Calculator — Rod Progression & Cash Planner' },
   description:
     'Free Hole Fishing calculator: pick your current rod and target rod to see exact cash needed, estimated casts and grind time. Plan your progression efficiently.',
   keywords: ['hole fishing calculator', 'hole fishing progression', 'hole fishing rod cost', 'hole fishing money guide'],
