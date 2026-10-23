@@ -143,7 +143,7 @@ export default function EventsPage() {
         <h2>Limited events</h2>
         <ul>
           <li><strong>🏜️ Desert Event (Sept 15–21)</strong> — a Mummy NPC handed out trials (catch 5 fish at night, catch 3 epics) and the reward was the <Link href="/rods/egyptian-rod">Egyptian Rod</Link>.</li>
-          <li><strong>☯️ Yin-Yang Update (Sept 21–27)</strong> — a themed event with its own catches.</li>
+          <li><strong>☯️ Yin-Yang Update (Sept 21–27)</strong> — a themed event with its own catches. Looking for a Yin Yang rod? We haven&apos;t confirmed one, and no source we checked shows a rod from this event. Only the unverified <Link href="/fish/yin-yang">Yin Yang fish</Link> has been seen. See all known rods on the <Link href="/rods">rods page</Link>.</li>
           <li><strong>🐟 Oct 4 Update</strong> — paired with the Admin Abuse above.</li>
           <li><strong>🌈 Rainbow Event (Oct 11)</strong> — the game title switched to [🌈EVENT] with the Oct 11 update. It shows a &quot;🌈 RAINBOW&quot; countdown banner and a rainbow in the sky. We haven&apos;t confirmed what bonus it gives yet.</li>
         </ul>
