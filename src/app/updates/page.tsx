@@ -72,7 +72,7 @@ export default function UpdatesPage() {
           <h2 className="text-xl font-black">🔧 Oct 25 Pre-Event Republish (contents not confirmed yet)</h2>
         </div>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-          The game was republished on <strong>Oct 25, 11:38 UTC</strong>, about four hours before the Halloween event opens. The title
+          The game was republished on <strong>Oct 25, 11:38 UTC</strong> and again at <strong>13:45 UTC</strong>, about two hours before the Halloween event opens. The title
           changed from <strong>[🎣UPDATE]</strong> to <strong>[⏳]</strong>. The hourglass likely means a countdown to the event, but that&apos;s a guess.
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
