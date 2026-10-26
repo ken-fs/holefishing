@@ -69,6 +69,23 @@ export default function UpdatesPage() {
       <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
         <div className="flex items-center gap-2 mb-2">
           <span className="text-xs px-2 py-0.5 rounded-full bg-gray-400/20 text-gray-600 dark:text-gray-400 font-bold uppercase border border-gray-400/40">New patch</span>
+          <h2 className="text-xl font-black">🎃 Oct 25 Halloween Republish (title is now [🎃HALLOWEEN])</h2>
+        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          The game was republished again on <strong>Oct 25, 18:26 UTC</strong>, during the Halloween event window. The title changed from{' '}
+          <strong>[⏳]</strong> to <strong>[🎃HALLOWEEN]</strong>. We don&apos;t know the full list of new rods and fish yet, so we haven&apos;t added any.
+        </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          The description is the same short text and has no code. There are still no working codes.
+        </p>
+        <p className="text-xs text-gray-500">
+          Sources: Roblox game API (update time, title, description), UrGameTips codes page (no working codes, checked Oct 26).
+        </p>
+      </article>
+
+      <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-gray-400/20 text-gray-600 dark:text-gray-400 font-bold uppercase border border-gray-400/40">New patch</span>
           <h2 className="text-xl font-black">🔧 Oct 25 Pre-Event Republish (contents not confirmed yet)</h2>
         </div>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
