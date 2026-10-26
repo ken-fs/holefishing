@@ -6,7 +6,7 @@ import { generateSEOMetadata, generateBreadcrumbSchema, getCurrentDateString } f
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Updates (${getCurrentDateString()}) — Patch Notes & Events`,
   description:
-    'Latest Hole Fishing updates: Halloween 🎃 Event + Admin Abuse confirmed for Oct 25, Oct 18 patch ([🎣UPDATE]), and a 2-hour full-playthrough verification — Celestial rarity tier, Rainbow event fish pool, Tree/Lava/Cosmic rod prices confirmed.',
+    'Latest Hole Fishing updates: next UPDATE + ADMIN ABUSE already scheduled for Nov 1 (15:00 UTC), Halloween 🎃 event live Oct 25–26 with the [🎃HALLOWEEN] title, and the weekly Sunday event cadence explained.',
   keywords: ['hole fishing update', 'hole fishing new update', 'hole fishing admin abuse', 'hole fishing october update', 'hole fishing baits update', 'hole fishing patch notes'],
   path: '/updates',
 });
@@ -42,10 +42,28 @@ export default function UpdatesPage() {
         </div>
       </div>
 
+      <article className="mb-8 p-5 rounded-xl border border-cyan-300 dark:border-cyan-800 bg-cyan-50 dark:bg-cyan-950/20">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-cyan-400/20 text-cyan-600 dark:text-cyan-400 font-bold uppercase border border-cyan-400/40">Scheduled</span>
+          <h2 className="text-xl font-black">🗓️ Next Event: UPDATE + ADMIN ABUSE (Nov 1, 2026)</h2>
+        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          While the Halloween window is still running, the official Roblox events listing has already moved on to the next
+          session: <strong>&quot;UPDATE + ADMIN ABUSE&quot;</strong> — no Halloween branding — scheduled for{' '}
+          <strong>Sun, Nov 1, 10 AM ET / 7 AM PT / 3 PM UK</strong> (15:00 UTC — note the US clock change that morning),{' '}
+          running through <strong>Mon, Nov 2, 16:00 UTC</strong>, with the same subtitle:{' '}
+          <strong>&quot;New rods, fish and more!&quot;</strong> That keeps the weekly Sunday pattern going (Oct 4 → Oct 11 →{' '}
+          Oct 18 → Oct 25 → Nov 1), one hour <em>earlier</em> than the last two events.
+        </p>
+        <p className="text-xs text-gray-500">
+          Source: Roblox virtual-events API for universe 9906378607, checked Oct 26, 2026 (event entry updated Oct 25, 19:02 UTC — about half an hour after the Halloween republish).
+        </p>
+      </article>
+
       <article className="mb-8 p-5 rounded-xl border border-green-300 dark:border-green-800 bg-green-50 dark:bg-green-950/20">
         <div className="flex items-center gap-2 mb-2">
           <span className="text-xs px-2 py-0.5 rounded-full bg-green-400/20 text-green-600 dark:text-green-400 font-bold uppercase border border-green-400/40">Live now</span>
-          <h2 className="text-xl font-black">🎃 Next Event: Halloween Event + Admin Abuse (Oct 25, 2026)</h2>
+          <h2 className="text-xl font-black">🎃 Halloween Event + Admin Abuse (Oct 25–26, 2026)</h2>
         </div>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
           The official Roblox events listing was updated minutes after the Oct 18 patch and now shows the next event as{' '}

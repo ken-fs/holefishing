@@ -14,13 +14,13 @@ export const metadata: Metadata = generateSEOMetadata({
   languages: CODES_LANGS,
 });
 
-// 里程碑数据来自 Roblox 公开 API（09-30 实测：votes / games / groups 端点；10-14 重拉）
+// 里程碑数据来自 Roblox 公开 API（09-30 实测：votes / games / groups 端点；10-14 / 10-26 重拉）
 // passed = 经典触发线（均已越过、仍无码）；next = 下一档整数里程碑
 const MILESTONES = [
-  { label: 'Likes', now: 63660, passed: 60000, next: 75000, note: '60K crossed on the Oct 11 "[NOW]" update — no code dropped with it. 75K is the next watch line.' },
-  { label: 'Visits', now: 14245720, passed: 10000000, next: 15000000, note: 'The classic simulator code trigger. 10M and the Baits update both passed with no code; 15M is approaching fast.' },
-  { label: 'Favorites', now: 482663, passed: 400000, next: 500000, note: '400K favorites also crossed without a code — the devs are clearly not milestone-driven. 500K next.' },
-  { label: 'Group members', now: 119448, passed: 100000, next: 125000, note: 'The 67K CCU group crossed 100K members without announcing codes.' },
+  { label: 'Likes', now: 66850, passed: 60000, next: 75000, note: '60K crossed on the Oct 11 "[NOW]" update — no code dropped with it. 75K is the next watch line.' },
+  { label: 'Visits', now: 15999362, passed: 15000000, next: 20000000, note: 'The classic simulator code trigger. 10M and the Baits update passed with no code — and 15M crossed in the run-up to the Halloween event, still with no code. 20M next.' },
+  { label: 'Favorites', now: 531066, passed: 500000, next: 1000000, note: '500K favorites crossed during the Halloween build-up — the devs are clearly not milestone-driven. 1M is the next round number.' },
+  { label: 'Group members', now: 124531, passed: 100000, next: 125000, note: 'The 67K CCU group crossed 100K members without announcing codes.' },
 ];
 
 // 聚合站 9/26 起集体列出的 5 个「码」——10/2 逐帧实证：游戏已有兑换 UI（Exclusive Store→Codes），但无任何成功兑换画面
@@ -37,7 +37,7 @@ export default function CodesPage() {
   const config = getGameConfig();
   const hasCodes = codes.active.length > 0;
   const version = config.game.currentVersion;
-  const groupMembers = 119448; // Roblox groups API, 2026-10-14
+  const groupMembers = 124531; // Roblox groups API, 2026-10-26
   const breadcrumb = generateBreadcrumbSchema([
     { name: 'Home', url: '/' },
     { name: 'Codes', url: '/codes' },
@@ -61,7 +61,7 @@ export default function CodesPage() {
     {
       question: 'When will Hole Fishing release its first codes?',
       answer:
-        'No official date yet. The redemption box has been in the game since late September, and the developers have teased "admin codes" in chat before — but the Oct 4, Oct 11 and Oct 18, 2026 Admin Abuse events all came and went without a code. The next chance is the 🎃 EVENT + ADMIN ABUSE on Oct 25, 2026. We re-check during and after every event.',
+        'No official date yet. The redemption box has been in the game since late September, and the developers have teased "admin codes" in chat before — but the Oct 4, Oct 11 and Oct 18, 2026 Admin Abuse events all came and went without a code, and the 🎃 Halloween window (Oct 25–26) is passing without one too. The next chance is the UPDATE + ADMIN ABUSE on Nov 1, 2026. We re-check during and after every event.',
     },
     {
       question: 'Are the Hole Fishing codes on other websites real?',
@@ -118,24 +118,26 @@ export default function CodesPage() {
         )}
       </section>
 
-      {/* 10-22 复查：Oct 18 场（10-19T20:00Z 结束）无码；virtual-events API 下一场 10-25T16:00Z → 10-26T16:00Z */}
+      {/* 10-26 复查：万圣节窗口进行中（10-26T16:00Z 结束）仍无码；virtual-events API 下一场 11-01T15:00Z → 11-02T16:00Z */}
       <section className="mb-10 p-5 rounded-xl border border-cyan-300 dark:border-cyan-800 bg-cyan-50 dark:bg-cyan-950/20">
-        <h2 className="text-lg font-bold mb-2">📅 Next code watch: 🎃 EVENT + ADMIN ABUSE — Sunday, Oct 25</h2>
+        <h2 className="text-lg font-bold mb-2">📅 Next code watch: UPDATE + ADMIN ABUSE — Sunday, Nov 1</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-          The next event starts <strong>Sunday, October 25, 2026 at 16:00 UTC</strong> (9 AM PT / 12 PM ET / midnight Monday
-          in the Philippines / 11 PM Sunday in Indonesia and Thailand) and runs until <strong>Monday, Oct 26 at 16:00
-          UTC</strong>. The official Roblox listing says &quot;New rods, fish and more!&quot; — same format as the last two
-          weeks, one hour later, with a Halloween skin on it. Timezone table:{' '}
-          <Link href="/events/halloween" className="underline">Halloween event page</Link>.
+          The 🎃 Halloween window (Oct 25, 16:00 UTC → Oct 26, 16:00 UTC) is live as we publish this — and the pattern
+          holds: the game was republished mid-window with the title now <strong>[🎃HALLOWEEN]</strong>, but{' '}
+          <strong>no code string</strong> has appeared in the game description, on the 67K CCU group, or in any creator
+          footage we could verify.
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-          <strong>Three events, three times no code.</strong> Oct 4 (x20 Global Luck finale), Oct 11 (50x Global Luck) and
-          Oct 18 (patch dropped mid-window) all ended without a code string — the Oct 18 window closed on Oct 19, 20:00 UTC
-          and post-event footage through Oct 22 shows nothing. The game description and the 67K CCU group have no code
-          either.
+          The next event is already listed: <strong>Sunday, November 1, 2026 at 15:00 UTC</strong> (10 AM ET / 7 AM PT /
+          11 PM in the Philippines — the US clock changes that morning) and runs until <strong>Monday, Nov 2 at 16:00
+          UTC</strong>. The official Roblox listing keeps the subtitle &quot;New rods, fish and more!&quot; but drops the
+          Halloween branding and starts one hour earlier.
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400">
-          If one shows up on Oct 25, it goes in the Active Codes box above. The full event-by-event log is on the{' '}
+          <strong>Four windows, four times no code.</strong> Oct 4 (x20 Global Luck finale), Oct 11 (50x Global Luck), Oct
+          18 (patch dropped mid-window) all ended without a code string — and the Halloween window has produced none in
+          its first 11 hours either (the Admin Abuse hour at the start is where a code would drop). If one ever shows
+          up, it goes in the Active Codes box above. The full event-by-event log is on the{' '}
           <Link href="/events/admin-abuse" className="underline">Admin Abuse page</Link>, and what each patch changed is in
           the <Link href="/updates" className="underline">updates log</Link>.
         </p>
@@ -165,7 +167,7 @@ export default function CodesPage() {
             catches). No code attached to it either.
           </li>
           <li>
-            <strong>🎃 Halloween event (Oct 25–26)</strong> — upcoming; the listing mentions new rods and fish only, no codes.
+            <strong>🎃 Halloween event (Oct 25–26)</strong> — checked 11 hours into the 24-hour window: the title changed to [🎃HALLOWEEN] and the listing mentioned new rods and fish only. No code.
           </li>
         </ul>
         <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">
@@ -228,7 +230,7 @@ export default function CodesPage() {
         <p className="text-sm text-gray-500 mb-4">
           Roblox simulators usually drop their first codes on a milestone. Hole Fishing has already{' '}
           <strong>passed all four classic triggers without adding codes</strong> — so milestones alone are not a
-          reliable signal for this game. Counters below are from the Roblox public API (checked October 14, 2026).
+          reliable signal for this game. Counters below are from the Roblox public API (checked October 26, 2026).
         </p>
         <div className="space-y-3">
           {MILESTONES.map((m) => {
