@@ -6,7 +6,7 @@ import { generateSEOMetadata, generateBreadcrumbSchema, getCurrentDateString } f
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Updates (${getCurrentDateString()}) — Patch Notes & Events`,
   description:
-    'Latest Hole Fishing updates: next UPDATE + ADMIN ABUSE already scheduled for Nov 1 (15:00 UTC), Halloween 🎃 event live Oct 25–26 with the [🎃HALLOWEEN] title, and the weekly Sunday event cadence explained.',
+    'Latest Hole Fishing updates: next UPDATE + ADMIN ABUSE scheduled for Nov 1 (15:00 UTC), the Halloween window closed Oct 26, and two newly documented fish sightings.',
   keywords: ['hole fishing update', 'hole fishing new update', 'hole fishing admin abuse', 'hole fishing october update', 'hole fishing baits update', 'hole fishing patch notes'],
   path: '/updates',
 });
@@ -48,7 +48,7 @@ export default function UpdatesPage() {
           <h2 className="text-xl font-black">🗓️ Next Event: UPDATE + ADMIN ABUSE (Nov 1, 2026)</h2>
         </div>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-          While the Halloween window is still running, the official Roblox events listing has already moved on to the next
+          Before the Halloween window closed, the official Roblox events listing had already moved on to the next
           session: <strong>&quot;UPDATE + ADMIN ABUSE&quot;</strong> — no Halloween branding — scheduled for{' '}
           <strong>Sun, Nov 1, 10 AM ET / 7 AM PT / 3 PM UK</strong> (15:00 UTC — note the US clock change that morning),{' '}
           running through <strong>Mon, Nov 2, 16:00 UTC</strong>, with the same subtitle:{' '}
@@ -60,27 +60,43 @@ export default function UpdatesPage() {
         </p>
       </article>
 
+      <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-blue-400/20 text-blue-600 dark:text-blue-400 font-bold uppercase border border-blue-400/40">Footage reviewed</span>
+          <h2 className="text-xl font-black">🎥 Oct 27: Penguin and Dreadjaw added to the Fish Index</h2>
+        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Today&apos;s YouTube and Tavily gap check found two catches missing from our index. Neither is being labeled
+          Halloween-exclusive — the sources do not establish that.
+        </p>
+        <ul className="list-disc pl-5 space-y-1.5 text-sm text-gray-600 dark:text-gray-400 mb-3">
+          <li><strong>Penguin</strong>: its name is independently confirmed by justanotherantinthehill&apos;s Oct 19 gameplay and FM and Toys&apos; Oct 25 catch footage. Rarity and value remain unknown.</li>
+          <li><strong>Dreadjaw</strong>: repeatedly caught and named in FM and Toys&apos; Oct 3–25 gameplay. A secondary guide calls it Secret, but without a readable rarity banner we keep its rarity and value unknown and mark the entry unverified.</li>
+        </ul>
+        <p className="text-xs text-gray-500">
+          Sources: justanotherantinthehill &quot;I Caught a PENGUIN in Hole Fishing…&quot; (65HemAujz5o, Oct 19, 2026); FM and Toys gameplay (CBO7in3ViYc, oggaoOc8VDs and XM69WrVluBQ, Oct 3–25); AllThingsHow used only as an unconfirmed Dreadjaw cross-check.
+        </p>
+      </article>
+
       <article className="mb-8 p-5 rounded-xl border border-green-300 dark:border-green-800 bg-green-50 dark:bg-green-950/20">
         <div className="flex items-center gap-2 mb-2">
-          <span className="text-xs px-2 py-0.5 rounded-full bg-green-400/20 text-green-600 dark:text-green-400 font-bold uppercase border border-green-400/40">Live now</span>
+          <span className="text-xs px-2 py-0.5 rounded-full bg-green-400/20 text-green-600 dark:text-green-400 font-bold uppercase border border-green-400/40">Window ended</span>
           <h2 className="text-xl font-black">🎃 Halloween Event + Admin Abuse (Oct 25–26, 2026)</h2>
         </div>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-          The official Roblox events listing was updated minutes after the Oct 18 patch and now shows the next event as{' '}
-          <strong>&quot;🎃 EVENT + ADMIN ABUSE&quot;</strong> — a <strong>Halloween-themed session</strong> — scheduled for{' '}
-          <strong>Sun, Oct 25, 9 AM PT / 12 PM ET / 5 PM UK</strong> (16:00 UTC), running through <strong>Mon, Oct 26, 16:00 UTC</strong>,{' '}
-          with the same subtitle: <strong>&quot;New rods, fish and more!&quot;</strong> That keeps the weekly Sunday pattern going{' '}
-          (Oct 4 → Oct 11 → Oct 18 → Oct 25), one hour later than before.
+          The official Roblox events listing scheduled <strong>&quot;🎃 EVENT + ADMIN ABUSE&quot;</strong> for{' '}
+          <strong>Sun, Oct 25, 16:00 UTC through Mon, Oct 26, 16:00 UTC</strong>, with the subtitle{' '}
+          <strong>&quot;New rods, fish and more!&quot;</strong> That listed window has now ended.
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-          Based on the last two sessions, expect roughly an hour of rotating server-wide mutations with countdown banners, a dev-run
-          luck poll (Oct 11 hit <strong>50x Global Luck</strong>), Double Cast / Double Catch windows, sell-cash boosts, and the best
-          multiplier saved for the finale. Be online at the start and stay for the last minutes. Any verified new rods or fish land
-          on the <Link href="/rods" className="underline">Rod Tier List</Link> and <Link href="/fish" className="underline">Fish Index</Link>{' '}
-          the same day — and if a code ever drops, it lands on the <Link href="/codes" className="underline">codes page</Link> within hours.
+          <strong>Post-event check, Oct 27:</strong> the game API still reports the <strong>[🎃HALLOWEEN]</strong> title and no
+          republish after Oct 25, 18:26 UTC. Today&apos;s checks found no verified code and no reliably readable Halloween-specific
+          rod or fish names. Any confirmed additions will land on the <Link href="/rods" className="underline">Rod Tier List</Link>{' '}
+          and <Link href="/fish" className="underline">Fish Index</Link>; any real code goes straight to the{' '}
+          <Link href="/codes" className="underline">codes page</Link>.
         </p>
         <p className="text-xs text-gray-500">
-          Source: Roblox virtual-events API for universe 9906378607, re-checked Oct 20, 2026 (event entry updated Oct 18 16:31 UTC — right after the patch). The game itself was last republished Oct 18, 16:25 UTC (see below).
+          Sources: Roblox virtual-events API for the original schedule (universe 9906378607); Roblox game API re-checked Oct 27, 2026; UrGameTips still lists zero working codes.
         </p>
       </article>
 

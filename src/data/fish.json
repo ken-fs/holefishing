@@ -590,6 +590,23 @@
       "weightKg": 34000,
       "note": "Oct 18, 2026 footage: caught as \"Abyssal Tiger Fish\" and shown on the best-catch board as a 34,000 kg specimen (~$146B with ~4x multipliers). Captions also read \"Tiger Angel Fish\", so the exact name is unconfirmed.",
       "unverified": true
+    },
+    {
+      "slug": "penguin",
+      "name": "Penguin",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Name independently confirmed in justanotherantinthehill's Oct 19, 2026 gameplay (video title and subtitles) and FM and Toys' Oct 25 catch footage. Rarity and sale value remain unconfirmed."
+    },
+    {
+      "slug": "dreadjaw",
+      "name": "Dreadjaw",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Repeatedly caught and named in FM and Toys' Oct 3–25, 2026 gameplay, including the Oct 8 video at about 1:48. A secondary guide calls it Secret, but no reliably readable rarity banner or base sale value was found, so those details stay unconfirmed.",
+      "unverified": true
     }
   ]
 }
