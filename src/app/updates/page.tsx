@@ -6,7 +6,7 @@ import { generateSEOMetadata, generateBreadcrumbSchema, getCurrentDateString } f
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Updates (${getCurrentDateString()}) — Patch Notes & Events`,
   description:
-    'Latest Hole Fishing updates: next UPDATE + ADMIN ABUSE scheduled for Nov 1 (15:00 UTC), the Halloween window closed Oct 26, and two newly documented fish sightings.',
+    'Latest Hole Fishing updates: Nov 1 Admin Abuse schedule, the Halloween Pumpkin Rod, 11 newly documented fish, and the Oct 25 Halloween patch.',
   keywords: ['hole fishing update', 'hole fishing new update', 'hole fishing admin abuse', 'hole fishing october update', 'hole fishing baits update', 'hole fishing patch notes'],
   path: '/updates',
 });
@@ -57,6 +57,27 @@ export default function UpdatesPage() {
         </p>
         <p className="text-xs text-gray-500">
           Source: Roblox virtual-events API for universe 9906378607, checked Oct 26, 2026 (event entry updated Oct 25, 19:02 UTC — about half an hour after the Halloween republish).
+        </p>
+      </article>
+
+      <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-blue-400/20 text-blue-600 dark:text-blue-400 font-bold uppercase border border-blue-400/40">Footage reviewed</span>
+          <h2 className="text-xl font-black">🎥 Oct 28: Pumpkin Rod and 11 fish added from Halloween-build gameplay</h2>
+        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Today&apos;s YouTube gap check reviewed FM and Toys&apos; Oct 27 gameplay frame by frame. The in-game pedestal and
+          catch banners confirmed a missing rod and 11 missing species. We are not labeling every catch Halloween-exclusive:
+          the footage alone does not establish their availability after the event.
+        </p>
+        <ul className="list-disc pl-5 space-y-1.5 text-sm text-gray-600 dark:text-gray-400 mb-3">
+          <li><strong>Pumpkin Rod</strong>: limited-stock lobby pedestal, <strong>R$399, 1,600 kg, x2.30 reel</strong>. Added to the <Link href="/rods" className="underline">Rod Tier List</Link> as a Robux-only rod.</li>
+          <li><strong>Standard-tier banner reads</strong>: Sea Otter (Uncommon), Coral Kraken (Mythic), Axolotl (Secret) and Sawshark (Mythic).</li>
+          <li><strong>Higher-tier banner reads</strong>: Anvilhead (Celestial), Mossback Behemoth (Divine), Cuttlefish and Bluefin Titan (Primordial), plus Ghost Nautilus (Abyssal) and Ghost Snow Siren (Ethereal). The base Nautilus and Snow Siren entries use Unknown rarity because those tiers are not in our data model.</li>
+          <li><strong>Emerald Bass</strong>: name confirmed, but its rarity label was cropped out. All 11 additions are marked single-source/unverified in the <Link href="/fish" className="underline">Fish Index</Link>; no ambiguous sell values were copied.</li>
+        </ul>
+        <p className="text-xs text-gray-500">
+          Source: FM and Toys gameplay (-zEy0_iLPAM, Oct 27, 2026). Names and rarities were read from the in-game banners; the fish is <strong>Mossback Behemoth</strong>, despite the video description saying &quot;Massback&quot;.
         </p>
       </article>
 

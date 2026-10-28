@@ -332,9 +332,20 @@
       "note": "A limited-stock Robux rod on a lobby pedestal: x2.20 reel, 1,400 kg. Stock showed 944/999 left on Oct 6 and 431/999 on Oct 11 (GAMER FAV stream). A lobby countdown next to the rod read ~1d 23h on Oct 11, pointing at a removal around Oct 13 ~16:00 UTC (provisional — boards can change). Price R$399."
     },
     {
+      "slug": "pumpkin-rod",
+      "name": "Pumpkin Rod",
+      "order": 31,
+      "price": 0,
+      "priceText": "Robux only (R$399)",
+      "maxWeightKg": 1600,
+      "tier": "A",
+      "priceVerified": false,
+      "note": "Halloween limited-stock Robux rod seen on a lobby pedestal in FM and Toys' Oct 27, 2026 footage (-zEy0_iLPAM): x2.30 reel, 1,600 kg, R$399. The pedestal showed 973/999 stock at recording; stock is dynamic."
+    },
+    {
       "slug": "leaf-rod",
       "name": "Leaf Rod",
-      "order": 31,
+      "order": 32,
       "price": 25000,
       "priceText": "Not in shop",
       "maxWeightKg": 80,
@@ -345,7 +356,7 @@
     {
       "slug": "night-rod",
       "name": "Night Rod",
-      "order": 32,
+      "order": 33,
       "price": 180000,
       "priceText": "Not in shop",
       "maxWeightKg": 150,
@@ -356,7 +367,7 @@
     {
       "slug": "void-rod",
       "name": "Void Rod",
-      "order": 33,
+      "order": 34,
       "price": 60000000,
       "priceText": "Not in shop",
       "maxWeightKg": 30000,

@@ -607,6 +607,105 @@
       "valueRange": "Unknown",
       "note": "Repeatedly caught and named in FM and Toys' Oct 3–25, 2026 gameplay, including the Oct 8 video at about 1:48. A secondary guide calls it Secret, but no reliably readable rarity banner or base sale value was found, so those details stay unconfirmed.",
       "unverified": true
+    },
+    {
+      "slug": "sea-otter",
+      "name": "Sea Otter",
+      "rarity": "Uncommon",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Catch banner read \"Uncommon Sea Otter\" in FM and Toys' Oct 27, 2026 gameplay (-zEy0_iLPAM). Single-creator sighting; base sale value and availability remain unconfirmed.",
+      "unverified": true
+    },
+    {
+      "slug": "emerald-bass",
+      "name": "Emerald Bass",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Name read clearly on a catch banner in FM and Toys' Oct 27, 2026 gameplay (-zEy0_iLPAM). The rarity label was cropped out, so rarity and base sale value stay unknown.",
+      "unverified": true
+    },
+    {
+      "slug": "coral-kraken",
+      "name": "Coral Kraken",
+      "rarity": "Mythical",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Catch banner read \"Mythic Coral Kraken\" in FM and Toys' Oct 27, 2026 gameplay (-zEy0_iLPAM). Single-creator sighting; base sale value and availability remain unconfirmed.",
+      "unverified": true
+    },
+    {
+      "slug": "axolotl",
+      "name": "Axolotl",
+      "rarity": "Secret",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Catch banner read \"Secret Axolotl\" in FM and Toys' Oct 27, 2026 gameplay (-zEy0_iLPAM). Single-creator sighting; base sale value and availability remain unconfirmed.",
+      "unverified": true
+    },
+    {
+      "slug": "nautilus",
+      "name": "Nautilus",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "A Ghost Nautilus catch carried an \"Abyssal\" banner in FM and Toys' Oct 27, 2026 gameplay (-zEy0_iLPAM). The base species is indexed here; that tier is outside our current data model and base value is unknown.",
+      "unverified": true
+    },
+    {
+      "slug": "snow-siren",
+      "name": "Snow Siren",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "A Ghost Snow Siren catch carried an \"Ethereal\" banner in FM and Toys' Oct 27, 2026 gameplay (-zEy0_iLPAM). The base species is indexed here; that tier is outside our current data model and base value is unknown.",
+      "unverified": true
+    },
+    {
+      "slug": "sawshark",
+      "name": "Sawshark",
+      "rarity": "Mythical",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Catch banner read \"Mythic Sawshark\" in FM and Toys' Oct 27, 2026 gameplay (-zEy0_iLPAM). Kept separate from Sawfish because the on-screen name is explicitly Sawshark; base value is unknown.",
+      "unverified": true
+    },
+    {
+      "slug": "anvilhead",
+      "name": "Anvilhead",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Catch banner read \"Celestial Anvilhead\" in FM and Toys' Oct 27, 2026 gameplay (-zEy0_iLPAM). Celestial is outside our current rarity data model; base sale value and availability remain unconfirmed.",
+      "unverified": true
+    },
+    {
+      "slug": "mossback-behemoth",
+      "name": "Mossback Behemoth",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Catch banner read \"Divine Mossback Behemoth\" in FM and Toys' Oct 27, 2026 gameplay (-zEy0_iLPAM). We use the banner spelling, not the video description's \"Massback\" typo. Divine is outside our current rarity model; base value is unknown.",
+      "unverified": true
+    },
+    {
+      "slug": "cuttlefish",
+      "name": "Cuttlefish",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Catch banner read \"Primordial Cuttlefish\" in FM and Toys' Oct 27, 2026 gameplay (-zEy0_iLPAM). Primordial is outside our current rarity data model; base sale value and availability remain unconfirmed.",
+      "unverified": true
+    },
+    {
+      "slug": "bluefin-titan",
+      "name": "Bluefin Titan",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Catch banner read \"Primordial Bluefin Titan\" in FM and Toys' Oct 27, 2026 gameplay (-zEy0_iLPAM). Primordial is outside our current rarity data model; base sale value and availability remain unconfirmed.",
+      "unverified": true
     }
   ]
 }
