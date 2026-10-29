@@ -706,6 +706,60 @@
       "valueRange": "Unknown",
       "note": "Catch banner read \"Primordial Bluefin Titan\" in FM and Toys' Oct 27, 2026 gameplay (-zEy0_iLPAM). Primordial is outside our current rarity data model; base sale value and availability remain unconfirmed.",
       "unverified": true
+    },
+    {
+      "slug": "flounder",
+      "name": "Flounder",
+      "rarity": "Rare",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "A Big Rainbow Flounder catch carried a \"Rare\" banner in FM and Toys' Oct 26, 2026 gameplay (dUZn0xqJyVc). Big and Rainbow are treated as modifiers; base sale value is unknown.",
+      "unverified": true
+    },
+    {
+      "slug": "lobster",
+      "name": "Lobster",
+      "rarity": "Uncommon",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Catch banner read \"Uncommon Rainbow Lobster\" in FM and Toys' Oct 26, 2026 gameplay (dUZn0xqJyVc). The base species is indexed here; base sale value is unknown.",
+      "unverified": true
+    },
+    {
+      "slug": "hermit-crab",
+      "name": "Hermit Crab",
+      "rarity": "Uncommon",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Catch banner read \"Uncommon Rainbow Hermit Crab\" in FM and Toys' Oct 26, 2026 gameplay (dUZn0xqJyVc). The base species is indexed here; base sale value is unknown.",
+      "unverified": true
+    },
+    {
+      "slug": "manatee",
+      "name": "Manatee",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "A Rainbow Manatee catch carried an \"Ethereal\" banner in FM and Toys' Oct 26, 2026 gameplay (dUZn0xqJyVc). Ethereal is outside our current rarity data model; base sale value is unknown.",
+      "unverified": true
+    },
+    {
+      "slug": "sapphire-tuna",
+      "name": "Sapphire Tuna",
+      "rarity": "Secret",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Catch banner read \"Secret Sapphire Tuna\" in FM and Toys' Oct 26, 2026 gameplay (dUZn0xqJyVc). Single-creator sighting; base sale value is unknown.",
+      "unverified": true
+    },
+    {
+      "slug": "sea-glitch",
+      "name": "Sea Glitch",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Catch banner read \"Celestial Sea Glitch\" in FM and Toys' Oct 26, 2026 gameplay (dUZn0xqJyVc). Celestial is outside our current rarity data model; base sale value is unknown.",
+      "unverified": true
     }
   ]
 }

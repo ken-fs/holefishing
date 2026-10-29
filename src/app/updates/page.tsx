@@ -6,7 +6,7 @@ import { generateSEOMetadata, generateBreadcrumbSchema, getCurrentDateString } f
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Updates (${getCurrentDateString()}) — Patch Notes & Events`,
   description:
-    'Latest Hole Fishing updates: Nov 1 Admin Abuse schedule, the Halloween Pumpkin Rod, 11 newly documented fish, and the Oct 25 Halloween patch.',
+    'Latest Hole Fishing updates: six more documented fish, the Nov 1 Admin Abuse schedule, the Halloween Pumpkin Rod, and the Oct 25 Halloween patch.',
   keywords: ['hole fishing update', 'hole fishing new update', 'hole fishing admin abuse', 'hole fishing october update', 'hole fishing baits update', 'hole fishing patch notes'],
   path: '/updates',
 });
@@ -57,6 +57,29 @@ export default function UpdatesPage() {
         </p>
         <p className="text-xs text-gray-500">
           Source: Roblox virtual-events API for universe 9906378607, checked Oct 26, 2026 (event entry updated Oct 25, 19:02 UTC — about half an hour after the Halloween republish).
+        </p>
+      </article>
+
+      <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-blue-400/20 text-blue-600 dark:text-blue-400 font-bold uppercase border border-blue-400/40">Footage reviewed</span>
+          <h2 className="text-xl font-black">🎥 Oct 29: Six more fish confirmed from Oct 26 gameplay</h2>
+        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          A fresh gap check of FM and Toys&apos; Oct 26 video found six missing species with readable catch banners.
+          All six are now in the <Link href="/fish" className="underline">Fish Index</Link> as single-source, unverified sightings.
+        </p>
+        <ul className="list-disc pl-5 space-y-1.5 text-sm text-gray-600 dark:text-gray-400 mb-3">
+          <li><strong>Uncommon</strong>: Rainbow Lobster and Rainbow Hermit Crab; the base entries are Lobster and Hermit Crab.</li>
+          <li><strong>Rare</strong>: a Big Rainbow Flounder, indexed under the base species Flounder.</li>
+          <li><strong>Secret</strong>: Sapphire Tuna.</li>
+          <li><strong>Higher-tier banners</strong>: Rainbow Manatee (Ethereal) and Sea Glitch (Celestial). Both use Unknown rarity because those tiers are not in our data model.</li>
+        </ul>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Big and Rainbow are treated as modifiers, not separate base species. No sale values were copied because the footage shows late-game multipliers. The video&apos;s sea-urchin footage is not indexed as &quot;Sea Urchin&quot;: the actual in-game banner reads <strong>Sea Glitch</strong>.
+        </p>
+        <p className="text-xs text-gray-500">
+          Source: FM and Toys gameplay (dUZn0xqJyVc, Oct 26, 2026), names and rarities read directly from the in-game catch banners.
         </p>
       </article>
 
