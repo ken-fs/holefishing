@@ -37,10 +37,10 @@
     {
       "slug": "red-snapper",
       "name": "Red Snapper",
-      "rarity": "Common",
+      "rarity": "Uncommon",
       "time": "day",
       "valueRange": "$70–$400",
-      "note": "Reliable early filler catch."
+      "note": "Reliable early filler catch. An Oct 29, 2026 catch banner read \"Uncommon Red Snapper\" in FM and Toys gameplay (v-oxxsFrqhw), superseding the earlier Common label; the late-game sale shown was not used as a base value."
     },
     {
       "slug": "clownfish",
@@ -182,10 +182,10 @@
     {
       "slug": "octopus",
       "name": "Octopus",
-      "rarity": "Epic",
+      "rarity": "Rare",
       "time": "day",
       "valueRange": "$20,000–$70,000",
-      "note": "~65 kg. Big Rare Octopus mutations confirmed.",
+      "note": "~65 kg. An Oct 29, 2026 catch banner read \"Rare Octopus\" in FM and Toys gameplay (v-oxxsFrqhw), superseding the earlier Epic label. Big variants exist; the value range is retained from earlier observations.",
       "weightKg": 65
     },
     {
@@ -257,10 +257,10 @@
     {
       "slug": "sawfish",
       "name": "Sawfish",
-      "rarity": "Mythical",
+      "rarity": "Epic",
       "time": "day",
       "valueRange": "$60,000–$200,000,000",
-      "note": "Value swings wildly with upgrades — late-game sawfish are nine figures."
+      "note": "Value swings wildly with upgrades — late-game sawfish are nine figures. An Oct 29, 2026 catch banner read \"Epic Sawfish\" in FM and Toys gameplay (v-oxxsFrqhw), superseding the earlier Mythical label."
     },
     {
       "slug": "sunfish",
@@ -433,10 +433,10 @@
     {
       "slug": "shrine-koi",
       "name": "Shrine Koi",
-      "rarity": "Unknown",
+      "rarity": "Rare",
       "time": "any",
       "valueRange": "Unknown",
-      "note": "Two independent sightings: RoBros' Sept 23, 2026 video (caught live for ~$70,000 during an admin-abuse cash boost — value possibly inflated) and Sept 24, 2026 creator footage (\"we got a shrine koi — that's my best catch\"). Rarity and true sell value not readable on screen.",
+      "note": "Two earlier independent sightings: RoBros' Sept 23, 2026 video and Sept 24 creator footage. An Oct 29, 2026 catch banner in FM and Toys gameplay (v-oxxsFrqhw) read \"Rare Shrine Koi\". Base sell value remains unknown; earlier values were boosted.",
       "unverified": true
     },
     {
@@ -513,10 +513,10 @@
     {
       "slug": "dolphin",
       "name": "Dolphin",
-      "rarity": "Unknown",
+      "rarity": "Legendary",
       "time": "any",
       "valueRange": "Unknown",
-      "note": "Rainbow-event catch in Oct 18, 2026 footage: \"all we're getting from the rainbow event are seals and dolphins.\" Rarity and value unread.",
+      "note": "First sighted in Oct 18, 2026 Rainbow-event footage. An Oct 29, 2026 Rainbow Dolphin catch carried a \"Legendary\" banner in FM and Toys gameplay (v-oxxsFrqhw). Rainbow is treated as a modifier; base value remains unknown.",
       "unverified": true
     },
     {
@@ -530,11 +530,11 @@
     },
     {
       "slug": "crown-spike",
-      "name": "Crown Spike",
-      "rarity": "Unknown",
+      "name": "Crownspike",
+      "rarity": "Epic",
       "time": "any",
       "valueRange": "Unknown",
-      "note": "Hacker-event catch in two creators' footage (Sept 24 and Oct 18, 2026): \"What exactly is this crown spike? Is it a fish?\" Rarity and value unread.",
+      "note": "Earlier Hacker-event sightings occurred on Sept 24 and Oct 18, 2026. An Oct 29, 2026 catch banner in FM and Toys gameplay (v-oxxsFrqhw) read \"Epic Crownspike\"; the name now follows that on-screen spelling. Base value remains unknown.",
       "unverified": true
     },
     {
@@ -594,10 +594,10 @@
     {
       "slug": "penguin",
       "name": "Penguin",
-      "rarity": "Unknown",
+      "rarity": "Rare",
       "time": "any",
       "valueRange": "Unknown",
-      "note": "Name independently confirmed in justanotherantinthehill's Oct 19, 2026 gameplay (video title and subtitles) and FM and Toys' Oct 25 catch footage. Rarity and sale value remain unconfirmed."
+      "note": "Name independently confirmed in justanotherantinthehill's Oct 19, 2026 gameplay and FM and Toys' Oct 25 footage. An Oct 29 catch banner (v-oxxsFrqhw) read \"Rare Penguin\". Base sale value remains unconfirmed."
     },
     {
       "slug": "dreadjaw",
@@ -759,6 +759,51 @@
       "time": "any",
       "valueRange": "Unknown",
       "note": "Catch banner read \"Celestial Sea Glitch\" in FM and Toys' Oct 26, 2026 gameplay (dUZn0xqJyVc). Celestial is outside our current rarity data model; base sale value is unknown.",
+      "unverified": true
+    },
+    {
+      "slug": "crab",
+      "name": "Crab",
+      "rarity": "Uncommon",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Catch banner read \"Uncommon Crab\" in FM and Toys' Oct 29, 2026 gameplay (v-oxxsFrqhw). Kept separate from Hermit Crab; base sale value is unknown.",
+      "unverified": true
+    },
+    {
+      "slug": "largemouth-bass",
+      "name": "Largemouth Bass",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Inventory label read \"Largemouth Bass\" in FM and Toys' Oct 29, 2026 gameplay (v-oxxsFrqhw). Kept separate from the existing generic Bass entry until another source establishes whether they are distinct; rarity and base value are unknown.",
+      "unverified": true
+    },
+    {
+      "slug": "forgefin",
+      "name": "Forgefin",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Inventory label read \"Forgefin\" in FM and Toys' Oct 29, 2026 gameplay (v-oxxsFrqhw), matching the earlier Sept 24 'Forge Fin' watch-list sighting. No rarity banner or base sale value is available.",
+      "unverified": true
+    },
+    {
+      "slug": "anglerfish",
+      "name": "Anglerfish",
+      "rarity": "Secret",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "A Rainbow Anglerfish catch carried a \"Secret\" banner in FM and Toys' Oct 29, 2026 gameplay (v-oxxsFrqhw). Rainbow is treated as a modifier; this is kept separate from Abyss Angler because the on-screen base name is explicitly Anglerfish. Base value is unknown.",
+      "unverified": true
+    },
+    {
+      "slug": "whale-shark",
+      "name": "Whale Shark",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "A Rainbow Whale Shark catch carried a \"Divine\" banner in FM and Toys' Oct 29, 2026 gameplay (v-oxxsFrqhw). Rainbow is treated as a modifier; Divine is outside our current rarity model, so the base rarity and sale value stay unknown.",
       "unverified": true
     }
   ]

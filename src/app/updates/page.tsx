@@ -6,7 +6,7 @@ import { generateSEOMetadata, generateBreadcrumbSchema, getCurrentDateString } f
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Updates (${getCurrentDateString()}) — Patch Notes & Events`,
   description:
-    'Latest Hole Fishing updates: six more documented fish, the Nov 1 Admin Abuse schedule, the Halloween Pumpkin Rod, and the Oct 25 Halloween patch.',
+    'Latest Hole Fishing updates: five more fish, seven current rarity reads, the Nov 1 Admin Abuse schedule, and Halloween content.',
   keywords: ['hole fishing update', 'hole fishing new update', 'hole fishing admin abuse', 'hole fishing october update', 'hole fishing baits update', 'hole fishing patch notes'],
   path: '/updates',
 });
@@ -57,6 +57,30 @@ export default function UpdatesPage() {
         </p>
         <p className="text-xs text-gray-500">
           Source: Roblox virtual-events API for universe 9906378607, checked Oct 26, 2026 (event entry updated Oct 25, 19:02 UTC — about half an hour after the Halloween republish).
+        </p>
+      </article>
+
+      <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-blue-400/20 text-blue-600 dark:text-blue-400 font-bold uppercase border border-blue-400/40">Footage reviewed</span>
+          <h2 className="text-xl font-black">🎥 Oct 30: Five species and seven rarity reads from Oct 29 gameplay</h2>
+        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          A frame-by-frame gap check of FM and Toys&apos; latest video found five labels missing from our index and supplied
+          direct rarity banners for seven existing entries. All five additions are marked single-source/unverified in the{' '}
+          <Link href="/fish" className="underline">Fish Index</Link>.
+        </p>
+        <ul className="list-disc pl-5 space-y-1.5 text-sm text-gray-600 dark:text-gray-400 mb-3">
+          <li><strong>New catch banners</strong>: Crab (Uncommon), Anglerfish (Secret, from Rainbow Anglerfish), and Whale Shark (Divine, from Rainbow Whale Shark). Divine is outside our rarity model, so Whale Shark stays Unknown.</li>
+          <li><strong>New inventory labels</strong>: Largemouth Bass and Forgefin. Their rarities remain Unknown; Largemouth Bass is kept separate from the generic Bass entry until a second source clarifies whether they differ.</li>
+          <li><strong>Current rarity reads</strong>: Red Snapper Common → Uncommon, Sawfish Mythical → Epic, Octopus Epic → Rare, Shrine Koi Unknown → Rare, Dolphin Unknown → Legendary, Crownspike Unknown → Epic, and Penguin Unknown → Rare.</li>
+        </ul>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Rainbow and Ghost are treated as modifiers, not separate base species. Crownspike now uses the on-screen spelling without a space.
+          No sale values were copied from this late-game footage because upgrades and event multipliers make them unsuitable as base values.
+        </p>
+        <p className="text-xs text-gray-500">
+          Source: FM and Toys gameplay (v-oxxsFrqhw, Oct 29, 2026), including readable catch banners and the in-game inventory.
         </p>
       </article>
 
