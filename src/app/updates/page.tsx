@@ -6,7 +6,7 @@ import { generateSEOMetadata, generateBreadcrumbSchema, getCurrentDateString } f
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Updates (${getCurrentDateString()}) — Patch Notes & Events`,
   description:
-    'Latest Hole Fishing updates: five more fish, seven current rarity reads, the Nov 1 Admin Abuse schedule, and Halloween content.',
+    'Latest Hole Fishing updates: Horseshoe Crab and Tiger Shark sightings, the Nov 1 Admin Abuse schedule, and Halloween content.',
   keywords: ['hole fishing update', 'hole fishing new update', 'hole fishing admin abuse', 'hole fishing october update', 'hole fishing baits update', 'hole fishing patch notes'],
   path: '/updates',
 });
@@ -57,6 +57,27 @@ export default function UpdatesPage() {
         </p>
         <p className="text-xs text-gray-500">
           Source: Roblox virtual-events API for universe 9906378607, checked Oct 26, 2026 (event entry updated Oct 25, 19:02 UTC — about half an hour after the Halloween republish).
+        </p>
+      </article>
+
+      <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-blue-400/20 text-blue-600 dark:text-blue-400 font-bold uppercase border border-blue-400/40">Footage reviewed</span>
+          <h2 className="text-xl font-black">🎥 Nov 1: Horseshoe Crab and Tiger Shark confirmed from Oct 31 gameplay</h2>
+        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          A gap check of FM and Toys&apos; Oct 31 video found two species missing from our index. Both are now in the{' '}
+          <Link href="/fish" className="underline">Fish Index</Link> as single-source, unverified sightings.
+        </p>
+        <ul className="list-disc pl-5 space-y-1.5 text-sm text-gray-600 dark:text-gray-400 mb-3">
+          <li><strong>Horseshoe Crab</strong>: a Big catch carried a <strong>Primordial</strong> banner. Big is treated as a modifier; Primordial is outside our rarity model, so the base entry stays Unknown.</li>
+          <li><strong>Tiger Shark</strong>: a Rainbow catch also carried a <strong>Primordial</strong> banner. Rainbow is treated as a modifier, and Tiger Shark is kept separate from the existing Tiger Fish entry.</li>
+        </ul>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          No sale values were copied from this late-game footage because upgrades and event multipliers make them unsuitable as base values.
+        </p>
+        <p className="text-xs text-gray-500">
+          Source: FM and Toys gameplay (J-OvYeXZjFc, Oct 31, 2026); names and rarity banners read directly from the in-game catch screens.
         </p>
       </article>
 

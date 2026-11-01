@@ -805,6 +805,24 @@
       "valueRange": "Unknown",
       "note": "A Rainbow Whale Shark catch carried a \"Divine\" banner in FM and Toys' Oct 29, 2026 gameplay (v-oxxsFrqhw). Rainbow is treated as a modifier; Divine is outside our current rarity model, so the base rarity and sale value stay unknown.",
       "unverified": true
+    },
+    {
+      "slug": "horseshoe-crab",
+      "name": "Horseshoe Crab",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "A Big Horseshoe Crab catch carried a \"Primordial\" banner in FM and Toys' Oct 31, 2026 gameplay (J-OvYeXZjFc). Big is treated as a modifier; Primordial is outside our current rarity model, so base rarity and sale value stay unknown.",
+      "unverified": true
+    },
+    {
+      "slug": "tiger-shark",
+      "name": "Tiger Shark",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "A Rainbow Tiger Shark catch carried a \"Primordial\" banner in FM and Toys' Oct 31, 2026 gameplay (J-OvYeXZjFc). Rainbow is treated as a modifier; this is distinct from Tiger Fish. Primordial is outside our current rarity model, so base rarity and sale value stay unknown.",
+      "unverified": true
     }
   ]
 }
