@@ -62,6 +62,25 @@ export default function UpdatesPage() {
 
       <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
         <div className="flex items-center gap-2 mb-2">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-green-400/20 text-green-600 dark:text-green-400 font-bold uppercase border border-green-400/40">Republished</span>
+          <h2 className="text-xl font-black">🔄 Nov 1: Game republished, title is now [NOW]</h2>
+        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Hole Fishing was republished on Nov 1 at 14:54 UTC, about six minutes before the Admin Abuse window opened.
+          The Roblox title changed from [🎃HALLOWEEN] to <strong>[NOW]</strong>. We don&apos;t have a confirmed list of what
+          changed yet. Rods, fish and other content from this update will be added once we see them in footage.
+        </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Still no codes: the game description has none, and UrGameTips lists zero working codes. See{' '}
+          <Link href="/codes" className="underline">Codes</Link> for the latest.
+        </p>
+        <p className="text-xs text-gray-500">
+          Source: Roblox games API for universe 9906378607, checked Nov 1, 2026; UrGameTips codes page, Nov 1, 2026.
+        </p>
+      </article>
+
+      <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
+        <div className="flex items-center gap-2 mb-2">
           <span className="text-xs px-2 py-0.5 rounded-full bg-blue-400/20 text-blue-600 dark:text-blue-400 font-bold uppercase border border-blue-400/40">Footage reviewed</span>
           <h2 className="text-xl font-black">🎥 Nov 1: Horseshoe Crab and Tiger Shark confirmed from Oct 31 gameplay</h2>
         </div>
