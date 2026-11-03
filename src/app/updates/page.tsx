@@ -63,6 +63,24 @@ export default function UpdatesPage() {
       <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
         <div className="flex items-center gap-2 mb-2">
           <span className="text-xs px-2 py-0.5 rounded-full bg-green-400/20 text-green-600 dark:text-green-400 font-bold uppercase border border-green-400/40">Republished</span>
+          <h2 className="text-xl font-black">🔄 Nov 3: Republished, title is back to [🎣UPDATE]</h2>
+        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Hole Fishing was republished on Nov 3 at 15:26 UTC. The Roblox title changed from [👻UPD] back to{' '}
+          <strong>[🎣UPDATE]</strong>. We don&apos;t have a confirmed list of what changed. We&apos;ll add new rods and fish once we see them in footage.
+        </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Still no codes: the game description has none, and UrGameTips lists no working codes.
+          See <Link href="/codes" className="underline">Codes</Link>.
+        </p>
+        <p className="text-xs text-gray-500">
+          Source: Roblox games API for universe 9906378607, checked Nov 4, 2026; UrGameTips codes page (modified Nov 1, 2026).
+        </p>
+      </article>
+
+      <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-green-400/20 text-green-600 dark:text-green-400 font-bold uppercase border border-green-400/40">Republished</span>
           <h2 className="text-xl font-black">🔄 Nov 1: Second republish, title is now [👻UPD]</h2>
         </div>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
