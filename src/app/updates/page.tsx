@@ -6,7 +6,7 @@ import { generateSEOMetadata, generateBreadcrumbSchema, getCurrentDateString } f
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Updates (${getCurrentDateString()}) — Patch Notes & Events`,
   description:
-    'Latest Hole Fishing updates: Horseshoe Crab and Tiger Shark sightings, the Nov 1 Admin Abuse schedule, and Halloween content.',
+    'Latest Hole Fishing updates: Crystal Manta and Midnight Behemoth sightings, current rarity reads, and the Nov 3 republish.',
   keywords: ['hole fishing update', 'hole fishing new update', 'hole fishing admin abuse', 'hole fishing october update', 'hole fishing baits update', 'hole fishing patch notes'],
   path: '/updates',
 });
@@ -44,19 +44,41 @@ export default function UpdatesPage() {
 
       <article className="mb-8 p-5 rounded-xl border border-cyan-300 dark:border-cyan-800 bg-cyan-50 dark:bg-cyan-950/20">
         <div className="flex items-center gap-2 mb-2">
-          <span className="text-xs px-2 py-0.5 rounded-full bg-cyan-400/20 text-cyan-600 dark:text-cyan-400 font-bold uppercase border border-cyan-400/40">Scheduled</span>
-          <h2 className="text-xl font-black">🗓️ Next Event: UPDATE + ADMIN ABUSE (Nov 1, 2026)</h2>
+          <span className="text-xs px-2 py-0.5 rounded-full bg-cyan-400/20 text-cyan-600 dark:text-cyan-400 font-bold uppercase border border-cyan-400/40">Window ended</span>
+          <h2 className="text-xl font-black">🗓️ UPDATE + ADMIN ABUSE (Nov 1–2, 2026)</h2>
         </div>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
           Before the Halloween window closed, the official Roblox events listing had already moved on to the next
           session: <strong>&quot;UPDATE + ADMIN ABUSE&quot;</strong> — no Halloween branding — scheduled for{' '}
           <strong>Sun, Nov 1, 10 AM ET / 7 AM PT / 3 PM UK</strong> (15:00 UTC — note the US clock change that morning),{' '}
           running through <strong>Mon, Nov 2, 16:00 UTC</strong>, with the same subtitle:{' '}
-          <strong>&quot;New rods, fish and more!&quot;</strong> That keeps the weekly Sunday pattern going (Oct 4 → Oct 11 →{' '}
-          Oct 18 → Oct 25 → Nov 1), one hour <em>earlier</em> than the last two events.
+          <strong>&quot;New rods, fish and more!&quot;</strong> That kept the weekly Sunday pattern going (Oct 4 → Oct 11 →{' '}
+          Oct 18 → Oct 25 → Nov 1), one hour <em>earlier</em> than the last two events. <strong>This listed window has now ended.</strong>
         </p>
         <p className="text-xs text-gray-500">
           Source: Roblox virtual-events API for universe 9906378607, checked Oct 26, 2026 (event entry updated Oct 25, 19:02 UTC — about half an hour after the Halloween republish).
+        </p>
+      </article>
+
+      <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-blue-400/20 text-blue-600 dark:text-blue-400 font-bold uppercase border border-blue-400/40">Footage reviewed</span>
+          <h2 className="text-xl font-black">🎥 Nov 4: Crystal Manta and Midnight Behemoth confirmed from Nov 2 gameplay</h2>
+        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          A frame review of FM and Toys&apos; Nov 2 video found two species missing from our index. Both are now in the{' '}
+          <Link href="/fish" className="underline">Fish Index</Link> as single-source, unverified sightings.
+        </p>
+        <ul className="list-disc pl-5 space-y-1.5 text-sm text-gray-600 dark:text-gray-400 mb-3">
+          <li><strong>Crystal Manta</strong>: the catch banner read <strong>Celestial</strong>. That tier is outside our rarity model, so the base entry stays Unknown.</li>
+          <li><strong>Midnight Behemoth</strong>: the catch banner read <strong>Primordial</strong>, also outside our rarity model, so its base rarity stays Unknown.</li>
+          <li><strong>Current rarity reads</strong>: Clownfish Common → Uncommon, and Humpback Whale Unknown → Legendary. Big is treated as a modifier on the Humpback Whale.</li>
+        </ul>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          No sale values were copied from this late-game footage because upgrades and event multipliers make them unsuitable as base values.
+        </p>
+        <p className="text-xs text-gray-500">
+          Source: FM and Toys gameplay (ZcZml2dEN5I, Nov 2, 2026); names and rarity banners read directly from the in-game catch screens.
         </p>
       </article>
 

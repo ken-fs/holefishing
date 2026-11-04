@@ -45,10 +45,10 @@
     {
       "slug": "clownfish",
       "name": "Clownfish",
-      "rarity": "Common",
+      "rarity": "Uncommon",
       "time": "day",
       "valueRange": "$50–$300",
-      "note": "Huge Clownfish mutations exist."
+      "note": "A Nov 2, 2026 catch banner read \"Uncommon Clownfish\" in FM and Toys gameplay (ZcZml2dEN5I), superseding the earlier Common label. Huge Clownfish mutations exist; the late-game sale shown was not used as a base value."
     },
     {
       "slug": "betta",
@@ -522,10 +522,10 @@
     {
       "slug": "humpback-whale",
       "name": "Humpback Whale",
-      "rarity": "Unknown",
+      "rarity": "Legendary",
       "time": "any",
       "valueRange": "Unknown",
-      "note": "Two sightings: Sept 24, 2026 footage (the creator's best catch, presented like a legendary) and Oct 18, 2026 footage. No clear rarity banner read yet.",
+      "note": "Earlier sightings occurred on Sept 24 and Oct 18, 2026. A Big Humpback Whale catch carried a \"Legendary\" banner in FM and Toys' Nov 2, 2026 gameplay (ZcZml2dEN5I). Big is treated as a modifier; base sale value remains unknown.",
       "unverified": true
     },
     {
@@ -822,6 +822,24 @@
       "time": "any",
       "valueRange": "Unknown",
       "note": "A Rainbow Tiger Shark catch carried a \"Primordial\" banner in FM and Toys' Oct 31, 2026 gameplay (J-OvYeXZjFc). Rainbow is treated as a modifier; this is distinct from Tiger Fish. Primordial is outside our current rarity model, so base rarity and sale value stay unknown.",
+      "unverified": true
+    },
+    {
+      "slug": "crystal-manta",
+      "name": "Crystal Manta",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Catch banner read \"Celestial Crystal Manta\" in FM and Toys' Nov 2, 2026 gameplay (ZcZml2dEN5I). Celestial is outside our current rarity model; base sale value and availability remain unconfirmed.",
+      "unverified": true
+    },
+    {
+      "slug": "midnight-behemoth",
+      "name": "Midnight Behemoth",
+      "rarity": "Unknown",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Catch banner read \"Primordial Midnight Behemoth\" in FM and Toys' Nov 2, 2026 gameplay (ZcZml2dEN5I). Primordial is outside our current rarity model; base sale value and availability remain unconfirmed.",
       "unverified": true
     }
   ]
