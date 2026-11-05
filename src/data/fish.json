@@ -141,11 +141,11 @@
     },
     {
       "slug": "frost-bone",
-      "name": "Frost Bone",
+      "name": "Frostbone",
       "rarity": "Rare",
       "time": "day",
       "valueRange": "$5,000–$15,000",
-      "note": "Skeletal fish. No special cutscene, but a solid rare."
+      "note": "Skeletal fish. The in-game spelling is Frostbone (no space), confirmed by a Rare catch banner in AceORedHeart Blox's Nov 3, 2026 gameplay (8PANSYLsUYg); the displayed $8,782 catch value is within the existing observed range."
     },
     {
       "slug": "meat-fish",
@@ -239,11 +239,11 @@
     },
     {
       "slug": "asian-turtle",
-      "name": "Asian Turtle",
+      "name": "Ancient Turtle",
       "rarity": "Legendary",
       "time": "night",
       "valueRange": "$500,000–$1,500,000",
-      "note": "Weighs half a ton. The night-fishing legend that makes millionaires.",
+      "note": "Previously mislabeled Asian Turtle. Multiple creators call it Ancient Turtle, and the name is directly readable on a best-catch board in AceORedHeart Blox's Nov 3, 2026 gameplay (8PANSYLsUYg). Night Legendary; individual catch weights vary.",
       "weightKg": 500
     },
     {
@@ -773,11 +773,10 @@
     {
       "slug": "largemouth-bass",
       "name": "Largemouth Bass",
-      "rarity": "Unknown",
+      "rarity": "Uncommon",
       "time": "any",
       "valueRange": "Unknown",
-      "note": "Inventory label read \"Largemouth Bass\" in FM and Toys' Oct 29, 2026 gameplay (v-oxxsFrqhw). Kept separate from the existing generic Bass entry until another source establishes whether they are distinct; rarity and base value are unknown.",
-      "unverified": true
+      "note": "First seen as an inventory label in FM and Toys' Oct 29, 2026 gameplay (v-oxxsFrqhw). A direct catch banner read \"Uncommon Largemouth Bass\" in AceORedHeart Blox's Nov 3, 2026 gameplay (8PANSYLsUYg), confirming it is distinct from generic Bass; base sale value is unknown."
     },
     {
       "slug": "forgefin",
@@ -840,6 +839,15 @@
       "time": "any",
       "valueRange": "Unknown",
       "note": "Catch banner read \"Primordial Midnight Behemoth\" in FM and Toys' Nov 2, 2026 gameplay (ZcZml2dEN5I). Primordial is outside our current rarity model; base sale value and availability remain unconfirmed.",
+      "unverified": true
+    },
+    {
+      "slug": "travifish",
+      "name": "Travifish",
+      "rarity": "Rare",
+      "time": "any",
+      "valueRange": "Unknown",
+      "note": "Catch banner read \"Rare Travifish\" in AceORedHeart Blox's Nov 3, 2026 gameplay (8PANSYLsUYg), resolving earlier creator nicknames such as \"Travis fish\". Base sale value and availability remain unconfirmed; the footage's $14,085 catch display includes player progression and is not used as a base value.",
       "unverified": true
     }
   ]

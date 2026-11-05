@@ -6,7 +6,7 @@ import { generateSEOMetadata, generateBreadcrumbSchema, getCurrentDateString } f
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Updates (${getCurrentDateString()}) — Patch Notes & Events`,
   description:
-    'Latest Hole Fishing updates: Crystal Manta and Midnight Behemoth sightings, current rarity reads, and the Nov 3 republish.',
+    'Latest Hole Fishing updates: Travifish identified, Ancient Turtle and Largemouth Bass rarity reads, and the Nov 3 republish.',
   keywords: ['hole fishing update', 'hole fishing new update', 'hole fishing admin abuse', 'hole fishing october update', 'hole fishing baits update', 'hole fishing patch notes'],
   path: '/updates',
 });
@@ -41,6 +41,28 @@ export default function UpdatesPage() {
           <div className="text-xs text-gray-500 uppercase">Last Game Update</div>
         </div>
       </div>
+
+      <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-blue-400/20 text-blue-600 dark:text-blue-400 font-bold uppercase border border-blue-400/40">Footage reviewed</span>
+          <h2 className="text-xl font-black">🎥 Nov 5: Travifish identified and three fish records corrected</h2>
+        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          A frame review of AceORedHeart Blox&apos;s Nov 3 fresh-account gameplay resolved a previously unnamed fish and
+          supplied direct labels for three existing records in the <Link href="/fish" className="underline">Fish Index</Link>.
+        </p>
+        <ul className="list-disc pl-5 space-y-1.5 text-sm text-gray-600 dark:text-gray-400 mb-3">
+          <li><strong>Travifish</strong>: a direct <strong>Rare</strong> catch banner confirms the name of the fish creators previously called &quot;Travis fish&quot;. It is added as a single-source, unverified sighting.</li>
+          <li><strong>Largemouth Bass</strong>: a direct <strong>Uncommon</strong> catch banner updates its rarity from Unknown and provides a second source after the Oct 29 inventory sighting.</li>
+          <li><strong>Name corrections</strong>: <strong>Ancient Turtle</strong> replaces the old Asian Turtle display label, matching the in-game best-catch board and earlier creator footage; <strong>Frostbone</strong> is one word.</li>
+        </ul>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          No catch value was copied as a new base value because sell-value upgrades affect the displayed amounts.
+        </p>
+        <p className="text-xs text-gray-500">
+          Source: AceORedHeart Blox &quot;Fishing Monsters In a Hole...&quot; (8PANSYLsUYg, Nov 3, 2026); names and rarities read directly from catch banners and best-catch boards.
+        </p>
+      </article>
 
       <article className="mb-8 p-5 rounded-xl border border-cyan-300 dark:border-cyan-800 bg-cyan-50 dark:bg-cyan-950/20">
         <div className="flex items-center gap-2 mb-2">
