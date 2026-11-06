@@ -6,7 +6,7 @@ import { generateSEOMetadata, generateBreadcrumbSchema, getCurrentDateString } f
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Updates (${getCurrentDateString()}) — Patch Notes & Events`,
   description:
-    'Latest Hole Fishing updates: Travifish identified, Ancient Turtle and Largemouth Bass rarity reads, and the Nov 3 republish.',
+    'Latest Hole Fishing updates: HAPPYHALLOWEEN and 123CODE surface, Travifish is identified, and the Nov 3 republish.',
   keywords: ['hole fishing update', 'hole fishing new update', 'hole fishing admin abuse', 'hole fishing october update', 'hole fishing baits update', 'hole fishing patch notes'],
   path: '/updates',
 });
@@ -41,6 +41,33 @@ export default function UpdatesPage() {
           <div className="text-xs text-gray-500 uppercase">Last Game Update</div>
         </div>
       </div>
+
+      <article className="mb-8 p-5 rounded-xl border border-green-300 dark:border-green-800 bg-green-50 dark:bg-green-950/20">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-green-400/20 text-green-600 dark:text-green-400 font-bold uppercase border border-green-400/40">Two sources</span>
+          <h2 className="text-xl font-black">🎁 Nov 6: HAPPYHALLOWEEN and 123CODE are the first reported working codes</h2>
+        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Two independent code trackers now list the game&apos;s first public code strings, both dated Nov 5. The{' '}
+          <Link href="/codes" className="underline">Codes page</Link> has been updated with the matching code texts and rewards:
+        </p>
+        <ul className="list-disc pl-5 space-y-1.5 text-sm text-gray-600 dark:text-gray-400 mb-3">
+          <li><strong>HAPPYHALLOWEEN</strong>: 3x Luck Boost for 15 minutes and 2x Sell Value Boost for 15 minutes.</li>
+          <li><strong>123CODE</strong>: 20K Cash.</li>
+        </ul>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Roblox Den marks both codes Active after a check within the last hour and states that its Code Guardian tests every listed code in-game.
+          MrGuider independently lists the same strings and rewards as added Nov 5. No first-party announcement or successful-redemption footage
+          has surfaced yet, so this is a two-source editorial confirmation—not a claim that we redeemed them ourselves.
+        </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          The official Roblox API still reports <strong>[🎣UPDATE]</strong>, last republished Nov 3 at 15:26 UTC; its description has no code,
+          and the 67K CCU group has no current shout.
+        </p>
+        <p className="text-xs text-gray-500">
+          Sources: Roblox Den and MrGuider Hole Fishing codes pages (entries dated Nov 5; checked Nov 6, 2026); Roblox games and groups APIs for universe 9906378607 / group 612510500 (checked Nov 6).
+        </p>
+      </article>
 
       <article className="mb-8 p-5 rounded-xl border border-gray-200 dark:border-gray-800">
         <div className="flex items-center gap-2 mb-2">

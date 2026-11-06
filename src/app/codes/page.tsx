@@ -8,7 +8,7 @@ import SiteIndexLinks from '@/components/SiteIndexLinks';
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Codes (${getCurrentDateString()}) — Working Codes & Status`,
   description:
-    'Are there Hole Fishing codes on Roblox? Verified status: the redemption box now exists in the Exclusive Store — no working codes released yet. How to redeem, fakes to avoid, and free rewards.',
+    'Two Hole Fishing codes: HAPPYHALLOWEEN for 3x Luck and 2x Sell Value boosts, and 123CODE for 20K Cash. Rewards, sources and redemption steps.',
   keywords: ['hole fishing codes', 'hole fishing codes 2026', 'hole fishing roblox codes', 'hole fishing redeem codes', 'hole fishing code'],
   path: '/codes',
   languages: CODES_LANGS,
@@ -37,7 +37,6 @@ export default function CodesPage() {
   const config = getGameConfig();
   const hasCodes = codes.active.length > 0;
   const version = config.game.currentVersion;
-  const groupMembers = 124531; // Roblox groups API, 2026-10-26
   const breadcrumb = generateBreadcrumbSchema([
     { name: 'Home', url: '/' },
     { name: 'Codes', url: '/codes' },
@@ -46,12 +45,12 @@ export default function CodesPage() {
     {
       question: 'Are there any working Hole Fishing codes right now?',
       answer:
-        `No working codes yet. As of October 2026 the game DOES have a redemption box — a Codes section inside the Exclusive Store, verified on Sept 28 gameplay footage — but the developers (67K CCU) have not released a single code string for it. This page will list verified codes the moment they exist.`,
+        `Yes. HAPPYHALLOWEEN gives a 3x Luck Boost and a 2x Sell Value Boost for 15 minutes each, and 123CODE gives 20K Cash. Roblox Den and MrGuider independently list both codes and rewards as active, with entries dated Nov 5, 2026.`,
     },
     {
       question: 'How do I redeem codes in Hole Fishing?',
       answer:
-        'Open the Store on the left-hand menu to bring up the Exclusive Store window, then scroll down to the Codes section. Type the code into the box exactly as written and press the green Redeem button. The menu exists today; there is just nothing official to type into it yet.',
+        'Open the Store on the left-hand menu to bring up the Exclusive Store window, then scroll down to the Codes section. Type HAPPYHALLOWEEN or 123CODE exactly as written and press the green Redeem button.',
     },
     {
       question: 'How do I get free rewards in Hole Fishing without codes?',
@@ -59,24 +58,24 @@ export default function CodesPage() {
         'Claim the free reward chest near the spawn (pays out for liking the game and joining the 67K CCU group), fish during the Server Hole event for 4x cash, fish at night for the highest-value species, and complete your fish index for permanent index luck.',
     },
     {
-      question: 'When will Hole Fishing release its first codes?',
+      question: 'When did Hole Fishing get its first codes?',
       answer:
-        'No official date yet. The redemption box has been in the game since late September, and the developers have teased "admin codes" in chat before — but the Oct 4, Oct 11 and Oct 18, 2026 Admin Abuse events all came and went without a code, and the 🎃 Halloween window (Oct 25–26) is passing without one too. The next chance is the UPDATE + ADMIN ABUSE on Nov 1, 2026. We re-check during and after every event.',
+        'Both current public strings are listed as added on Nov 5, 2026 and were cross-checked here on Nov 6. The redemption box existed since late September, but the earlier Oct 4, Oct 11, Oct 18 and Oct 25–26 event windows produced no verified public code.',
     },
     {
       question: 'Are the Hole Fishing codes on other websites real?',
       answer:
-        'No. The redemption box in the Exclusive Store is real, but every "working Hole Fishing codes" list on aggregator sites is fabricated — none of those codes were ever announced by the developers, and no footage shows any of them redeeming successfully. Those pages exist to capture the search traffic. This page says so plainly instead.',
+        'Not all of them are fake. HAPPYHALLOWEEN and 123CODE are independently listed with identical rewards by Roblox Den and MrGuider; Roblox Den says its Code Guardian tests codes in-game. The five older strings below remain unsupported, so check the exact code and reward instead of trusting or rejecting every list wholesale.',
     },
     {
       question: 'Do BIGGERHOLE, MUTATIONHUNT or CASTANDSELL work in Hole Fishing?',
       answer:
-        'No. BIGGERHOLE, MUTATIONHUNT, DESERTCAST, RAREFISH and CASTANDSELL are circulating on code aggregator sites, but the developers have never announced them and no gameplay footage shows any of them redeeming. The "Hole Fishing codes" YouTube videos are clickbait — in one, the creator literally types "THANKS FOR WATCHING" into the box instead of a working code.',
+        'There is still no reliable evidence for BIGGERHOLE, MUTATIONHUNT, DESERTCAST, RAREFISH or CASTANDSELL. They are not among the two independently confirmed Nov 5 codes, no developer announcement has been found, and no gameplay footage shows them redeeming successfully.',
     },
     {
-      question: 'Why does this page rank if there are no codes?',
+      question: 'How does this page verify Hole Fishing codes?',
       answer:
-        'Because "are there codes" is itself the search — most players searching for Hole Fishing codes do not know the game has no code system. Answering that honestly is more useful than inventing a list, and it means we are already the page that updates first when codes do launch.',
+        'The current pair is cross-confirmed by two independent trackers, one of which states that its editor tests codes in-game. No first-party announcement or successful-redemption footage has been indexed yet, so the page labels this as editorial confirmation rather than claiming a first-hand redemption test.',
     },
   ]);
 
@@ -118,28 +117,22 @@ export default function CodesPage() {
         )}
       </section>
 
-      {/* 10-26 复查：万圣节窗口进行中（10-26T16:00Z 结束）仍无码；virtual-events API 下一场 11-01T15:00Z → 11-02T16:00Z */}
       <section className="mb-10 p-5 rounded-xl border border-cyan-300 dark:border-cyan-800 bg-cyan-50 dark:bg-cyan-950/20">
-        <h2 className="text-lg font-bold mb-2">📅 Next code watch: UPDATE + ADMIN ABUSE — Sunday, Nov 1</h2>
+        <h2 className="text-lg font-bold mb-2">📅 Nov 6 code check: two active codes cross-confirmed</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-          The 🎃 Halloween window (Oct 25, 16:00 UTC → Oct 26, 16:00 UTC) is live as we publish this — and the pattern
-          holds: the game was republished mid-window with the title now <strong>[🎃HALLOWEEN]</strong>, but{' '}
-          <strong>no code string</strong> has appeared in the game description, on the 67K CCU group, or in any creator
-          footage we could verify.
+          <strong>Roblox Den</strong> marks HAPPYHALLOWEEN and 123CODE Active after a check within the last hour. Its
+          Code Guardian policy says every listed code is tested in-game and checked for the correct reward.
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-          The next event is already listed: <strong>Sunday, November 1, 2026 at 15:00 UTC</strong> (10 AM ET / 7 AM PT /
-          11 PM in the Philippines — the US clock changes that morning) and runs until <strong>Monday, Nov 2 at 16:00
-          UTC</strong>. The official Roblox listing keeps the subtitle &quot;New rods, fish and more!&quot; but drops the
-          Halloween branding and starts one hour earlier.
+          <strong>MrGuider</strong> independently lists the identical code strings and rewards, both labelled
+          <strong> Added: November 5, 2026</strong>. This is the first time our daily check has found two independent
+          sources agreeing on public Hole Fishing codes.
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400">
-          <strong>Four windows, four times no code.</strong> Oct 4 (x20 Global Luck finale), Oct 11 (50x Global Luck), Oct
-          18 (patch dropped mid-window) all ended without a code string — and the Halloween window has produced none in
-          its first 11 hours either (the Admin Abuse hour at the start is where a code would drop). If one ever shows
-          up, it goes in the Active Codes box above. The full event-by-event log is on the{' '}
-          <Link href="/events/admin-abuse" className="underline">Admin Abuse page</Link>, and what each patch changed is in
-          the <Link href="/updates" className="underline">updates log</Link>.
+          The official game description and 67K CCU group shout still contain no code, and no successful-redemption
+          footage has been indexed. The pair above is therefore a <strong>two-source editorial confirmation</strong>,
+          not a claim that we redeemed it ourselves. The change is also recorded in the{' '}
+          <Link href="/updates" className="underline">updates log</Link>.
         </p>
       </section>
 
@@ -148,7 +141,7 @@ export default function CodesPage() {
         <h2 className="text-xl font-bold mb-3">Event Codes: Yin-Yang, Admin Abuse and the Hacker Event</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
           Players search for a code for every themed event the game runs, so here is each one in one place —{' '}
-          <strong>none of them released a code</strong>:
+          <strong>the early windows were codeless; the first public strings are dated Nov 5</strong>:
         </p>
         <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-2 list-disc list-inside">
           <li>
@@ -167,12 +160,12 @@ export default function CodesPage() {
             catches). No code attached to it either.
           </li>
           <li>
-            <strong>🎃 Halloween event (Oct 25–26)</strong> — checked 11 hours into the 24-hour window: the title changed to [🎃HALLOWEEN] and the listing mentioned new rods and fish only. No code.
+            <strong>🎃 Halloween event (Oct 25–26)</strong> — no public code was found during the original window. Both trackers date <strong>HAPPYHALLOWEEN</strong> to Nov 5; they do not establish that it was already available on Oct 25–26.
           </li>
         </ul>
         <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">
-          The pattern is that this developer simply does not use the code system yet. Milestone counters are all past their
-          classic triggers (see below) and still produce nothing.
+          The code system was infrastructure-first: the redemption box appeared in late September, while the first
+          cross-confirmed public strings arrived on Nov 5. Earlier event windows remain codeless; the current pair is above.
         </p>
       </section>
 
@@ -180,18 +173,15 @@ export default function CodesPage() {
       <section className="mb-10">
         <h2 className="text-xl font-bold mb-3">Are There Hole Fishing Roblox Codes?</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-          <strong>No working codes — but the redemption box is real.</strong> The {version} era brought a Codes
-          section inside the game&apos;s Exclusive Store (input box + green Redeem button + the line &quot;Join our
-          group &amp; community for more codes!&quot;), verified on September 28, 2026 gameplay footage. What does
-          not exist yet is any official code string to type into it — which means every list of &quot;Hole Fishing
-          Roblox codes&quot; you find elsewhere is fabricated. This page tracks the official sources and publishes
-          real codes as soon as one is verified.
+          <strong>Yes — HAPPYHALLOWEEN and 123CODE are now cross-confirmed active codes.</strong> The {version} era
+          brought a Codes section inside the game&apos;s Exclusive Store (input box + green Redeem button + the line
+          &quot;Join our group &amp; community for more codes!&quot;), verified on September 28 gameplay footage.
+          HAPPYHALLOWEEN gives 15-minute 3x Luck and 2x Sell Value boosts; 123CODE gives 20K Cash.
         </p>
         <p className="text-sm text-gray-600 dark:text-gray-400">
           If you searched for <em>Roblox Hole Fishing codes</em>, <em>codes for Hole Fishing Roblox</em>, or
-          <em> code Hole Fishing Roblox</em> — they all point to the same answer, and this is it. The closest
-          substitutes that <em>do</em> exist are below: the free reward chest, the Server Hole event, and index
-          milestones.
+          <em> code Hole Fishing Roblox</em> — the two current strings are in the Active Codes box above. Additional
+          free options remain below: the reward chest, Server Hole event, night fishing and index milestones.
         </p>
       </section>
 
@@ -199,9 +189,8 @@ export default function CodesPage() {
       <section className="mb-10">
         <h2 className="text-xl font-bold mb-3">Fake Hole Fishing Codes Going Around</h2>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-          Since late September, several code sites list the same five &quot;working&quot; Hole Fishing codes. None of
-          them is real — the developers never announced them, and no footage shows any of them redeeming in the
-          game&apos;s codes box:
+          The five older strings below are not the newly confirmed pair. They have circulated since late September
+          without a developer announcement or successful-redemption footage, so they remain unsupported:
         </p>
         <div className="flex flex-wrap gap-2 mb-3">
           {FAKE_CODES.map((c) => (
@@ -214,23 +203,20 @@ export default function CodesPage() {
           <li>The sites listing them describe redemption with template wording (&quot;if Hole Fishing has a code menu&quot;) — they have not seen the real one in the Exclusive Store.</li>
           <li>The &quot;Hole Fishing codes&quot; YouTube videos behind these lists never show a successful redemption — one creator types strings like FIRST, UNDERWATER and finally &quot;THANKS FOR WATCHING&quot; into the box with zero results.</li>
           <li>
-            The only real code talk: during scheduled <Link href="/events" className="underline">Admin Abuse events</Link>,
-            the developers have teased temporary &quot;admin codes&quot; in chat. No code string has been shown working on
-            screen yet — if one is, it goes straight into the Active Codes box above. We watched the full{' '}
-            <strong>Oct 4, 2026 Admin Abuse</strong> (about an hour of mutations and luck boosts, hosted by the dev in
-            chat): <strong>no code was given out</strong>. The <strong>Oct 11</strong> one ended the same way, with no code.
-            The next window to watch is the Oct 18 event.
+            The first credible public strings are <strong>HAPPYHALLOWEEN</strong> and <strong>123CODE</strong>, dated Nov 5
+            and cross-confirmed by Roblox Den and MrGuider. Earlier <Link href="/events" className="underline">Admin Abuse events</Link>{' '}
+            on Oct 4, Oct 11 and Oct 18 produced no public code; that older history does not apply to the new pair.
           </li>
         </ul>
       </section>
 
       {/* Milestone monitor */}
       <section className="mb-10">
-        <h2 className="text-xl font-bold mb-2">What Would Trigger a Code Drop</h2>
+        <h2 className="text-xl font-bold mb-2">Milestone History and Future Code Drops</h2>
         <p className="text-sm text-gray-500 mb-4">
-          Roblox simulators usually drop their first codes on a milestone. Hole Fishing has already{' '}
-          <strong>passed all four classic triggers without adding codes</strong> — so milestones alone are not a
-          reliable signal for this game. Counters below are from the Roblox public API (checked October 26, 2026).
+          Hole Fishing passed all four classic triggers before the first public codes appeared on Nov 5. Neither current
+          source ties the new pair to a specific milestone. The counters below are a historical Roblox public API snapshot
+          from October 26, 2026.
         </p>
         <div className="space-y-3">
           {MILESTONES.map((m) => {
@@ -266,27 +252,21 @@ export default function CodesPage() {
         </p>
       </section>
 
-      {/* Why no codes */}
       <section className="prose prose-gray dark:prose-invert max-w-none mb-10">
-        <h2>Why There Are No Hole Fishing Codes Yet</h2>
+        <h2>Why Hole Fishing Had No Codes Until November</h2>
         <p>
-          Hole Fishing is a young game — it went viral only weeks ago and has already rotated through several limited events (Desert, Yin-Yang, Baits).
-          The developers (67K CCU) built the economy around four in-game systems instead of code giveaways: the free reward chest,
-          the <Link href="/server-hole">Server Hole event</Link>, index luck milestones, and Robux potions/gamepasses.
-          The codes box that appeared in the Exclusive Store in late September is the infrastructure arriving first —
-          the codes themselves have not followed yet.
+          Hole Fishing rotated through the Desert, Yin-Yang and Baits updates with a redemption box but no public strings.
+          The developers built the early economy around the free reward chest, the <Link href="/server-hole">Server Hole event</Link>,
+          index luck milestones, and Robux potions/gamepasses. The Exclusive Store codes box was infrastructure arriving first.
         </p>
         <p>
-          That sequencing is normal for Roblox simulators: the redemption UI ships in a systems update, then the first
-          code strings arrive with a milestone celebration or a scheduled Admin Abuse event. The Oct 4 and Oct 11 Admin Abuse events
-          went by without one, but with the box already in-game, a first code drop still looks close rather than
-          hypothetical. A group with {config.stats.favorites} favourites and a {fmt(groupMembers)}-member community
-          now has every reason to use it.
+          That changed with entries dated Nov 5: <strong>HAPPYHALLOWEEN</strong> and <strong>123CODE</strong> appeared on
+          Roblox Den and MrGuider with identical rewards. Roblox Den says its editors test codes in-game, giving the pair
+          a stronger basis than the unsupported strings that circulated in September and October.
         </p>
         <p>
-          The practical consequence for you: there is nothing to redeem today, and any list you find is fiction. But the
-          moment a milestone lands, this page becomes the fastest place to get the real codes — because we are already
-          watching for it.
+          For players, the practical answer is now simple: try the two active codes above. The older five strings remain
+          unverified, and future drops still need the same source cross-check rather than an assumption based on milestones.
         </p>
       </section>
 
@@ -302,20 +282,19 @@ export default function CodesPage() {
         </ul>
       </section>
 
-      {/* Where codes would appear */}
       <section className="prose prose-gray dark:prose-invert max-w-none mb-10">
-        <h2>Where Real Codes Would Appear First</h2>
+        <h2>Where New Codes Appear</h2>
         <p>
-          If 67K CCU adds codes, they will surface in one of these places — in this order:
+          Codes can be enabled server-side without a new game description or group announcement. We check first-party
+          channels and independent trackers rather than relying on either one alone:
         </p>
         <ol>
-          <li><strong>The 67K CCU group page</strong> — group shout is the standard channel for Roblox code drops. This group has {fmt(groupMembers)} members and is where a celebration announcement would land.</li>
-          <li><strong>The game page description</strong> — developers usually append codes there alongside the update notes.</li>
-          <li><strong>This page</strong> — we watch both of the above for changes and add verified codes here as soon as they are confirmed in-game.</li>
+          <li><strong>The 67K CCU group page and game description</strong> — the official announcement channels, currently without a code post.</li>
+          <li><strong>Independent code trackers</strong> — Roblox Den and MrGuider currently agree on both Nov 5 strings and rewards.</li>
+          <li><strong>This page</strong> — new strings are listed after a source cross-check, with the level of evidence stated plainly.</li>
         </ol>
         <p>
-          What codes will <em>not</em> appear in: YouTube comment sections, Discord DMs, or any site that lists
-          &quot;codes&quot; for a game with no redemption menu.
+          A YouTube comment, Discord DM or lone aggregator string without redemption evidence is not enough on its own.
         </p>
 
         <h2>How to Redeem Codes in Hole Fishing</h2>
@@ -326,37 +305,35 @@ export default function CodesPage() {
           <li>Launch Hole Fishing and let your fishing area load.</li>
           <li>Open the <strong>Store</strong> on the left-hand menu — this brings up the <strong>Exclusive Store</strong> window (the one with the Robux cash packs at the top).</li>
           <li>Scroll down to the <strong>Codes</strong> section — it reads &quot;Join our group &amp; community for more codes!&quot;</li>
-          <li>Type the code into the box exactly as written (Roblox codes are usually case-sensitive) and press the green <strong>Redeem</strong> button.</li>
+          <li>Type <strong>HAPPYHALLOWEEN</strong> or <strong>123CODE</strong> exactly as written and press the green <strong>Redeem</strong> button. Roblox Den labels its codes case-sensitive.</li>
         </ol>
         <p>
-          The only step missing today is an official code to enter. When the first real one lands, it goes into the
-          Active Codes box at the top of this page.
+          The active pair and its rewards are listed at the top of this page. Check back for status changes before trying
+          older strings from September and October lists.
         </p>
 
-        <h2>Why This Page Says &quot;No Codes&quot; Instead of Inventing Them</h2>
+        <h2>How This Page Handles Real and Fake Codes</h2>
         <p>
-          Search for &quot;Hole Fishing codes&quot; and you will find plenty of pages with lists. Every one of them is
-          fabricated — none of their codes was ever announced by the developers, and none is shown redeeming
-          successfully anywhere. Those pages exist purely to capture the search traffic, and they will never update
-          because there is nothing real to update.
+          Not every aggregator list is fabricated. The current pair is supported by two independent pages, one of which
+          states that its editor tests codes in-game. The older five strings remain unsupported because no matching
+          official announcement or successful-redemption evidence has surfaced.
         </p>
         <p>
-          This page takes the opposite approach, and it turns out to be the better one: &quot;are there codes&quot; is
-          itself the search. Most players looking for Hole Fishing codes do not know the redemption box exists but has
-          no codes yet, and finding a straight answer is more useful than a fake list. It also means that when codes
-          <em> do</em> launch, we are already the page players trust — and the first one with the real codes.
+          We also distinguish two-source editorial confirmation from first-party footage. No official announcement or
+          successful-redemption video has been indexed for the new pair yet, so that limitation stays on the page instead
+          of claiming we tested the codes ourselves.
         </p>
         <p className="text-sm text-gray-500">
           Tracked automatically: the game page and developer group are watched for changes, and a daily review searches
-          for new code drops. The current status file is verified empty of codes — the redemption UI is verified present.
+          for new code drops. The current status file lists two active codes cross-checked on Nov 6, 2026.
         </p>
       </section>
 
       {/* 全鱼种内链模块（2026-09-28 加，借全站最强页的爬取热度带鱼页收录） */}
       <SiteIndexLinks />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faq) }} />
+      <script type="application/ld+json">{JSON.stringify(breadcrumb).replace(/</g, '\\u003c')}</script>
+      <script type="application/ld+json">{JSON.stringify(faq).replace(/</g, '\\u003c')}</script>
     </div>
   );
 }
