@@ -57,6 +57,11 @@ export default function RodsPage() {
       answer:
         'They are not in the shop anymore. On Oct 4 footage the ladder goes Golden → Cactus → Tree → Knight with no Leaf or Night Rod in between, so they look removed. Their old pages are kept here with a "Not in shop" label.',
     },
+    {
+      question: 'How to get the Yin Yang Rod in Hole Fishing?',
+      answer:
+        "We can't confirm that a Yin Yang Rod exists. No rod from the Sept 21–27 Yin-Yang event shows up in the shop footage we checked. Only a Yin Yang fish was seen, once, and it is unverified.",
+    },
   ]);
 
   return (
@@ -100,6 +105,16 @@ export default function RodsPage() {
       </div>
 
       <section className="prose prose-gray dark:prose-invert max-w-none mb-10">
+        <h2>How to Get the Yin Yang Rod</h2>
+        <p>
+          We can&apos;t confirm there is a Yin Yang Rod. It isn&apos;t in the rod table above, and no source we checked shows one.
+          The Yin-Yang event ran Sept 21–27, 2026, and creator footage from it only showed a fish, not a rod.
+        </p>
+        <p>
+          That fish is the <Link href="/fish/yin-yang">Yin Yang fish</Link>, seen once and still unverified. Don&apos;t trust
+          videos or &quot;scripts&quot; that promise a free Yin Yang Rod. If a rod shows up in the shop, we&apos;ll add it here.
+          More on the event is on the <Link href="/events">events page</Link>.
+        </p>
         <h2>Recommended Upgrade Path</h2>
         <p>
           Rods are the #1 progression gate in Hole Fishing — but don&apos;t rush them blindly. The golden rule:
