@@ -60,6 +60,9 @@ export default function UpdatesPage() {
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
           <strong>Update, 13:20 UTC:</strong> the game was republished again on Nov 8 at 12:44 UTC, about two hours before the event window opens. The title is still <strong>[⏳]</strong> and the description still has no code. We don&apos;t know what changed yet.
         </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          <strong>Update, 15:20 UTC:</strong> the game was republished once more on Nov 8 at 14:57 UTC, and the title is now <strong>[NOW]</strong>. The description still has no code, and Roblox Den still lists only HAPPYHALLOWEEN and 123CODE. We haven&apos;t seen footage of the new rods or fish yet, so we aren&apos;t listing any.
+        </p>
         <p className="text-xs text-gray-500">
           Sources: Roblox games API and virtual-events API for universe 9906378607, checked Nov 8, 2026 at 03:01 UTC; games API re-checked at 13:20 UTC.
         </p>
