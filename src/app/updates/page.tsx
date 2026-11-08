@@ -57,8 +57,11 @@ export default function UpdatesPage() {
           <strong>[🎣UPDATE]</strong> to <strong>[⏳]</strong>. The description is unchanged and contains no code. No new rod or fish
           details have been confirmed from footage yet; they will be added only after they are visible in game or in a gameplay video.
         </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          <strong>Update, 13:20 UTC:</strong> the game was republished again on Nov 8 at 12:44 UTC, about two hours before the event window opens. The title is still <strong>[⏳]</strong> and the description still has no code. We don&apos;t know what changed yet.
+        </p>
         <p className="text-xs text-gray-500">
-          Sources: Roblox games API and virtual-events API for universe 9906378607, checked Nov 8, 2026 at 03:01 UTC.
+          Sources: Roblox games API and virtual-events API for universe 9906378607, checked Nov 8, 2026 at 03:01 UTC; games API re-checked at 13:20 UTC.
         </p>
       </article>
 
