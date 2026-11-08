@@ -6,7 +6,7 @@ import { generateSEOMetadata, generateBreadcrumbSchema, getCurrentDateString } f
 export const metadata: Metadata = generateSEOMetadata({
   title: `Hole Fishing Updates (${getCurrentDateString()}) — Patch Notes & Events`,
   description:
-    'Latest Hole Fishing updates: HAPPYHALLOWEEN and 123CODE surface, Travifish is identified, and the Nov 3 republish.',
+    'Latest Hole Fishing updates: UPDATE + ADMIN ABUSE on Nov 8, the hourglass-title republish, HAPPYHALLOWEEN, 123CODE, and Travifish.',
   keywords: ['hole fishing update', 'hole fishing new update', 'hole fishing admin abuse', 'hole fishing october update', 'hole fishing baits update', 'hole fishing patch notes'],
   path: '/updates',
 });
@@ -41,6 +41,26 @@ export default function UpdatesPage() {
           <div className="text-xs text-gray-500 uppercase">Last Game Update</div>
         </div>
       </div>
+
+      <article className="mb-8 p-5 rounded-xl border border-cyan-300 dark:border-cyan-800 bg-cyan-50 dark:bg-cyan-950/20">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-cyan-400/20 text-cyan-600 dark:text-cyan-400 font-bold uppercase border border-cyan-400/40">Official event</span>
+          <h2 className="text-xl font-black">🗓️ Nov 8: UPDATE + ADMIN ABUSE starts at 15:00 UTC</h2>
+        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          The official Roblox events listing schedules <strong>&quot;UPDATE + ADMIN ABUSE&quot;</strong> for{' '}
+          <strong>Sun, Nov 8 at 15:00 UTC</strong> through <strong>Mon, Nov 9 at 16:00 UTC</strong>, with the subtitle{' '}
+          <strong>&quot;New rods, fish and more!&quot;</strong> That is 10 AM ET / 7 AM PT / 3 PM UK on Sunday.
+        </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Ahead of the event, the game was republished on <strong>Nov 7 at 23:08 UTC</strong> and its title changed from{' '}
+          <strong>[🎣UPDATE]</strong> to <strong>[⏳]</strong>. The description is unchanged and contains no code. No new rod or fish
+          details have been confirmed from footage yet; they will be added only after they are visible in game or in a gameplay video.
+        </p>
+        <p className="text-xs text-gray-500">
+          Sources: Roblox games API and virtual-events API for universe 9906378607, checked Nov 8, 2026 at 03:01 UTC.
+        </p>
+      </article>
 
       <article className="mb-8 p-5 rounded-xl border border-green-300 dark:border-green-800 bg-green-50 dark:bg-green-950/20">
         <div className="flex items-center gap-2 mb-2">
