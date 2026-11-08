@@ -14,7 +14,7 @@ const FAQS = [
   {
     question: 'Are there any Hole Fishing codes right now?',
     answer:
-      'No. Hole Fishing does not have a code redemption system as of the Desert Event update. Our codes page is monitored daily — the system appears here first if it gets added.',
+      'Yes, two. HAPPYHALLOWEEN gives 3x Luck and 2x Sell Value boosts for 15 minutes each, and 123CODE gives 20K Cash. Two trackers (Roblox Den and MrGuider) list both, dated Nov 5, 2026. Redeem them in Store → Codes. Full details are on the Hole Fishing codes page.',
   },
   {
     question: 'Why do fish escape with the "too strong" message?',
@@ -69,7 +69,7 @@ export default function FAQPage() {
     <div className="max-w-3xl mx-auto px-4 py-10">
       <h1 className="text-3xl font-black mb-2">Hole Fishing FAQ</h1>
       <p className="text-gray-500 mb-8">
-        The questions everyone asks, answered with current data. Updated {getCurrentDateString()}.
+        Hole Fishing is a Roblox fishing game where you cast into a hole, sell fish and upgrade. These are the questions players ask most, answered with current data. Updated {getCurrentDateString()}. Looking for codes? See the <Link href="/codes" className="underline">Hole Fishing codes page</Link>.
       </p>
 
       <div className="space-y-3 mb-10">
