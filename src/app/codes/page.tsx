@@ -183,6 +183,10 @@ export default function CodesPage() {
           <em> code Hole Fishing Roblox</em> — the two current strings are in the Active Codes box above. Additional
           free options remain below: the reward chest, Server Hole event, night fishing and index milestones.
         </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">
+          Next watch window: the official events listing shows UPDATE + ADMIN ABUSE on Nov 15 at 15:00 UTC. As of Nov 13, no
+          new code has appeared in the game description or on the trackers. See the <Link href="/updates" className="underline">updates log</Link>.
+        </p>
       </section>
 
       {/* Fake codes — 点名聚合站在传的码（搜这些码的人会落到这页） */}
