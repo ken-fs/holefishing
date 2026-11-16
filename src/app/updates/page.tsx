@@ -45,16 +45,34 @@ export default function UpdatesPage() {
       <article className="mb-8 p-5 rounded-xl border border-cyan-300 dark:border-cyan-800 bg-cyan-50 dark:bg-cyan-950/20">
         <div className="flex items-center gap-2 mb-2">
           <span className="text-xs px-2 py-0.5 rounded-full bg-cyan-400/20 text-cyan-600 dark:text-cyan-400 font-bold uppercase border border-cyan-400/40">Next event</span>
-          <h2 className="text-xl font-black">🗓️ Nov 15: next UPDATE + ADMIN ABUSE starts at 15:00 UTC</h2>
+          <h2 className="text-xl font-black">🗓️ Nov 22: next UPDATE + ADMIN ABUSE starts at 15:00 UTC</h2>
         </div>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
           The official Roblox events listing shows another <strong>&quot;UPDATE + ADMIN ABUSE&quot;</strong> on{' '}
-          <strong>Sun, Nov 15 at 15:00 UTC</strong> through <strong>Mon, Nov 16 at 16:00 UTC</strong>. The subtitle is again
+          <strong>Sun, Nov 22 at 15:00 UTC</strong> through <strong>Mon, Nov 23 at 16:00 UTC</strong>. The subtitle is again
           &quot;New rods, fish and more!&quot; That is 10 AM ET / 7 AM PT / 3 PM UK on Sunday.
         </p>
         <p className="text-xs text-gray-500">
-          Sources: Roblox virtual-events API for universe 9906378607, checked Nov 13, 2026. The game was last republished Nov 8 at 16:35 UTC (title [🌸SAKURA]); nothing newer as of Nov 13. The only codes listed are still{' '}
+          Source: Roblox virtual-events API for universe 9906378607, checked Nov 16, 2026. The only codes we list are still{' '}
           <Link href="/codes" className="underline">HAPPYHALLOWEEN and 123CODE</Link>.
+        </p>
+      </article>
+
+      <article className="mb-8 p-5 rounded-xl border border-green-300 dark:border-green-800 bg-green-50 dark:bg-green-950/20">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-xs px-2 py-0.5 rounded-full bg-green-400/20 text-green-600 dark:text-green-400 font-bold uppercase border border-green-400/40">Republished</span>
+          <h2 className="text-xl font-black">🔄 Nov 16: Game republished, title is now [🐟UPDATE]</h2>
+        </div>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Hole Fishing was republished on Nov 16 at 12:59 UTC, after the Nov 15 event window. The Roblox title changed from [NOW] to <strong>[🐟UPDATE]</strong>.
+          We don&apos;t have a confirmed list of what changed. We&apos;ll add new rods and fish once we see them in footage.
+        </p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+          Codes: Roblox Den (checked Nov 15) still lists only HAPPYHALLOWEEN and 123CODE. UrGameTips lists a single code, &quot;Voltline&quot;, with a reward that reads &quot;Electric Scooters Codes&quot;. No other tracker has it and the reward looks wrong, so we haven&apos;t added it.
+          See <Link href="/codes" className="underline">Codes</Link>.
+        </p>
+        <p className="text-xs text-gray-500">
+          Sources: Roblox games API for universe 9906378607 and virtual-events API, checked Nov 16, 2026; Roblox Den; UrGameTips.
         </p>
       </article>
 
