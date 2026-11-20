@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'What this fan guide collects (no accounts, no forms), how Google Analytics and ad partners including Google use cookies, and how to opt out.',
+  description: 'What this fan guide collects (no accounts, no forms), how Google Analytics and our ad partners use cookies, and how to opt out.',
   alternates: { canonical: '/privacy-policy/' },
 };
 
@@ -43,36 +43,9 @@ export default function PrivacyPage() {
         Ads keep the guide free. Ad partners may use cookies, web beacons, IP addresses and similar identifiers to show ads, limit how often
         you see the same ad, measure performance and prevent fraud.
       </p>
-      <h3>Google AdSense</h3>
-      <p>This site uses Google AdSense to show ads. In line with Google&apos;s requirements:</p>
-      <ul>
-        <li>
-          Third-party vendors, including Google, use cookies to serve ads based on a user&apos;s prior visits to this website or other websites.
-        </li>
-        <li>
-          Google&apos;s use of advertising cookies enables it and its partners to serve ads to users based on their visit to this site and/or
-          other sites on the internet.
-        </li>
-        <li>
-          You may opt out of personalised advertising by visiting <Ext href="https://adssettings.google.com/">Google Ads Settings</Ext>. You
-          can also opt out of some third-party vendors&apos; use of cookies for personalised advertising at{' '}
-          <Ext href="https://optout.aboutads.info/">aboutads.info</Ext>, or in Europe at{' '}
-          <Ext href="https://www.youronlinechoices.eu/">youronlinechoices.eu</Ext>.
-        </li>
-        <li>
-          Read{' '}
-          <Ext href="https://policies.google.com/technologies/partner-sites">how Google uses information from sites that use its services</Ext>{' '}
-          and <Ext href="https://policies.google.com/technologies/ads">how Google uses cookies in advertising</Ext>.
-        </li>
-      </ul>
-      <p>
-        Visitors in the European Economic Area, the UK and Switzerland will be asked for consent through a Google-certified consent message
-        before Google uses cookies for personalised ads. If you don&apos;t consent, Google may still show non-personalised ads, which use
-        cookies only for things like frequency capping, measurement and fraud prevention.
-      </p>
       <h3>Adsterra and Monetag</h3>
       <p>
-        Some pages also show banner ads from Adsterra. Each banner runs inside its own sandboxed frame, so it can&apos;t read this page. A small
+        Some pages show banner ads from Adsterra. Each banner runs inside its own sandboxed frame, so it can&apos;t read this page. A small
         bar of ads from Monetag can appear at the bottom of the screen. Both networks may use cookies or similar technology to show and measure
         ads; see <Ext href="https://adsterra.com/privacy-policy/">Adsterra&apos;s privacy policy</Ext> and{' '}
         <Ext href="https://monetag.com/privacy/">Monetag&apos;s privacy policy</Ext>.
@@ -83,7 +56,7 @@ export default function PrivacyPage() {
       <ul>
         <li>Strictly necessary: Cloudflare security cookies, if any.</li>
         <li>Analytics: Google Analytics cookies.</li>
-        <li>Advertising: cookies set by Google, Adsterra and Monetag when ads load, as described above.</li>
+        <li>Advertising: cookies set by Adsterra and Monetag when ads load, as described above.</li>
       </ul>
       <p>You can block or delete cookies in your browser settings. The guide works fine without them.</p>
 
