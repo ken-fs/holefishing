@@ -44,17 +44,17 @@ export default function UpdatesPage() {
 
       <article className="mb-8 p-5 rounded-xl border border-cyan-300 dark:border-cyan-800 bg-cyan-50 dark:bg-cyan-950/20">
         <div className="flex items-center gap-2 mb-2">
-          <span className="text-xs px-2 py-0.5 rounded-full bg-cyan-400/20 text-cyan-600 dark:text-cyan-400 font-bold uppercase border border-cyan-400/40">Next event</span>
-          <h2 className="text-xl font-black">🗓️ Nov 22: next UPDATE + ADMIN ABUSE starts at 15:00 UTC</h2>
+          <span className="text-xs px-2 py-0.5 rounded-full bg-cyan-400/20 text-cyan-600 dark:text-cyan-400 font-bold uppercase border border-cyan-400/40">Live now</span>
+          <h2 className="text-xl font-black">🗓️ Nov 22: game republished before UPDATE + ADMIN ABUSE</h2>
         </div>
         <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-          The official Roblox events listing shows another <strong>&quot;UPDATE + ADMIN ABUSE&quot;</strong> on{' '}
-          <strong>Sun, Nov 22 at 15:00 UTC</strong> through <strong>Mon, Nov 23 at 16:00 UTC</strong>. The subtitle is again
-          &quot;New rods, fish and more!&quot; That is 10 AM ET / 7 AM PT / 3 PM UK on Sunday.
+          Hole Fishing was republished on <strong>Nov 22 at 14:25 UTC</strong>, about 35 minutes before the{' '}
+          <strong>&quot;UPDATE + ADMIN ABUSE&quot;</strong> event opens at 15:00 UTC. It runs until Mon, Nov 23 at 16:00 UTC.
+          The title is still [🐟UPDATE]. We don&apos;t have a confirmed list of what changed yet. We&apos;ll add new rods and fish once we see them in footage.
         </p>
         <p className="text-xs text-gray-500">
-          Source: Roblox virtual-events API for universe 9906378607, checked Nov 16, 2026. The only codes we list are still{' '}
-          <Link href="/codes" className="underline">HAPPYHALLOWEEN and 123CODE</Link>.
+          Source: Roblox games API for universe 9906378607, checked Nov 22, 2026. The description has no code. The only codes we list are still{' '}
+          <Link href="/codes" className="underline">HAPPYHALLOWEEN and 123CODE</Link>. UrGameTips still lists only &quot;Voltline&quot; (reward &quot;Electric Scooters Codes&quot;), which we haven&apos;t added.
         </p>
       </article>
 
